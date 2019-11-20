@@ -2,10 +2,14 @@
 // src/Controller/LuckyController.php
 namespace App\Controller;
 
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
 
 class LuckyController
 {
+       /**
+       * @Route("/lucky/number")
+       */
     public function number()
     {
         $number = random_int(0, 100);
