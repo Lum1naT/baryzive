@@ -7,4 +7,3 @@ phases:
     commands:
   build:
     commands:
-      - phpunit tests
