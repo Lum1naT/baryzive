@@ -19,3 +19,5 @@ b6c10e,::1,GET,https://localhost:8000/lucky/number,1574275426,,200
 9c2610,::1,GET,https://localhost:8000/lucky/number,1574276017,,200
 572b3c,::1,GET,https://localhost:8000/lucky/number,1574276018,,200
 39ebb9,::1,GET,https://localhost:8000/lucky/number,1574276019,,200
+3f64f3,::1,GET,https://localhost:8000/lucky/number,1574278346,7341a0,200
+7341a0,::1,GET,https://localhost:8000/lucky/number,1574278346,,500
