@@ -1,0 +1,17 @@
+406cd4,::1,GET,https://localhost:8000/lucky/number,1574274990,4c3bbc,200
+42236e,::1,GET,https://localhost:8000/lucky/number,1574274990,a7261f,200
+4c3bbc,::1,GET,https://localhost:8000/lucky/number,1574274990,,500
+a7261f,::1,GET,https://localhost:8000/lucky/number,1574274990,,500
+58b7cf,::1,GET,https://localhost:8000/lucky/number,1574275114,,200
+5c034e,::1,GET,https://localhost:8000/favicon.ico,1574275114,4d4a08,200
+4d4a08,::1,GET,https://localhost:8000/favicon.ico,1574275114,,404
+70f938,::1,GET,https://localhost:8000/lucky/number,1574275120,,200
+b590d4,::1,GET,https://localhost:8000/lucky/number,1574275122,,200
+d31251,::1,GET,https://localhost:8000/lucky/number,1574275123,,200
+e22ea0,::1,GET,https://localhost:8000/lucky/number,1574275124,,200
+94f280,::1,GET,https://localhost:8000/lucky/number,1574275125,,200
+aac812,::1,GET,https://localhost:8000/lucky/number,1574275126,,200
+42c42f,::1,GET,https://localhost:8000/lucky/number,1574275136,,200
+fdccfb,::1,GET,https://localhost:8000/lucky/number,1574275137,,200
+0d69fc,::1,GET,https://localhost:8000/lucky/number,1574275138,,200
+4c1300,::1,GET,https://localhost:8000/lucky/number,1574275139,,200
