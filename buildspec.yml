@@ -7,3 +7,6 @@ phases:
     commands:
   build:
     commands:
+  finally:
+    commands:
+      - php bin/console debug:router
