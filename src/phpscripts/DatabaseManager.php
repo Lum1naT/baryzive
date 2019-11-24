@@ -1,6 +1,6 @@
 <?php
 
-include_once("../loginCredentials.php");
+include_once("../../loginCredentials.php");
 
 $host = DB_HOST;
 $db   = DB_DATABASE;
