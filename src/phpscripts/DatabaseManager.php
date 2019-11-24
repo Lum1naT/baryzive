@@ -4,7 +4,7 @@ echo "DB manager included successfuly.";
 define("DB_HOST", "baryzive.ciu3ar9isoci.eu-west-1.rds.amazonaws.com");
 define("DB_USERNAME", "Luminat");
 define("DB_PASSWORD", "baryzive42");
-define("DB_DATABASE", "ebdb");
+define("DB_DATABASE", "baryzive");
 
 $host = DB_HOST;
 $db   = DB_DATABASE;
