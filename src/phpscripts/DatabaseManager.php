@@ -9,6 +9,9 @@ $user = DB_USERNAME;
 $pass = DB_PASSWORD;
 $charset = 'utf8mb4';
 
+echo $host;
+echo $port;
+
 $dsn = "pgsql:host=$host;port=$port;dbname=$db;charset=$charset";
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
