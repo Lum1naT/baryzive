@@ -10,8 +10,9 @@ use Twig\Loader\FilesystemLoader;
 $loader = new FilesystemLoader(__DIR__ . '/src/templates');
 $twig = new Environment($loader);
 
-echo $twig->render('first.html.twig', ['name' => 'John Doe',
-    'occupation' => 'gardener']);
+$stmt = $pdo->prepare('SELECT * FROM users WHERE first_name = ? AND lastname = ?');
+$stmt->execute(["wow.", "Pepa"]);
+$user = $stmt->fetch();
 
 #echo $_SERVER['SERVER_NAME'];
 #echo $_SERVER['HTTP_HOST'];
