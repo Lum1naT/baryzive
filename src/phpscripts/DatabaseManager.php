@@ -1,6 +1,11 @@
 <?php
 echo "DB manager included successfuly.";
-include_once("../loginCredentials.php");
+
+define("DB_HOST", "baryzive.ciu3ar9isoci.eu-west-1.rds.amazonaws.com");
+define("DB_PORT", "5432");
+define("DB_USERNAME", "Luminat");
+define("DB_PASSWORD", "baryzive42");
+define("DB_DATABASE", "ebdb");
 
 $host = DB_HOST;
 $port = DB_PORT;
@@ -9,8 +14,7 @@ $user = DB_USERNAME;
 $pass = DB_PASSWORD;
 $charset = 'utf8mb4';
 
-echo $host;
-echo $port;
+
 
 $dsn = "pgsql:host=$host;port=$port;dbname=$db;charset=$charset";
 $options = [
