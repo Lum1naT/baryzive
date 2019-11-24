@@ -16,7 +16,7 @@ $charset = 'utf8mb4';
 
 
 
-$dsn = "pgsql:host=$host;dbname=$db;charset=$charset";
+$dsn = "pgsql:host=$host;dbname=$db";
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
