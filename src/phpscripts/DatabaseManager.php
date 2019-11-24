@@ -3,12 +3,13 @@ echo "DB manager included successfuly.";
 include_once("../../loginCredentials.php");
 
 $host = DB_HOST;
+$port = DB_PORT;
 $db   = DB_DATABASE;
 $user = DB_USERNAME;
 $pass = DB_PASSWORD;
 $charset = 'utf8mb4';
 
-$dsn = "pgsql:host=$host;dbname=$db;charset=$charset";
+$dsn = "pgsql:host=$host;port=$port;dbname=$db;charset=$charset";
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
