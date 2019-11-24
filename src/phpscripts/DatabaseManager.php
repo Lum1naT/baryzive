@@ -1,5 +1,5 @@
 <?php
-
+echo "DB manager included successfuly.";
 include_once("../../loginCredentials.php");
 
 $host = DB_HOST;
@@ -9,6 +9,7 @@ $pass = DB_PASSWORD;
 $charset = 'utf8mb4';
 
 echo $host;
+
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [
