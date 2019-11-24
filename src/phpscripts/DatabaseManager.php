@@ -1,6 +1,6 @@
 <?php
 echo "DB manager included successfuly.";
-include_once("../../loginCredentials.php");
+include_once("../loginCredentials.php");
 
 $host = DB_HOST;
 $port = DB_PORT;
