@@ -10,7 +10,6 @@ $host = DB_HOST;
 $db   = DB_DATABASE;
 $username = DB_USERNAME;
 $password = DB_PASSWORD;
-$charset = 'utf8mb4';
 
 
 $dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
