@@ -8,6 +8,8 @@ $user = DB_USERNAME;
 $pass = DB_PASSWORD;
 $charset = 'utf8mb4';
 
+echo $host;
+
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
