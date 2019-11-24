@@ -11,7 +11,7 @@ $loader = new FilesystemLoader(__DIR__ . '/src/templates');
 $twig = new Environment($loader);
 
 
-$stmt = $pdo->query('SELECT * FROM users');
+$stmt = $pdo->query('SELECT first_name, last_name FROM users');
 foreach ($stmt as $row)
 {
   echo $row['first_name'] . "\n";
