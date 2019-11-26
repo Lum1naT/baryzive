@@ -9,7 +9,8 @@
         "class": "phpDocumentor\\Composer\\TemplateInstallerPlugin"
     },
     "require": {
-        "composer-plugin-api": "^1.0"
+        "composer-plugin-api": "^1.0",
+        "twig/twig": "^2.0"
     },
     "require-dev": {
         "composer/composer": "^1.3"
