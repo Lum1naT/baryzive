@@ -1,8 +1,18 @@
 <?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
+
 include_once("../src/phpscripts/DatabaseManager.php");
 echo "Hello World";
 
+$loader = new FilesystemLoader(__DIR__ . '/templates');
+$twig = new Environment($loader);
 
+echo $twig->render('first.html.twig', ['name' => 'John Doe',
+    'occupation' => 'gardener']);
 
 
 $stmt = $conn->query('SELECT first_name, last_name FROM users');
