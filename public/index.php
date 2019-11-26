@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '../vendor/autoload.php';
+require '../vendor/autoload.php';
 
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
@@ -8,7 +8,7 @@ use Twig\Loader\FilesystemLoader;
 include_once("../src/phpscripts/DatabaseManager.php");
 echo "Hello World";
 
-$loader = new FilesystemLoader(__DIR__ . '/templates');
+$loader = new FilesystemLoader('../templates');
 $twig = new Environment($loader);
 
 echo $twig->render('first.html.twig', ['name' => 'John Doe',
