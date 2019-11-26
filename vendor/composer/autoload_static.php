@@ -13,6 +13,10 @@ class ComposerStaticInita05ef18f9e65be50a2250ffa6171cb1f
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php73\\' => 23,
@@ -46,6 +50,10 @@ class ComposerStaticInita05ef18f9e65be50a2250ffa6171cb1f
     );
 
     public static $prefixDirsPsr4 = array (
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
         'Symfony\\Polyfill\\Php73\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php73',
@@ -126,6 +134,13 @@ class ComposerStaticInita05ef18f9e65be50a2250ffa6171cb1f
             'phpDocumentor\\Composer' => 
             array (
                 0 => __DIR__ . '/../..' . '/src',
+            ),
+        ),
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
             ),
         ),
     );
