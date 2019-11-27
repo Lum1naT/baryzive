@@ -33,11 +33,7 @@ function findUserByEmail($email, $pdo){
    $stmt = $pdo->prepare('SELECT first_name, last_name FROM users WHERE email = ?');
    $stmt->execute([$email]);
    $user = $stmt->fetch();
-   if($user){
-     return "user found.";
-   } else {
-     return "No user with $email email found.";
-   }
+   var_dump($user);
 
  }
 
