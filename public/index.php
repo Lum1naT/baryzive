@@ -9,11 +9,11 @@ use Twig\Loader\FilesystemLoader;
 
 $loader = new FilesystemLoader('../src/templates');
 $twig = new Environment($loader);
+include_once("../src/phpscripts/DatabaseManager.php");
 
 echo $twig->render('first.html.twig', ['name' => 'John Doe',
     'occupation' => 'gardener']);
 
-    include_once("../src/phpscripts/DatabaseManager.php");
 
     echo findUserByEmail("K0jnCZ@gmail.com");
 /*
