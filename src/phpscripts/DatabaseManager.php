@@ -4,6 +4,7 @@ define("DB_USERNAME", "Luminat");
 define("DB_PASSWORD", "baryzive42");
 define("DB_DATABASE", "baryzivedb");
 
+public $conn;
 $host = DB_HOST;
 $db   = DB_DATABASE;
 $username = DB_USERNAME;
@@ -26,7 +27,7 @@ try{
 }
 
 public function findUserByEmail($email){
-  $stmt = $pdo->prepare('SELECT * FROM users WHERE email = ?');
+  $stmt = this->$conn->prepare('SELECT * FROM users WHERE email = ?');
   $stmt->execute([$email]);
   $user = $stmt->fetch();
   if($user){
