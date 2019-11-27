@@ -5,11 +5,11 @@ require '../vendor/autoload.php';
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
+include_once("../src/phpscripts/DatabaseManager.php");
 
 
 $loader = new FilesystemLoader('../src/templates');
 $twig = new Environment($loader);
-include_once("../src/phpscripts/DatabaseManager.php");
 
 echo $twig->render('first.html.twig', ['name' => 'John Doe',
     'occupation' => 'gardener']);

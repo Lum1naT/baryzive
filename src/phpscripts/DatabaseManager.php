@@ -20,7 +20,7 @@ try{
  if($conn){
  echo "Connected to the <strong>$db</strong> database successfully!";
 
- public function findUserByEmail($email){
+function findUserByEmail($email){
    $stmt = this->$conn->prepare('SELECT * FROM users WHERE email = ?');
    $stmt->execute([$email]);
    $user = $stmt->fetch();
@@ -30,6 +30,7 @@ try{
      return "No user with $email email found";
    }
  }
+
  }
 }catch (PDOException $e){
  // report error message
