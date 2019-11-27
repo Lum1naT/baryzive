@@ -8,7 +8,7 @@ use Twig\Loader\FilesystemLoader;
 include_once("../src/phpscripts/DatabaseManager.php");
 echo "Hello World";
 
-$loader = new FilesystemLoader('../templates');
+$loader = new FilesystemLoader('../src/templates');
 $twig = new Environment($loader);
 
 echo $twig->render('first.html.twig', ['name' => 'John Doe',
