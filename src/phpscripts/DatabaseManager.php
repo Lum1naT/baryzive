@@ -33,9 +33,9 @@ function findUserByEmail($email){
    $stmt->execute([$email]);
    $user = $stmt->fetch();
    if($user){
-     return $user;
+     return "user found.";
    } else {
-     return "No user with $email email found";
+     return "No user with $email email found.";
    }
  }
 
