@@ -4,10 +4,11 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
 
+
+        {% block stylesheets %}
         <link rel="stylesheet" href="../styles/style.css" type="text/css" />
 
-        <link rel="stylesheet" href="../styles/style.sass" type="text/sass" />
-        {% block stylesheets %}{% endblock %}
+        {% endblock %}
     </head>
     <body>
     <h1> {{ name }} </h1>
