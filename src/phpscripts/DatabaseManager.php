@@ -25,4 +25,15 @@ try{
  echo $e->getMessage();
 }
 
+public function findUserByEmail($email){
+  $stmt = $pdo->prepare('SELECT * FROM users WHERE email = ?');
+  $stmt->execute([$email]);
+  $user = $stmt->fetch();
+  if($user){
+    return $user;
+  } else {
+    return "No user with $email email found";
+  }
+}
+
  ?>
