@@ -29,6 +29,8 @@ try{
 
 
 function findUserByEmail($email){
+ return $email;
+   /*
    $connection = $this->conn;
    $stmt = $connection->prepare('SELECT * FROM users WHERE email = ?');
    $stmt->execute([$email]);
@@ -38,6 +40,7 @@ function findUserByEmail($email){
    } else {
      return "No user with $email email found";
    }
+   */
  }
 
 
