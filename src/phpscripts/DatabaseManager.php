@@ -29,8 +29,7 @@ try{
 
 
 function findUserByEmail($email){
- return $email;
-      $stmt = $conn->prepare('SELECT * FROM users WHERE email = ?');
+   $stmt = $conn->prepare('SELECT * FROM users WHERE email = ?');
    $stmt->execute([$email]);
    $user = $stmt->fetch();
    if($user){
