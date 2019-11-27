@@ -15,6 +15,8 @@ echo $twig->render('first.html.twig', ['name' => 'John Doe',
 
     include_once("../src/phpscripts/DatabaseManager.php");
 
+    echo findUserByEmail("K0jnCZ@gmail.com");
+/*
 $stmt = $conn->query('SELECT first_name, last_name FROM users');
 foreach ($stmt as $row)
 {
@@ -22,6 +24,7 @@ foreach ($stmt as $row)
   echo $row['last_name'] . "\n";
 }
 
+*/
 
 #echo $_SERVER['SERVER_NAME'];
 #echo $_SERVER['HTTP_HOST'];
