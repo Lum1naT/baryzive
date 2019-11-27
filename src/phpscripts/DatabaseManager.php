@@ -1,4 +1,5 @@
 <?php
+
 define("DB_HOST", "baryzive.ciu3ar9isoci.eu-west-1.rds.amazonaws.com");
 define("DB_USERNAME", "Luminat");
 define("DB_PASSWORD", "baryzive42");
@@ -14,15 +15,28 @@ $dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password"
 
 try{
  // create a PostgreSQL database connection
- $conn = new PDO($dsn);
+ $pdo = new PDO($dsn);
 
  // display a message if connected to the PostgreSQL successfully
- if($conn){
+ if($pdo){
  echo "Connected to the <strong>$db</strong> database successfully!";
+
+
  }
 }catch (PDOException $e){
  // report error message
  echo $e->getMessage();
 }
+
+
+function findUserByEmail($email, $pdo){
+   $stmt = $pdo->prepare('SELECT first_name, last_name FROM users WHERE email = ?');
+   $stmt->execute([$email]);
+   $user = $stmt->fetch();
+   var_dump($user);
+
+ }
+
+
 
  ?>
