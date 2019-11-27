@@ -6,6 +6,7 @@ use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
 include_once("../src/phpscripts/DatabaseManager.php");
+echo findUserByEmail("K0jnCZ@gmail.com");
 
 
 $loader = new FilesystemLoader('../src/templates');
@@ -15,7 +16,6 @@ echo $twig->render('first.html.twig', ['name' => 'John Doe',
     'occupation' => 'gardener']);
 
 
-   echo findUserByEmail("K0jnCZ@gmail.com");
 /*
 $stmt = $conn->query('SELECT first_name, last_name FROM users');
 foreach ($stmt as $row)
