@@ -33,15 +33,11 @@ function findUserByEmail($email){
    $stmt->execute([$email]);
    $user = $stmt->fetch();
    if($user){
-<<<<<<< HEAD
      return "user found.";
-=======
-     return "User Found.";
->>>>>>> 1b64cbe72c19b78cb14b386d17a9698ef6ba9ee7
    } else {
      return "No user with $email email found.";
    }
-   
+
  }
 
 
