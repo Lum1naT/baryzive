@@ -12,7 +12,7 @@ echo findUserByEmail("K0jnCZ@gmail.com", $pdo);
 $loader = new FilesystemLoader('../src/templates');
 $twig = new Environment($loader);
 
-echo $twig->render('first.html.twig', ['name' => 'John Doe',
+echo $twig->render('base.html.twig', ['name' => 'John Doe',
     'occupation' => 'gardener']);
 
 
