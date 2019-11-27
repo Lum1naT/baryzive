@@ -30,17 +30,15 @@ try{
 
 function findUserByEmail($email){
  return $email;
-   /*
-   $connection = $this->conn;
-   $stmt = $connection->prepare('SELECT * FROM users WHERE email = ?');
+      $stmt = $conn->prepare('SELECT * FROM users WHERE email = ?');
    $stmt->execute([$email]);
    $user = $stmt->fetch();
    if($user){
-     return $user;
+     return "User Found.";
    } else {
      return "No user with $email email found";
    }
-   */
+   
  }
 
 
