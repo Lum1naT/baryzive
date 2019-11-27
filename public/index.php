@@ -15,7 +15,7 @@ echo $twig->render('first.html.twig', ['name' => 'John Doe',
     'occupation' => 'gardener']);
 
 
-    echo findUserByEmail("K0jnCZ@gmail.com");
+  //  echo findUserByEmail("K0jnCZ@gmail.com");
 /*
 $stmt = $conn->query('SELECT first_name, last_name FROM users');
 foreach ($stmt as $row)
