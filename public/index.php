@@ -8,6 +8,8 @@ use Twig\Loader\FilesystemLoader;
 include_once("../src/phpscripts/DatabaseManager.php");
 echo listAllUsers($pdo);
 
+createNewUser($pdo, "test_oauth_provider", "test_oauth_uid", "test_first_name", "test_last_name", "test_email", "test_gender", "test_locale", "test_link");
+
 
 $loader = new FilesystemLoader('../src/templates');
 $twig = new Environment($loader);
