@@ -30,11 +30,20 @@ try{
 
 
 function listAllUsers($pdoInstance){
-  $stmt = $pdoInstance->query('SELECT first_name, last_name FROM users');
+  $stmt = $pdoInstance->query('SELECT * FROM users');
   foreach ($stmt as $row)
   {
+    echo $row['id'] . "\n";
+    echo $row['oauth_provider'] . "\n";
+    echo $row['oauth_uid'] . "\n";
+    echo $row['email'] . "\n";
     echo $row['first_name'] . "\n";
     echo $row['last_name'] . "\n";
+    echo $row['gender'] . "\n";
+    echo $row['locale'] . "\n";
+    echo $row['link'] . "\n";
+    echo $row['created'] . "\n";
+    echo $row['modified'] . "\n";
   }
  }
 
