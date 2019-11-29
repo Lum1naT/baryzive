@@ -6,7 +6,7 @@ use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
 include_once("../src/phpscripts/DatabaseManager.php");
-echo findUserByEmail("K0jnCZ@gmail.com", $pdo);
+echo listAllUsers($pdo);
 
 
 $loader = new FilesystemLoader('../src/templates');

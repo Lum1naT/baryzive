@@ -29,11 +29,9 @@ try{
 }
 
 
-function findUserByEmail($email, $pdo){
-   $stmt = $pdo->prepare('SELECT first_name, last_name FROM users WHERE email = ?');
-   $stmt->execute([$email]);
-   $user = $stmt->fetch();
-   var_dump($user);
+function listAllUsers($pdoInstance){
+   $stmt = $pdo->query('SELECT * FROM users');
+   var_dump($stmt);
 
  }
 
