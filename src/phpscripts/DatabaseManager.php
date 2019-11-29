@@ -30,9 +30,12 @@ try{
 
 
 function listAllUsers($pdoInstance){
-   $stmt = $pdo->query('SELECT * FROM users');
-   var_dump($stmt);
-
+  $stmt = $pdoInstance->query('SELECT first_name, last_name FROM users');
+  foreach ($stmt as $row)
+  {
+    echo $row['first_name'] . "\n";
+    echo $row['last_name'] . "\n";
+  }
  }
 
 
