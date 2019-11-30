@@ -7,7 +7,7 @@ use Twig\Loader\FilesystemLoader;
 
 include_once("../src/phpscripts/DatabaseManager.php");
 
-echo createNewUser($pdo, "test_oauth_provider", "test_oauth_uid", "David", "Vítek", "K0jnCZ@gmail.com", "M", "cs_CZ", "test_link");
+echo createNewUser($pdo, "test_oauth_provider", "test_oauth_uid", "David", "Vitek", "K0jnCZ@gmail.com", "M", "cs_CZ", "test_link");
 
 
 $loader = new FilesystemLoader('../src/templates');
