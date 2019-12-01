@@ -49,10 +49,20 @@ function listAllUsers($pdoInstance){
 
 
  function createNewUser($pdoInstance, $oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale, $link){
-  // $sql = "INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-  // $stmt = $pdoInstance->prepare($sql);
-  // $stmt->execute([$oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale, $link]);
+  /*
 
+          $stmt = $pdo->prepare("INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link, role, account_status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+  try {
+      $pdo->beginTransaction();
+
+      $stmt->execute(["intern", "42069", "David", "Vítek", "K0jnCZ@gmail.com", "M", "cz_cs",  "customlink", "1", "0"]);
+
+      $pdo->commit();
+  }catch (Exception $e){
+      $pdo->rollback();
+      throw $e;
+  }
+  */
 
 
  }
