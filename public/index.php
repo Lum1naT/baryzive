@@ -10,15 +10,12 @@ include_once("../src/phpscripts/DatabaseManager.php");
 
 
 
-        $stmt = $pdo->prepare("INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link, role) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
 try {
-    $pdo->beginTransaction();
+  $stmt = $pdo->prepare("INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link, role) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     $stmt->execute(["intern", "42069", "David", "Vítek", "K0jnCZ@gmail.com", "M", "cz_cs",  "customlink", "1"]);
-
-    $pdo->commit();
-}catch (Exception $e){
-    $pdo->rollback();
+    echo "Inserted successfully.";
+}catch (PDOException $e){
     throw $e;
 }
 
