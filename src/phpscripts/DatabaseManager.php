@@ -53,21 +53,7 @@ function listAllUsers($pdoInstance){
   // $stmt = $pdoInstance->prepare($sql);
   // $stmt->execute([$oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale, $link]);
 
-   $data = [
-       $oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale, $link,
-   ];
-   $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-   try {
-       $pdoInstance->beginTransaction();
-       foreach ($data as $row)
-       {
-           $stmt->execute($row);
-       }
-       $pdoInstance->commit();
-   }catch (Exception $e){
-       $pdoInstance->rollback();
-       throw $e;
-   }
+
 
  }
 
