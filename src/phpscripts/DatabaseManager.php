@@ -68,7 +68,7 @@ function listAllUsers($pdoInstance){
        $pdoInstance->rollback();
        throw $e;
    }
-   */
+
  }
 
 
