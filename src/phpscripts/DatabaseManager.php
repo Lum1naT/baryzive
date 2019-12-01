@@ -49,24 +49,23 @@ function listAllUsers($pdoInstance){
 
 
  function createNewUser($pdoInstance, $oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale, $link){
-   $sql = "INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-   $stmt = $pdoInstance->prepare($sql);
-   $stmt->execute([$oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale, $link]);
-  /*
+  // $sql = "INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+  // $stmt = $pdoInstance->prepare($sql);
+  // $stmt->execute([$oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale, $link]);
+
    $data = [
-       'John','Doe', 22,
-       'Jane','Roe', 19,
+       $oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale, $link,
    ];
-   $stmt = $pdo->prepare("INSERT INTO users (name, surname, age) VALUES (?,?,?)");
+   $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
    try {
-       $pdo->beginTransaction();
+       $pdoInstance->beginTransaction();
        foreach ($data as $row)
        {
            $stmt->execute($row);
        }
-       $pdo->commit();
+       $pdoInstance->commit();
    }catch (Exception $e){
-       $pdo->rollback();
+       $pdoInstance->rollback();
        throw $e;
    }
    */
