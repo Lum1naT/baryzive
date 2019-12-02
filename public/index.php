@@ -7,10 +7,6 @@ use Twig\Loader\FilesystemLoader;
 
 include_once("../src/phpscripts/DatabaseManager.php");
 
-
-
-
-
 $loader = new FilesystemLoader('../src/templates');
 $twig = new Environment($loader);
 
