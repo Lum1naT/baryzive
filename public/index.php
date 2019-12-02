@@ -10,9 +10,10 @@ include_once("../src/phpscripts/DatabaseManager.php");
 
 
 
-$loader->addPath('path/to/public', 'public');
 
 $loader = new FilesystemLoader('../src/templates');
+$loader->addPath('path/to/public', 'public');
+
 $twig = new Environment($loader);
 
 echo $twig->render('base.html.twig', ['name' => 'John Doe',
