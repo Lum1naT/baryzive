@@ -12,7 +12,6 @@ include_once("../src/phpscripts/DatabaseManager.php");
 
 
 $loader = new FilesystemLoader('../src/templates');
-$loader->addPath('/', 'root');
 
 $twig = new Environment($loader);
 
