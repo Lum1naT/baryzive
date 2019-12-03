@@ -5,9 +5,9 @@ require '../vendor/autoload.php';
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
-include_once("../src/phpscripts/DatabaseManager.php");
+include_once("assets/phpscripts/DatabaseManager.php");
 
-$loader = new FilesystemLoader('../src/templates');
+$loader = new FilesystemLoader('assets/templates');
 $twig = new Environment($loader);
 
 echo $twig->render('base.html.twig', ['name' => 'John Doe',
