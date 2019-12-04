@@ -9,5 +9,6 @@ phases:
       - npm install -g sass
   build:
     commands:
+      - gulp build
   post_build:
     commands:
