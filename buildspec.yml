@@ -6,14 +6,13 @@ phases:
   pre_build:
     commands:
       - composer install
-      - npm init
       - npm install -g sass
       - npm install gulp
       - gulp --version
 
   build:
     commands:
-      - gulp --version      
+      - gulp --version
       - gulp build
   post_build:
     commands:
