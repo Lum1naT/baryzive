@@ -6,6 +6,7 @@ phases:
   pre_build:
     commands:
       - composer install
+      - npm install -g sass
   build:
     commands:
   post_build:
