@@ -7,7 +7,7 @@ phases:
     commands:
       - composer install
       - npm install -g sass
-      - npm install -g gulp
+      - npm install gulp
   build:
     commands:
       - gulp build
