@@ -9,7 +9,6 @@ phases:
       - npm install -g sass
       - npm install gulp
       - gulp --version
-
   build:
     commands:
       - gulp --version
