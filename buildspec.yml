@@ -6,9 +6,9 @@ phases:
   pre_build:
     commands:
       - composer install
-      - npm install node-modules
   build:
     commands:
+      - npm install node-modules
       - npm run scss
   post_build:
     commands:
