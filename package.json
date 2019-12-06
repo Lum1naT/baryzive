@@ -5,7 +5,7 @@
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass public/assets/styles/scss/style.scss -o public/assets/styles/css"
+    "scss": "node-sass public/assets/styles/scss/style.scss -o public/assets/styles/css",
     "sass": "node-sass public/assets/styles/sass/style.sass -o public/assets/styles/css"
   },
   "repository": {
