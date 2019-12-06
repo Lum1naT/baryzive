@@ -1,10 +1,2 @@
-body p {
-  color: red; }
-
-body li {
-  display: inline-block; }
-
-body a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none; }
+p {
+  color: blue; }
