@@ -46,6 +46,10 @@ footer .footerBox ul li a, footer .footerBox ul li {
   font-weight: 300;
   color: rgba(0, 0, 0, 0.7); }
 
+footer svg {
+  max-width: 20px;
+  margin-right: 5px; }
+
 .row.footerBottomContent p, .row.footerBottomContent a {
   font-size: smaller; }
 
