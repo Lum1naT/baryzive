@@ -33,14 +33,14 @@ h4 {
 p {
   color: blue; }
 
-/* --- Footer --- */
-footer h4 {
-  margin-bottom: 10px; }
-
-.footerWrapper {
+.fastInfoWrapper, .footerWrapper {
   max-width: 1350px;
   width: 100%;
   margin: 0 auto; }
+
+/* --- Footer --- */
+footer h4 {
+  margin-bottom: 10px; }
 
 footer .footerBox ul li a, footer .footerBox ul li {
   font-weight: 300;
