@@ -21,3 +21,28 @@ h4{
 p {
   color: $blue;
 }
+
+/* --- Footer --- */
+footer h4{
+  margin-bottom: 10px;
+}
+
+.footerWrapper{
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer .footer_box ul li a, footer .footer_box ul li{
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px){
+  footer{
+    padding: 40px 20px;
+  }
+
+  .col-6.copyright {
+    text-align: right;
+  }
+}
