@@ -33,8 +33,13 @@ footer h4{
   margin: 0 auto;
 }
 
-footer .footer_box ul li a, footer .footer_box ul li{
+footer .footerBox ul li a, footer .footerBox ul li{
   font-weight: 300;
+  color: $secondary-color;
+}
+
+.row.footerBottomContent p, .row.footerBottomContent a {
+    font-size: smaller;
 }
 
 @media only screen and (min-width: 768px){
@@ -42,7 +47,13 @@ footer .footer_box ul li a, footer .footer_box ul li{
     padding: 40px 20px;
   }
 
+  .row.footerBottomContent {
+    padding-top: 40px;
+  }
+
   .col-6.copyright {
     text-align: right;
   }
 }
+
+/* --- Responsive --- */
