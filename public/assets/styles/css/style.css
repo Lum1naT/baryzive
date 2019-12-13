@@ -55,6 +55,22 @@ a {
   height: auto;
   margin-bottom: 10px; }
 
+form.newsletter button {
+  border: none;
+  border-bottom: 3px solid #24CE88;
+  border-radius: 4px;
+  padding: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: #37EEA3;
+  margin-left: 10px; }
+
+form.newsletter input {
+  border: none;
+  padding: 15px;
+  font-weight: 500;
+  border-radius: 4px; }
+
 /* --- Footer --- */
 footer h4 {
   margin-bottom: 10px; }
