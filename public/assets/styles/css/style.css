@@ -85,14 +85,21 @@ footer .footerBox ul li a, footer .footerBox ul li {
   font-weight: 300;
   color: #6F83A8; }
 
+footer .footerBox ul li strong {
+  font-weight: bold; }
+
 footer svg {
   max-width: 20px;
   height: auto;
   margin-right: 5px; }
 
-.row.footerBottomContent p, .row.footerBottomContent a {
+.row.footerBottomContent p {
   font-size: smaller;
   font-weight: 300; }
+
+.row.footerBottomContent a {
+  font-weight: 300;
+  color: #37EEA3; }
 
 footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   font-weight: bold;
