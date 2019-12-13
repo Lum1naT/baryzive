@@ -28,10 +28,14 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: bold;
-  color: #000666; }
+  color: #000666;
+  margin-bottom: 10px; }
 
 p {
   color: #6F83A8;
+  font-weight: 500; }
+
+a {
   font-weight: 500; }
 
 .fastInfoWrapper, .footerWrapper {
@@ -43,7 +47,7 @@ p {
 #fastInfo {
   background-color: #f2f6f9; }
 
-#fastInfo .col-7 .col-4 {
+#fastInfo .col-4 {
   text-align: center; }
 
 .fastInfoIcon svg {
@@ -65,13 +69,14 @@ footer svg {
   margin-right: 5px; }
 
 .row.footerBottomContent p, .row.footerBottomContent a {
-  font-size: smaller; }
+  font-size: smaller;
+  font-weight: 300; }
 
 @media only screen and (min-width: 768px) {
   footer, section {
-    padding: 40px 20px; }
+    padding: 4rem 20px; }
   .row.footerBottomContent {
-    padding-top: 40px; }
+    padding-top: 4rem; }
   .col-6.copyright {
     text-align: right; } }
 

@@ -15,10 +15,15 @@ h3{
   font-size: 18px;
   font-weight: bold;
   color: $primary-color;
+  margin-bottom: 10px;
 }
 
 p {
   color: $secondary-color;
+  font-weight: 500;
+}
+
+a{
   font-weight: 500;
 }
 
@@ -33,7 +38,7 @@ p {
   background-color: #f2f6f9;
 }
 
-#fastInfo .col-7 .col-4{
+#fastInfo .col-4{
   text-align: center;
 }
 
@@ -61,15 +66,16 @@ footer svg {
 
 .row.footerBottomContent p, .row.footerBottomContent a {
     font-size: smaller;
+    font-weight: 300;
 }
 
 @media only screen and (min-width: 768px){
   footer, section{
-    padding: 40px 20px;
+    padding: 4rem 20px;
   }
 
   .row.footerBottomContent {
-    padding-top: 40px;
+    padding-top: 4rem;
   }
 
   .col-6.copyright {
