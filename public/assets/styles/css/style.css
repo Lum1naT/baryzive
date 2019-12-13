@@ -55,6 +55,9 @@ a {
   height: auto;
   margin-bottom: 10px; }
 
+form.newsletter {
+  margin-top: 10px; }
+
 form.newsletter button {
   border: none;
   border-bottom: 3px solid #24CE88;
