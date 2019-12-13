@@ -72,7 +72,7 @@ footer svg {
   font-size: smaller;
   font-weight: 300; }
 
-footer .email, footer .phone-number {
+footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   font-weight: bold;
   color: #37EEA3; }
 
