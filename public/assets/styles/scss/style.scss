@@ -58,6 +58,9 @@ form.newsletter button {
   color: white;
   background-color: $primary-btn;
   margin-left: 10px;
+  &:hover{
+    background-color: #32E99E;
+  }
 }
 
 form.newsletter input {
@@ -65,6 +68,7 @@ form.newsletter input {
     padding: 15px;
     font-weight: 500;
     border-radius: 4px;
+    color: $secondary-color;
 }
 
 /* --- Footer --- */

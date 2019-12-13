@@ -64,12 +64,15 @@ form.newsletter button {
   color: white;
   background-color: #37EEA3;
   margin-left: 10px; }
+  form.newsletter button:hover {
+    background-color: #32E99E; }
 
 form.newsletter input {
   border: none;
   padding: 15px;
   font-weight: 500;
-  border-radius: 4px; }
+  border-radius: 4px;
+  color: #6F83A8; }
 
 /* --- Footer --- */
 footer h4 {
