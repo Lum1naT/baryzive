@@ -40,9 +40,7 @@ p {
 
 /* --- Fast Info --- */
 #fastInfo {
-  background-color: #efefef;
-  border-top: 1px solid #dcdcdc;
-  border-bottom: 1px solid #dcdcdc; }
+  background-color: #f2f6f9; }
 
 /* --- Footer --- */
 footer h4 {
