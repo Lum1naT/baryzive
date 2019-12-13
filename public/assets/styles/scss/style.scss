@@ -43,9 +43,9 @@ a{
 }
 
 .fastInfoIcon svg {
-    max-width: 64px;
+    max-width: 55px;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* --- Footer --- */
@@ -67,6 +67,11 @@ footer svg {
 .row.footerBottomContent p, .row.footerBottomContent a {
     font-size: smaller;
     font-weight: 300;
+}
+
+footer .email, footer .phone-number{
+  font-weight: bold;
+  color: #37EEA3;
 }
 
 @media only screen and (min-width: 768px){
