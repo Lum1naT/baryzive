@@ -33,6 +33,11 @@ a{
   margin: 0 auto;
 }
 
+/* --- Navigation --- */
+.navWrapper{
+  max-width: $max-width;
+}
+
 /* --- Fast Info --- */
 #fastInfo{
   background-color: #f2f6f9;

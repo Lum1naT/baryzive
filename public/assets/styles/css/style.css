@@ -43,6 +43,10 @@ a {
   width: 100%;
   margin: 0 auto; }
 
+/* --- Navigation --- */
+.navWrapper {
+  max-width: 1350px; }
+
 /* --- Fast Info --- */
 #fastInfo {
   background-color: #f2f6f9; }
