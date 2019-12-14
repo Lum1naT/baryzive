@@ -44,6 +44,9 @@ a {
   margin: 0 auto; }
 
 /* --- Navigation --- */
+nav .navWrapper ul {
+  text-align: right; }
+
 nav ul li {
   display: inline-block;
   margin: 0 10px; }
@@ -111,8 +114,10 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   color: #37EEA3; }
 
 @media only screen and (min-width: 768px) {
-  footer, section, nav {
+  footer, section {
     padding: 4rem 20px; }
+  nav {
+    padding: 2rem 20px; }
   .row.footerBottomContent {
     padding-top: 4rem; }
   .col-6.copyright {
