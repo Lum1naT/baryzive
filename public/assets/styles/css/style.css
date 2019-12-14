@@ -38,14 +38,10 @@ p {
 a {
   font-weight: 500; }
 
-.fastInfoWrapper, .footerWrapper {
+.fastInfoWrapper, .footerWrapper, .navWrapper {
   max-width: 1350px;
   width: 100%;
   margin: 0 auto; }
-
-/* --- Navigation --- */
-.navWrapper {
-  max-width: 1350px; }
 
 /* --- Fast Info --- */
 #fastInfo {

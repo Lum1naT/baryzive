@@ -27,15 +27,10 @@ a{
   font-weight: 500;
 }
 
-.fastInfoWrapper, .footerWrapper{
+.fastInfoWrapper, .footerWrapper, .navWrapper{
   max-width: $max-width;
   width: 100%;
   margin: 0 auto;
-}
-
-/* --- Navigation --- */
-.navWrapper{
-  max-width: $max-width;
 }
 
 /* --- Fast Info --- */
