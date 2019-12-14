@@ -19,7 +19,6 @@ try{
 
  // display a message if connected to the PostgreSQL successfully
  if($pdo){
- echo "Connected to the <strong>$db</strong> database successfully!";
 
 
  }
