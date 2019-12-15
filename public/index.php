@@ -12,7 +12,7 @@ include_once("assets/phpscripts/DatabaseManager.php");
 $loader = new FilesystemLoader('assets/templates');
 $twig = new Environment($loader);
 
-echo $twig->render('base.html.twig', ['name' => 'John Doe',
+echo $twig->render('register.html.twig', ['name' => 'John Doe',
     'occupation' => 'gardener']);
 
 
