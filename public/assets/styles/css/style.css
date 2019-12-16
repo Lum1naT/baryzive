@@ -38,6 +38,13 @@ p {
 a {
   font-weight: 500; }
 
+input {
+  border: none;
+  padding: 15px;
+  font-weight: 500;
+  border-radius: 4px;
+  color: #6F83A8; }
+
 .fastInfoWrapper, .footerWrapper, .navWrapper, .headerContent {
   max-width: 1350px;
   width: 100%;
@@ -77,13 +84,6 @@ form.newsletter button {
   margin-left: 10px; }
   form.newsletter button:hover {
     background-color: #32E99E; }
-
-form.newsletter input {
-  border: none;
-  padding: 15px;
-  font-weight: 500;
-  border-radius: 4px;
-  color: #6F83A8; }
 
 /* --- Footer --- */
 footer h4 {
