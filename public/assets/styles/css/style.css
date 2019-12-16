@@ -51,7 +51,7 @@ input {
   border-radius: 4px;
   color: #6F83A8; }
 
-.fastInfoWrapper, .footerWrapper, .navWrapper, .headerContent {
+.fastInfoWrapper, .footerWrapper, .navWrapper, .headerContent, .aboutUsWrapper {
   max-width: 1350px;
   width: 100%;
   margin: 0 auto; }
