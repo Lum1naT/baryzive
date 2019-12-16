@@ -120,6 +120,8 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
     padding: 2rem 20px 4rem 20px; }
   nav {
     padding: 0 20px 2rem 20px; }
+  .headerContent {
+    padding-top: 2rem; }
   .row.footerBottomContent {
     padding-top: 4rem; }
   .col-6.copyright {
