@@ -27,7 +27,7 @@ a{
   font-weight: 500;
 }
 
-.fastInfoWrapper, .footerWrapper, .navWrapper{
+.fastInfoWrapper, .footerWrapper, .navWrapper, .headerContent{
   max-width: $max-width;
   width: 100%;
   margin: 0 auto;
@@ -121,12 +121,12 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 }
 
 @media only screen and (min-width: 768px){
-  footer, section{
+  footer, section, header{
     padding: 4rem 20px;
   }
 
   nav{
-    padding: 2rem 20px;
+    padding: 0 20px 2rem 20px;
   }
 
   .row.footerBottomContent {
