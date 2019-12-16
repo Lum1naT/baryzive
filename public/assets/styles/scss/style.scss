@@ -121,8 +121,12 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 }
 
 @media only screen and (min-width: 768px){
-  footer, section, header{
+  footer, section{
     padding: 4rem 20px;
+  }
+
+  header{
+    padding: 2rem 20px 4rem 20px;
   }
 
   nav{
