@@ -27,7 +27,7 @@ echo $twig->render('base.html.twig', ['name' => 'John Doe',
         'occupation' => 'gardener']);
         break;
 
-    case '/about' :
+    case '/register' :
     echo $twig->render('register.html.twig', ['name' => 'John Doe',
         'occupation' => 'gardener']);
     default:
