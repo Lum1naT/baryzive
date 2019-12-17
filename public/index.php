@@ -13,6 +13,9 @@ $loader = new FilesystemLoader('assets/templates');
 $twig = new Environment($loader);
 
 
+// ROUTING
+
+
     $request = $_SERVER['REQUEST_URI'];
     switch ($request) {
     case '/' :
@@ -32,7 +35,7 @@ $twig = new Environment($loader);
 
     default:
         http_response_code(404);
-        echo $twig->render('base.html.twig', ['name' => 'John Doe',
+        echo $twig->render('error.html.twig', ['name' => 'John Doe',
             'occupation' => 'gardener']);
             break;
 }
