@@ -28,6 +28,8 @@ $twig = new Environment($loader);
     case '/register' :
     echo $twig->render('register.html.twig', ['name' => 'John Doe',
         'occupation' => 'gardener']);
+        break;
+
     default:
         http_response_code(404);
         echo $twig->render('base.html.twig', ['name' => 'John Doe',
