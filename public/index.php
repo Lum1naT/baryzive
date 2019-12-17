@@ -18,7 +18,7 @@ echo $twig->render('base.html.twig', ['name' => 'John Doe',
     $request = $_SERVER['REQUEST_URI'];
     switch ($request) {
     case '/' :
-    echo "/index.php"
+    echo "/index.php";
       //  require __DIR__ . '/views/index.php';
         break;
     case '' :
