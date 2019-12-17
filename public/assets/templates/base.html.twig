@@ -43,7 +43,20 @@
          -->
         <header>
           {{ include('navigation.html.twig') }}
-          <div class="headerContent">
+          <div class="headerWrapper">
+            <div class="headerContent">
+              <h1>Main title</h1>
+              <p>Text</p>
+              <form class="search" method="post">
+                <input type="text" name="search" placeholder="Zadejte město nebo oblíbený bar">
+                <button type="button" name="search-button">Vyhledat</button>
+              </form>
+            </div>
+            <div class="headerImg">
+              <img src="assets/imgs/header-back.png" alt="Obrázek v hlavičce">
+            </div>
+          </div>
+          <!--<div class="headerContent">
             <div class="row">
               <div class="col-sm-5">
                 <h1>Main title</h1>
@@ -58,7 +71,7 @@
                 <img src="assets/imgs/header-back.png" alt="Obrázek v hlavičce">
               </div>
             </div>
-          </div>
+          </div>-->
         </header>
 
         <section id="aboutUs">
