@@ -77,9 +77,13 @@ nav ul li{
 }
 
 .fastInfoIcon svg {
-    max-width: 55px;
-    height: auto;
-    margin-bottom: 10px;
+  max-width: 55px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#fastInfo .fastInfoWrapper h3{
+  margin: 0;
 }
 
 // Newsletter preview

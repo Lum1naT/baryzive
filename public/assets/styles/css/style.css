@@ -82,6 +82,9 @@ nav ul li {
   height: auto;
   margin-bottom: 10px; }
 
+#fastInfo .fastInfoWrapper h3 {
+  margin: 0; }
+
 form.newsletter {
   margin-top: 10px; }
 
