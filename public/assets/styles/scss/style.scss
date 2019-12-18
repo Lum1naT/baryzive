@@ -69,13 +69,14 @@ nav ul li{
     align-items: center;
     position: relative;
     z-index: 2;
+    height: 480px;
 }
 
 .headerContentWrapper {
     position: relative;
-    width: 540px;
+    width: 520px;
     background-color: white;
-    padding: 9.8rem 2rem;
+    padding: 10.3rem 2rem;
 }
 
 .search input {
@@ -102,6 +103,7 @@ nav ul li{
     top: 0;
     margin-left: calc(50% - 200px);
     z-index: 1;
+    height: 480px;
 }
 
 /* --- About Us --- */
@@ -193,11 +195,6 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 
   nav{
     padding: 0 0 2rem 0;
-  }
-
-  .headerWrapper{
-    padding-top: 2rem;
-    min-height: 480px;
   }
 
   .row.footerBottomContent {
