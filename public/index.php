@@ -3,12 +3,12 @@
 session_start();
 
 require '../vendor/autoload.php';
-require '/assets/phpscripts/UriHandler.php';
 
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
 include_once("assets/phpscripts/DatabaseManager.php");
+include_once("assets/phpscripts/UriHandler.php");
 
 $loader = new FilesystemLoader('assets/templates');
 $twig = new Environment($loader);
