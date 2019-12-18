@@ -89,11 +89,17 @@ nav ul li{
     flex-grow: 1;
 }
 
+.headerContent{
+  position: relative;
+  z-index: 2;
+}
+
 .headerImg {
     position: absolute;
     top: 0;
     bottom: 0;
     margin-left: calc(50% - 200px);
+    z-index: 1;
 }
 
 /* --- About Us --- */
