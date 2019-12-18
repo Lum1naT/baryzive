@@ -8,7 +8,7 @@ use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
 include_once("assets/phpscripts/DatabaseManager.php");
-include_once("assets/phpscripts/UriHandler.php");
+include_once("assets/phpscripts/router.php");
 
 $loader = new FilesystemLoader('assets/templates');
 $twig = new Environment($loader);
@@ -17,17 +17,26 @@ $twig = new Environment($loader);
 // ROUTING
 
 
-    $request = $_SERVER['REQUEST_URI'];
-    echo UriHandler::decodeUri($request);
+    // = $_SERVER['REQUEST_URI'];
+
+
+    route('/', function () {
+        return "Hello World";
+    });
+
+    route('/register', function () {
+        return "Hello form the register route";
+    });
+
+    $action = $_SERVER['REQUEST_URI'];
+    dispatch($action);
 
 
 
 
 
 
-
-
-
+/*
     switch ($request) {
     case '/' :
     echo $twig->render('base.html.twig', ['name' => 'John Doe',
@@ -52,6 +61,9 @@ $twig = new Environment($loader);
             'occupation' => 'gardener']);
             break;
 }
+*/
+
+
 /*
 $stmt = $conn->query('SELECT first_name, last_name FROM users');
 foreach ($stmt as $row)
