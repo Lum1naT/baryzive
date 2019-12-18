@@ -21,8 +21,10 @@ $twig = new Environment($loader);
       $splitUrl = explode('?',$request);
       $request = $splitUrl[0];
       $getParam = $splitUrl[1];
-      $splitGet = explode('&',$getParam);
+      if(strpos($getParam, "&") !== false ){
 
+      $splitGet = explode('&',$getParam);
+    }
 
 
     }
