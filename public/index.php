@@ -8,7 +8,7 @@ use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
 include_once("assets/phpscripts/DatabaseManager.php");
-include_once("assets/phpscripts/router.php");
+include_once("assets/phpscripts/Route.php");
 
 $loader = new FilesystemLoader('assets/templates');
 $twig = new Environment($loader);
@@ -17,24 +17,33 @@ $twig = new Environment($loader);
 // ROUTING
 
 
-    // = $_SERVER['REQUEST_URI'];
+// Add base route (startpage)
+Route::add('/',function(){
+    echo 'Welcome :-)';
+});
 
+// Simple test route that simulates static html file
+Route::add('/test.html',function(){
+    echo 'Hello from test.html';
+});
 
-    route('/', function () {
-      return $twig->render('register.html.twig', ['name' => 'John Doe']);
-    });
+// Post route example
+Route::add('/contact-form',function(){
+    echo '<form method="post"><input type="text" name="test" /><input type="submit" value="send" /></form>';
+},'get');
 
-    route('/register', function () {
+// Post route example
+Route::add('/contact-form',function(){
+    echo 'Hey! The form has been sent:<br/>';
+    print_r($_POST);
+},'post');
 
-      return $twig->render('register.html.twig', ['name' => 'John Doe']);
+// Accept only numbers as parameter. Other characters will result in a 404 error
+Route::add('/foo/([0-9]*)/bar',function($var1){
+    echo $var1.' is a great number!';
+});
 
-            });
-
-    $action = $_SERVER['REQUEST_URI'];
-    dispatch($action);
-
-
-
+Route::run('/');
 
 
 
