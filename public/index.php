@@ -25,8 +25,11 @@ Route::add('/',function(){
     });
 
 // Simple test route that simulates static html file
-Route::add('/test.html',function(){
-    echo 'Hello from test.html';
+Route::add('/register',function(){
+  $loader = new FilesystemLoader('assets/templates');
+  $twig = new Environment($loader);
+  echo $twig->render('register.html.twig', ['name' => 'John Doe',
+      'occupation' => 'gardener']);
 });
 
 // Post route example
