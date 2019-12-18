@@ -18,7 +18,7 @@ $twig = new Environment($loader);
 
 
     $request = $_SERVER['REQUEST_URI'];
-    UriHandler::decodeUri($request);
+    echo UriHandler::decodeUri($request);
 
 
 
