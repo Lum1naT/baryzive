@@ -177,3 +177,6 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
     text-align: right; } }
 
 /* --- Responsive --- */
+@media only screen and (max-width: 767px) {
+  .headerImg {
+    display: none; } }

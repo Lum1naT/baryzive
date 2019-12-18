@@ -207,3 +207,8 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 }
 
 /* --- Responsive --- */
+@media only screen and (max-width: 767px){
+  .headerImg{
+    display: none;
+  }
+}
