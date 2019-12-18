@@ -42,7 +42,7 @@ $twig = new Environment($loader);
     case '/register' :
     echo $twig->render('register.html.twig', ['name' => 'John Doe',
         'occupation' => 'gardener']);
-        echo urlencode($request);
+        vardump($splitGet);
         break;
 
     default:
