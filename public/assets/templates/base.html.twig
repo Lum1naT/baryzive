@@ -43,9 +43,22 @@
          -->
         <header>
           {{ include('navigation.html.twig') }}
-          <div class="headerContent">
+          <div class="headerWrapper">
+            <div class="headerContent">
+              <h1>Main title</h1>
+              <p>Text</p>
+              <form class="search" method="post">
+                <input type="text" name="search" placeholder="Zadejte město nebo oblíbený bar">
+                <button type="button" name="search-button">Vyhledat</button>
+              </form>
+            </div>
+            <div class="headerImg">
+              <img src="assets/imgs/header-bg.png" alt="Obrázek v hlavičce">
+            </div>
+          </div>
+          <!--<div class="headerContent">
             <div class="row">
-              <div class="col-sm-5">
+              <div class="col-md-5">
                 <h1>Main title</h1>
                 <p>Text</p>
                 <form class="search" method="post">
@@ -54,11 +67,11 @@
                 </form>
               </div>
 
-              <div class="col-sm-7">
-                <img src="assets/imgs/header-back.png" alt="Obrázek v hlavičce">
+              <div class="col-md-7">
+                <img src="#" alt="Obrázek v hlavičce">
               </div>
             </div>
-          </div>
+          </div>-->
         </header>
 
         <section id="aboutUs">
@@ -71,7 +84,7 @@
         <section id="fastInfo">
             <div class="fastInfoWrapper">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                         <h3>Newsletter</h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <form class="newsletter" action="index.html" method="post">
@@ -79,9 +92,9 @@
                         </form>
                     </div>
 
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-md-4">
                                 <div class="fastInfoIcon">
                                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                     <g>
@@ -104,7 +117,7 @@
                                     <p>Živé přenosy</p>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-md-4">
                                 <div class="fastInfoIcon">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
                                         <g>
@@ -120,7 +133,7 @@
                                     <p>Generování slev<br />každý den</p>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-md-4">
                                 <div class="fastInfoIcon">
                                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                     <g>

@@ -53,7 +53,7 @@ input {
   border-radius: 4px;
   color: #6F83A8; }
 
-.fastInfoWrapper, .footerWrapper, .navWrapper, .headerContent, .aboutUsWrapper {
+.fastInfoWrapper, .footerWrapper, .navWrapper, .headerWrapper, .aboutUsWrapper {
   max-width: 1350px;
   width: 100%;
   margin: 0 auto; }
@@ -66,6 +66,31 @@ nav ul li {
   display: inline-block;
   margin: 0 10px; }
 
+/* --- Header --- */
+.headerWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+
+.search input {
+  width: 100%;
+  max-width: 20rem; }
+
+.headerWrapper button {
+  border: none;
+  border-bottom: 3px solid #24CE88;
+  border-radius: 4px;
+  padding: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: #37EEA3;
+  margin-left: 10px; }
+  .headerWrapper button:hover {
+    background-color: #32E99E; }
+
+.headerContent, .headerImg {
+  flex-grow: 1; }
+
 /* --- About Us --- */
 .aboutUsWrapper {
   text-align: center; }
@@ -74,7 +99,7 @@ nav ul li {
 #fastInfo {
   background-color: #f2f6f9; }
 
-#fastInfo .col-4 {
+#fastInfo .col-md-4 {
   text-align: center; }
 
 .fastInfoIcon svg {
@@ -134,12 +159,12 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   header {
     padding: 2rem 20px 4rem 20px; }
   nav {
-    padding: 0 20px 2rem 20px; }
-  .headerContent {
+    padding: 0 0 2rem 0; }
+  .headerWrapper {
     padding-top: 2rem; }
   .row.footerBottomContent {
     padding-top: 4rem; }
-  .col-6.copyright {
+  .col-md-6.copyright {
     text-align: right; } }
 
 /* --- Responsive --- */

@@ -46,7 +46,7 @@ input{
   color: $secondary-color;
 }
 
-.fastInfoWrapper, .footerWrapper, .navWrapper, .headerContent, .aboutUsWrapper{
+.fastInfoWrapper, .footerWrapper, .navWrapper, .headerWrapper, .aboutUsWrapper{
   max-width: $max-width;
   width: 100%;
   margin: 0 auto;
@@ -62,6 +62,36 @@ nav ul li{
   margin: 0 10px;
 }
 
+/* --- Header --- */
+.headerWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.search input {
+    width: 100%;
+    max-width: 20rem;
+}
+
+.headerWrapper button{
+  border: none;
+  border-bottom: $primaryBorder-underBtn;
+  border-radius: 4px;
+  padding: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: $primary-btn;
+  margin-left: 10px;
+  &:hover{
+    background-color: #32E99E;
+  }
+}
+
+.headerContent, .headerImg {
+    flex-grow: 1;
+}
+
 /* --- About Us --- */
 .aboutUsWrapper{
   text-align: center;
@@ -72,7 +102,7 @@ nav ul li{
   background-color: #f2f6f9;
 }
 
-#fastInfo .col-4{
+#fastInfo .col-md-4{
   text-align: center;
 }
 
@@ -150,10 +180,10 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
   }
 
   nav{
-    padding: 0 20px 2rem 20px;
+    padding: 0 0 2rem 0;
   }
 
-  .headerContent{
+  .headerWrapper{
     padding-top: 2rem;
   }
 
@@ -161,7 +191,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
     padding-top: 4rem;
   }
 
-  .col-6.copyright {
+  .col-md-6.copyright {
     text-align: right;
   }
 }
