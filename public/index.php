@@ -44,7 +44,7 @@ $twig = new Environment($loader);
     case '/register' :
     echo $twig->render('register.html.twig', ['name' => 'John Doe',
         'occupation' => 'gardener']);
-        vardump($splitGet);
+        echo $getParam;
         break;
 
     default:
