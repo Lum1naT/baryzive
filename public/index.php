@@ -30,6 +30,8 @@ $twig = new Environment($loader);
         $splitVariable = $splitVarVal[0];
         $splitValue = $splitVarVal[1];
         echo $splitVariable ."<br>".$splitValue."<br>";
+
+        
       }
 
 
@@ -54,8 +56,8 @@ $twig = new Environment($loader);
     case '/register' :
     echo $twig->render('register.html.twig', ['name' => 'John Doe',
         'occupation' => 'gardener']);
-        echo $splitVariable;
-        echo $splitValue;
+
+
         break;
 
     default:
