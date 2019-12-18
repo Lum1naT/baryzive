@@ -10,8 +10,7 @@ use Twig\Loader\FilesystemLoader;
 include_once("assets/phpscripts/DatabaseManager.php");
 include_once("assets/phpscripts/Route.php");
 
-$loader = new FilesystemLoader('assets/templates');
-$twig = new Environment($loader);
+
 
 
 // ROUTING
@@ -19,8 +18,11 @@ $twig = new Environment($loader);
 
 // Add base route (startpage)
 Route::add('/',function(){
+  $loader = new FilesystemLoader('assets/templates');
+  $twig = new Environment($loader);
   echo $twig->render('base.html.twig', ['name' => 'John Doe',
-      'occupation' => 'gardener']);});
+      'occupation' => 'gardener']);
+    });
 
 // Simple test route that simulates static html file
 Route::add('/test.html',function(){
@@ -50,7 +52,8 @@ Route::run('/');
 /*
     switch ($request) {
     case '/' :
-
+    echo $twig->render('base.html.twig', ['name' => 'John Doe',
+        'occupation' => 'gardener']);
         break;
 
     case '' :
