@@ -29,7 +29,7 @@ $twig = new Environment($loader);
         $splitVarVal = explode('=', $value);
         $splitVariable = $splitVarVal[0];
         $splitValue = $splitVarVal[1];
-        echo $splitValue."<br>".$splitVariable."<br>";
+        echo $splitVariable ."<br>".$splitValue."<br>";
       }
 
 
