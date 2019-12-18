@@ -3,6 +3,7 @@
 session_start();
 
 require '../vendor/autoload.php';
+require '/assets/phpscripts/UriHandler.php';
 
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
@@ -17,22 +18,7 @@ $twig = new Environment($loader);
 
 
     $request = $_SERVER['REQUEST_URI'];
-    if(strpos($request, "?") !== false ){
-      $splitUrl = explode('?',$request);
-      $request = $splitUrl[0];
-      $getParam = $splitUrl[1];
-      if(strpos($getParam, "&") !== false ){
-
-      $splitGet = explode('&',$getParam);
-
-      foreach ($splitGet as $value) {
-        $splitVarVal = explode('=', $value);
-        $splitVariable = $splitVarVal[0];
-        $splitValue = $splitVarVal[1];
-        echo $splitVariable ."<br>".$splitValue."<br>";
-
-        
-      }
+    UriHandler::decodeUri($request);
 
 
 
