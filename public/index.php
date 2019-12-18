@@ -19,8 +19,8 @@ $twig = new Environment($loader);
 
 // Add base route (startpage)
 Route::add('/',function(){
-    echo 'Welcome :-)';
-});
+  echo $twig->render('base.html.twig', ['name' => 'John Doe',
+      'occupation' => 'gardener']);});
 
 // Simple test route that simulates static html file
 Route::add('/test.html',function(){
@@ -50,8 +50,7 @@ Route::run('/');
 /*
     switch ($request) {
     case '/' :
-    echo $twig->render('base.html.twig', ['name' => 'John Doe',
-        'occupation' => 'gardener']);
+
         break;
 
     case '' :
