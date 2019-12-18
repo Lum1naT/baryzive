@@ -21,12 +21,14 @@ $twig = new Environment($loader);
 
 
     route('/', function () {
-        return "Hello World";
+      echo $twig->render('base.html.twig', ['name' => 'John Doe']);
     });
 
     route('/register', function () {
-        return "Hello form the register route";
-    });
+
+      echo $twig->render('register.html.twig', ['name' => 'John Doe']);
+
+            });
 
     $action = $_SERVER['REQUEST_URI'];
     dispatch($action);
@@ -49,8 +51,7 @@ $twig = new Environment($loader);
         break;
 
     case '/register' :
-    echo $twig->render('register.html.twig', ['name' => 'John Doe',
-        'occupation' => 'gardener']);
+
 
 
         break;
