@@ -21,12 +21,12 @@ $twig = new Environment($loader);
 
 
     route('/', function () {
-      echo $twig->render('base.html.twig', ['name' => 'John Doe']);
+      return $twig->render('register.html.twig', ['name' => 'John Doe']);
     });
 
     route('/register', function () {
 
-      echo $twig->render('register.html.twig', ['name' => 'John Doe']);
+      return $twig->render('register.html.twig', ['name' => 'John Doe']);
 
             });
 
