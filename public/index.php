@@ -24,7 +24,6 @@ $twig = new Environment($loader);
       if(strpos($getParam, "&") !== false ){
 
       $splitGet = explode('&',$getParam);
-      $resultArray = array();
         $splitVariable = explode('=',$splitGet);
 
 
@@ -49,7 +48,7 @@ $twig = new Environment($loader);
     case '/register' :
     echo $twig->render('register.html.twig', ['name' => 'John Doe',
         'occupation' => 'gardener']);
-        echo $splitVariable[0];
+        echo $splitGet[0];
         break;
 
     default:
