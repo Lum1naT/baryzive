@@ -74,6 +74,20 @@ nav ul li{
     max-width: 30rem;
 }
 
+.headerWrapper button{
+  border: none;
+  border-bottom: $primaryBorder-underBtn;
+  border-radius: 4px;
+  padding: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: $primary-btn;
+  margin-left: 10px;
+  &:hover{
+    background-color: #32E99E;
+  }
+}
+
 .headerContent, .headerImg {
     flex-grow: 1;
 }

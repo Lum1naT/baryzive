@@ -76,6 +76,18 @@ nav ul li {
   width: 100%;
   max-width: 30rem; }
 
+.headerWrapper button {
+  border: none;
+  border-bottom: 3px solid #24CE88;
+  border-radius: 4px;
+  padding: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: #37EEA3;
+  margin-left: 10px; }
+  .headerWrapper button:hover {
+    background-color: #32E99E; }
+
 .headerContent, .headerImg {
   flex-grow: 1; }
 
