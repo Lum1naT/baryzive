@@ -43,9 +43,6 @@ p {
 a {
   font-weight: 500; }
 
-img {
-  width: 100%; }
-
 input {
   border: 1px solid #ebeff2;
   padding: 15px;
@@ -70,7 +67,8 @@ nav ul li {
 .headerWrapper {
   display: flex;
   flex-flow: row wrap;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .search input {
   width: 100%;
@@ -90,6 +88,12 @@ nav ul li {
 
 .headerContent, .headerImg {
   flex-grow: 1; }
+
+.headerImg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: calc(50% - 200px); }
 
 /* --- About Us --- */
 .aboutUsWrapper {
@@ -161,7 +165,8 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   nav {
     padding: 0 0 2rem 0; }
   .headerWrapper {
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    min-height: 480px; }
   .row.footerBottomContent {
     padding-top: 4rem; }
   .col-md-6.copyright {
