@@ -10,7 +10,7 @@ class UriHandler {
       $splitUrl = explode('?',$request);
 
       $request = $splitUrl[0];
-      $escapits = array('%%', '%=', '%&', '%&');
+      $escapits = ['%%', '%=', '%&', '%&'];
       $getParam = $splitUrl[1];
       foreach ($escapits as $value) {
         $getParam = str_replace($value, substr($value, 1), $getParam);

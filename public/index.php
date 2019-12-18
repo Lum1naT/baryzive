@@ -22,10 +22,10 @@ $twig = new Environment($loader);
 
 
 
-    }
 
 
-    }
+
+
 
 
     switch ($request) {
