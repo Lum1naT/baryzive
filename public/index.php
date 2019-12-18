@@ -17,6 +17,9 @@ $twig = new Environment($loader);
 
 
     $request = $_SERVER['REQUEST_URI'];
+    if(strpos($request, "?") !== false ){
+      
+    }
     switch ($request) {
     case '/' :
     echo $twig->render('base.html.twig', ['name' => 'John Doe',
