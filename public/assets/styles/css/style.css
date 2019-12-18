@@ -65,10 +65,20 @@ nav ul li {
 
 /* --- Header --- */
 .headerWrapper {
+  position: relative; }
+
+.headerContent {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
+
+.headerContentWrapper {
+  position: relative;
+  width: 540px;
+  background: white;
+  padding: 9.8rem 2rem; }
 
 .search input {
   width: 100%;
@@ -85,13 +95,6 @@ nav ul li {
   margin-left: 10px; }
   .headerWrapper button:hover {
     background-color: #32E99E; }
-
-.headerContent, .headerImg {
-  flex-grow: 1; }
-
-.headerContent {
-  position: relative;
-  z-index: 2; }
 
 .headerImg {
   position: absolute;
