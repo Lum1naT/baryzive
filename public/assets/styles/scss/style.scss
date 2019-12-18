@@ -63,9 +63,19 @@ nav ul li{
 }
 
 /* --- Header --- */
+.headerWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
 .search input {
     width: 100%;
     max-width: 30rem;
+}
+
+.headerContent, .headerImg {
+    flex-grow: 1;
 }
 
 /* --- About Us --- */
