@@ -18,8 +18,13 @@ $twig = new Environment($loader);
 
     $request = $_SERVER['REQUEST_URI'];
     if(strpos($request, "?") !== false ){
-      
+      $splitUrl = explode('?',$request);
+      $request = $splitUrl[0];
+      $getParam = $splitUrl[1];
+
     }
+
+
     switch ($request) {
     case '/' :
     echo $twig->render('base.html.twig', ['name' => 'John Doe',
@@ -34,6 +39,7 @@ $twig = new Environment($loader);
     case '/register' :
     echo $twig->render('register.html.twig', ['name' => 'John Doe',
         'occupation' => 'gardener']);
+        echo $getParam;
         break;
 
     default:
