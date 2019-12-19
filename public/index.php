@@ -43,17 +43,22 @@ Route::add('/contact-form',function(){
     print_r($_POST);
 },'post');
 
-// Accept only numbers as parameter. Other characters will result in a 404 error
-Route::add('/bar/([A-Z]*[a-z]*[0-9]*)',function($barname){
-    echo $barname.' is a great bar!';
-    // TODO: check if bar is in DB
+/*
+* @param $barname (string, unique)
+* @param $cameraname (string, unique)
+*
+*/
+Route::add('/bar/([A-Z]*[a-z]*[0-9]*)/([A-Z]*[a-z]*[0-9]*)',function($barName, $cameraName){
+  // TODO: check if bar is in DB
+
+    echo $barName.' is a great bar! <br/> You are viewing '. $cameraName . ' camera.' ;
 });
 
 
-  //TODO: count amount of bars in database and allow only pages 1 -> x;
-Route::add('/bars/page/([^0][0-9]*)',function($barname){
-    echo $barname.' is a great bar!';
-    // TODO: check if bar is in DB;
+  //TODO: count amount of bars in database and allow only pages 1 -> x; How many per page?
+
+Route::add('/bars/page/([^0][0-9]*)',function($pagenumber){
+    echo 'You are on page '.$pagenumber;
 });
 
 Route::run('/');
