@@ -48,7 +48,7 @@ Route::add('/contact-form',function(){
 * @param $cameraname (string, unique)
 *
 */
-Route::add('/bar/([A-Z]*[a-z]*[0-9]*)/([A-Z]*[a-z]*[0-9]*)',function($barName, $cameraName){
+Route::add('/bar/([a-z]*[0-9]*)\S/([a-z]*[0-9]*)\S',function($barName, $cameraName){
   // TODO: check if bar is in DB
 
     echo $barName.' is a great bar! <br/> You are viewing '. $cameraName . ' camera.' ;
