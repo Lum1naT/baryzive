@@ -85,7 +85,7 @@ nav ul li {
   width: 100%;
   max-width: 20rem; }
 
-.headerWrapper button {
+.headerWrapper .search-btn {
   border: none;
   border-bottom: 3px solid #24CE88;
   border-radius: 4px;
@@ -94,7 +94,7 @@ nav ul li {
   color: white;
   background-color: #37EEA3;
   margin-left: 10px; }
-  .headerWrapper button:hover {
+  .headerWrapper .search-btn:hover {
     background-color: #32E99E; }
 
 .headerImg {
