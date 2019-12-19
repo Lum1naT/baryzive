@@ -24,6 +24,13 @@ Route::add('/',function(){
       'occupation' => 'gardener']);
     }, 'get');
 
+    Route::add('/',function(){
+      $loader = new FilesystemLoader('assets/templates');
+      $twig = new Environment($loader);
+      echo $twig->render('base.html.twig', ['search' => $_POST['search'],
+          'occupation' => 'gardener']);
+        }, 'post');
+
 // Simple test route that simulates static html file
 Route::add('/register',function(){
   $loader = new FilesystemLoader('assets/templates');
