@@ -24,7 +24,7 @@ Route::add('/',function(){
       'occupation' => 'gardener']);
     }, 'get');
 
-    Route::add('/',function(){
+    Route::add('/finder',function(){
       $loader = new FilesystemLoader('assets/templates');
       $twig = new Environment($loader);
       echo $twig->render('base.html.twig', ['search' => $_POST['search'],
