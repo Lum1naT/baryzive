@@ -46,6 +46,14 @@ Route::add('/contact-form',function(){
 // Accept only numbers as parameter. Other characters will result in a 404 error
 Route::add('/bar/([A-Z]*[a-z]*[0-9]*)',function($barname){
     echo $barname.' is a great bar!';
+    // TODO: check if bar is in DB
+});
+
+
+  //TODO: count amount of bars in database and allow only pages 1 -> x;
+Route::add('/bars/page/([^0][0-9]*)',function($barname){
+    echo $barname.' is a great bar!';
+    // TODO: check if bar is in DB;
 });
 
 Route::run('/');
