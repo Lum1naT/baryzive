@@ -44,8 +44,8 @@ Route::add('/contact-form',function(){
 },'post');
 
 // Accept only numbers as parameter. Other characters will result in a 404 error
-Route::add('/bar/([A-Z]*[a-z]*[0-9]*)',function($var1){
-    echo $var1.' is a great number!';
+Route::add('/bar/([A-Z]*[a-z]*[0-9]*)',function($barname){
+    echo $barname.' is a great bar!';
 });
 
 Route::run('/');
