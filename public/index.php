@@ -22,7 +22,7 @@ Route::add('/',function(){
   $twig = new Environment($loader);
   echo $twig->render('base.html.twig', ['name' => 'John Doe',
       'occupation' => 'gardener']);
-    });
+    }, 'get');
 
 // Simple test route that simulates static html file
 Route::add('/register',function(){
