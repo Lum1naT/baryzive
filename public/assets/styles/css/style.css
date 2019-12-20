@@ -86,6 +86,9 @@ nav ul li {
   width: 100%;
   max-width: 20rem; }
 
+.headerWrapper .add-city-bar {
+  margin: 10px 0; }
+
 .headerWrapper .search-btn {
   border: none;
   border-bottom: 3px solid #24CE88;
@@ -93,8 +96,7 @@ nav ul li {
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #37EEA3;
-  margin-top: 10px; }
+  background-color: #37EEA3; }
   .headerWrapper .search-btn:hover {
     background-color: #32E99E; }
 

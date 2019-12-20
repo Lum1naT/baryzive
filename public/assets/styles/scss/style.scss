@@ -85,6 +85,10 @@ nav ul li{
     max-width: 20rem;
 }
 
+.headerWrapper .add-city-bar{
+  margin: 10px 0;
+}
+
 .headerWrapper .search-btn{
   border: none;
   border-bottom: $primaryBorder-underBtn;
@@ -93,7 +97,6 @@ nav ul li{
   font-weight: 500;
   color: white;
   background-color: $primary-btn;
-  margin-top: 10px;
   &:hover{
     background-color: #32E99E;
   }
