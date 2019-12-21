@@ -207,5 +207,12 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   .headerContentWrapper {
     width: 100%;
     padding: 0; }
+  body .newsletter-box {
+    padding-bottom: 1.8rem; }
+  body .newsletter button {
+    width: 100%;
+    margin: 10px 0 0 0; }
   .advantages-box .row .col-md-4:nth-child(2), .footerWrapper .row .footerBox:nth-child(2) {
-    padding: 1.8rem 0; } }
+    padding: 1.8rem 0; }
+  .footerBottomContent {
+    padding-top: 1.8rem; } }
