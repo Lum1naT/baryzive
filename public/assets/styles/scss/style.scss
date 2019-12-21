@@ -214,6 +214,14 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 
 /* --- Responsive --- */
 @media only screen and (max-width: 767px){
+  body .row{
+    margin: 0;
+  }
+
+  body [class*="col-"]{
+    padding: 0;
+  }
+
   .headerImg{
     display: none;
   }
