@@ -69,6 +69,7 @@ nav ul li{
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 3.8rem;
 }
 
 .hamRotate.active {
@@ -296,6 +297,10 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
   section, footer, header{
     padding: 1.8rem;
     text-align: center;
+  }
+
+  .navWrapper{
+    display: none;
   }
 
   .headerContent{
