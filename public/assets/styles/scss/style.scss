@@ -244,8 +244,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 
   section, footer, header{
     padding: 1.8rem;
-    /*padding-left: 1.8rem;
-    padding-right: 1.8rem;*/
+    text-align: center;
   }
 
   .headerContent{
@@ -257,7 +256,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
     padding: 0;
   }
 
-  .advantages-box .row .col-md-4:nth-child(2){
+  .advantages-box .row .col-md-4:nth-child(2), .footerWrapper .row .footerBox:nth-child(2){
     padding: 1.8rem 0;
   }
 }
