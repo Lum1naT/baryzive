@@ -207,4 +207,6 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
     height: initial; }
   .headerContentWrapper {
     width: 100%;
-    padding: 0; } }
+    padding: 0; }
+  .advantages-box .row .col-md-4:nth-child(2) {
+    padding: 1.8rem 0; } }
