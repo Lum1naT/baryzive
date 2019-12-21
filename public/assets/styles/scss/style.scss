@@ -27,7 +27,7 @@ h3{
   font-size: 18px;
 }
 
-p {
+p, li {
   color: $secondary-color;
   font-weight: 500;
 }
@@ -161,7 +161,7 @@ footer h4{
 }
 
 footer .footerBox ul li a, footer .footerBox ul li{
-  font-weight: 300;
+  /*font-weight: 300;*/
   color: $secondary-color;
 }
 
@@ -190,6 +190,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
   color: #37EEA3;
 }
 
+/* --- Responsive --- */
 @media only screen and (min-width: 768px){
   footer, section{
     padding: 4rem 20px;
@@ -212,7 +213,6 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
   }
 }
 
-/* --- Responsive --- */
 @media only screen and (max-width: 767px){
   body .row{
     margin: 0;
