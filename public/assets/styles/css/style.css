@@ -65,7 +65,7 @@ nav ul li {
   display: inline-block;
   margin: 0 10px; }
 
-/* --- Ham menu --- */
+/* --- Ham menu ---
 .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -74,33 +74,40 @@ nav ul li {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 3.8rem; }
+  width: 3.8rem;
+}
 
 .hamRotate.active {
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+}
 
 .hamRotate180.active {
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+}
 
 .line {
-  fill: none;
+  fill:none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: #000;
-  stroke-width: 5.5;
-  stroke-linecap: round; }
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
 
 .ham1 .top {
-  stroke-dasharray: 40 139; }
+  stroke-dasharray: 40 139;
+}
 
 .ham1 .bottom {
-  stroke-dasharray: 40 180; }
+  stroke-dasharray: 40 180;
+}
 
 .ham1.active .top {
-  stroke-dashoffset: -98px; }
+  stroke-dashoffset: -98px;
+}
 
 .ham1.active .bottom {
-  stroke-dashoffset: -138px; }
-
+  stroke-dashoffset: -138px;
+}*/
 /* --- DropBtn --- */
 .dropbtn {
   background-color: #3498DB;
@@ -137,48 +144,6 @@ nav ul li {
 
 .show {
   display: block; }
-
-/* --- Bootstrap HamMenu --- */
-.animated-icon3 span:nth-child(1) {
-  top: 0px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center; }
-
-.animated-icon3 span:nth-child(2) {
-  top: 10px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center; }
-
-.animated-icon3 span:nth-child(3) {
-  top: 20px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center; }
-
-.animated-icon3.open span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 0px;
-  left: 8px; }
-
-.animated-icon3.open span:nth-child(2) {
-  width: 0%;
-  opacity: 0; }
-
-.animated-icon3.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 21px;
-  left: 8px; }
 
 /* --- Header --- */
 .headerWrapper {
