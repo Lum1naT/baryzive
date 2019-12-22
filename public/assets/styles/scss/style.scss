@@ -93,6 +93,7 @@ input{
   	clear: both;
   	max-height: 0;
   	transition: max-height .2s ease-out;
+    width: 100%;
 }
 
 /* menu icon */
@@ -173,7 +174,6 @@ input{
     	clear: none;
     	float: right;
     	max-height: none;
-      width: 100%;
   	}
 
   	.nav .menu-icon {

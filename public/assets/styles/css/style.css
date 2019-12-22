@@ -93,7 +93,8 @@ input {
 .nav .menu {
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out; }
+  transition: max-height .2s ease-out;
+  width: 100%; }
 
 /* menu icon */
 .nav .menu-icon {
@@ -157,8 +158,7 @@ input {
   .nav .menu {
     clear: none;
     float: right;
-    max-height: none;
-    width: 100%; }
+    max-height: none; }
   .nav .menu-icon {
     display: none; } }
 
