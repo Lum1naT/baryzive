@@ -44,7 +44,7 @@ input{
   color: $secondary-color;
 }
 
-.fastInfoWrapper, .footerWrapper, .navWrapper, .headerWrapper, .aboutUsWrapper{
+.fastInfoWrapper, .footerWrapper, .headerWrapper, .aboutUsWrapper{
   max-width: $max-width;
   width: 100%;
   margin: 0 auto;
@@ -93,7 +93,6 @@ input{
   	clear: both;
   	max-height: 0;
   	transition: max-height .2s ease-out;
-    width: 100%;
 }
 
 /* menu icon */
@@ -374,8 +373,8 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
     text-align: center;
   }
 
-  .navWrapper{
-    display: none;
+  .nav .menu {
+      width: 100%;
   }
 
   .headerContent{

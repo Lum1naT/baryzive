@@ -52,7 +52,7 @@ input {
   border-radius: 4px;
   color: #6F83A8; }
 
-.fastInfoWrapper, .footerWrapper, .navWrapper, .headerWrapper, .aboutUsWrapper {
+.fastInfoWrapper, .footerWrapper, .headerWrapper, .aboutUsWrapper {
   max-width: 1350px;
   width: 100%;
   margin: 0 auto; }
@@ -93,8 +93,7 @@ input {
 .nav .menu {
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
-  width: 100%; }
+  transition: max-height .2s ease-out; }
 
 /* menu icon */
 .nav .menu-icon {
@@ -302,8 +301,8 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   section, footer, header {
     padding: 1.8rem;
     text-align: center; }
-  .navWrapper {
-    display: none; }
+  .nav .menu {
+    width: 100%; }
   .headerContent {
     height: initial; }
   .headerContentWrapper {
