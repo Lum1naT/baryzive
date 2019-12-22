@@ -134,7 +134,8 @@ nav ul li {
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #37EEA3; }
+  background-color: #37EEA3;
+  box-shadow: 0 25px 30px -15px #37EEA3; }
   .headerWrapper .search-btn:hover {
     background-color: #32E99E; }
 
@@ -175,7 +176,8 @@ form.newsletter button {
   font-weight: 500;
   color: white;
   background-color: #37EEA3;
-  margin-left: 10px; }
+  margin-left: 10px;
+  box-shadow: 0 25px 30px -15px #37EEA3; }
   form.newsletter button:hover {
     background-color: #32E99E; }
 
