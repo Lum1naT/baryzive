@@ -105,7 +105,7 @@ input {
   position: relative;
   user-select: none; }
 
-.ham-nav .menu-icon .ham-navicon {
+.ham-nav .menu-icon .navicon {
   background: #333;
   display: block;
   height: 2px;
@@ -113,8 +113,8 @@ input {
   transition: background .2s ease-out;
   width: 18px; }
 
-.ham-nav .menu-icon .ham-navicon:before,
-.ham-nav .menu-icon .ham-navicon:after {
+.ham-nav .menu-icon .navicon:before,
+.ham-nav .menu-icon .navicon:after {
   background: #333;
   content: '';
   display: block;
@@ -123,10 +123,10 @@ input {
   transition: all .2s ease-out;
   width: 100%; }
 
-.ham-nav .menu-icon .ham-navicon:before {
+.ham-nav .menu-icon .navicon:before {
   top: 5px; }
 
-.ham-nav .menu-icon .ham-navicon:after {
+.ham-nav .menu-icon .navicon:after {
   top: -5px; }
 
 .ham-nav .menu-btn {
@@ -135,17 +135,17 @@ input {
 .ham-nav .menu-btn:checked ~ .menu {
   max-height: 240px; }
 
-.ham-nav .menu-btn:checked ~ .menu-icon .ham-navicon {
+.ham-nav .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent; }
 
-.ham-nav .menu-btn:checked ~ .menu-icon .ham-navicon:before {
+.ham-nav .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg); }
 
-.ham-nav .menu-btn:checked ~ .menu-icon .ham-navicon:after {
+.ham-nav .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg); }
 
-.ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .ham-navicon:before,
-.ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .ham-navicon:after {
+.ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0; }
 
 /* 48em = 768px */
