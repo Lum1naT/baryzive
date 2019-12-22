@@ -58,14 +58,6 @@ input {
   margin: 0 auto; }
 
 /* --- Navigation --- */
-nav .navWrapper ul {
-  text-align: right; }
-
-nav ul li {
-  display: inline-block;
-  margin: 0 10px; }
-
-/* --- Navigation --- */
 .nav {
   /*background: linear-gradient(120deg, #4986F2 20%, #964BF2 80%);*/
   box-shadow: none;
@@ -165,7 +157,8 @@ nav ul li {
   .nav .menu {
     clear: none;
     float: right;
-    max-height: none; }
+    max-height: none;
+    width: 100%; }
   .nav .menu-icon {
     display: none; } }
 
