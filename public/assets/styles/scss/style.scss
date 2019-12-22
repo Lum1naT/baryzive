@@ -143,7 +143,7 @@ nav ul li{
   font-weight: 500;
   color: white;
   background-color: $primary-btn;
-  box-shadow: 0 25px 30px -15px #37EEA3;
+  box-shadow: 0 25px 25px -15px rgba(55, 238, 163, 0.7);
   &:hover{
     background-color: #32E99E;
   }
@@ -195,7 +195,7 @@ form.newsletter button {
   color: white;
   background-color: $primary-btn;
   margin-left: 10px;
-  box-shadow: 0 25px 30px -15px #37EEA3;
+  box-shadow: 0 25px 25px -15px rgba(55, 238, 163, 0.7);
   &:hover{
     background-color: #32E99E;
   }
