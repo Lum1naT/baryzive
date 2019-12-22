@@ -56,7 +56,7 @@ input{
 	box-shadow: none;
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: 10;
 	top: 0;
   left: 0;
 }
@@ -374,8 +374,15 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
     text-align: center;
   }
 
+  .ham-nav {
+    position: relative;
+    display: inline-block;
+  }
+
   .ham-nav .menu {
-      width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 60px; 
   }
 
   .headerContent{
