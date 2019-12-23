@@ -109,10 +109,11 @@ input{
 .ham-nav .menu-icon .navicon {
   	background: #333;
   	display: block;
-  	height: 2px;
+  	height: 4px;
   	position: relative;
   	transition: background .2s ease-out;
-  	width: 18px;
+  	width: 24px;
+    border-radius: 2px;
 }
 
 .ham-nav .menu-icon .navicon:before,
@@ -124,14 +125,15 @@ input{
   	position: absolute;
   	transition: all .2s ease-out;
   	width: 100%;
+    border-radius: 2px;
 }
 
 .ham-nav .menu-icon .navicon:before {
-  	top: 5px;
+  	top: 7px;
 }
 
 .ham-nav .menu-icon .navicon:after {
-  	top: -5px;
+  	top: -7px;
 }
 
 .ham-nav .menu-btn {
@@ -382,7 +384,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
   .ham-nav .menu {
     width: 100%;
     position: absolute;
-    top: 60px; 
+    top: 60px;
   }
 
   .headerContent{
