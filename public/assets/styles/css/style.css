@@ -106,7 +106,7 @@ input {
   user-select: none; }
 
 .ham-nav .menu-icon .navicon {
-  background: #333;
+  background: #000666;
   display: block;
   height: 4px;
   position: relative;
@@ -116,7 +116,7 @@ input {
 
 .ham-nav .menu-icon .navicon:before,
 .ham-nav .menu-icon .navicon:after {
-  background: #333;
+  background: #000666;
   content: '';
   display: block;
   height: 100%;
@@ -153,10 +153,11 @@ input {
 .ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon::before {
   content: "MENU";
   font-size: 0.7rem;
-  font-weight: 500;
+  font-weight: bold;
   background: transparent;
   height: initial;
-  top: 4px; }
+  top: 4px;
+  color: #37EEA3; }
 
 .ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon {
   width: 36px; }
