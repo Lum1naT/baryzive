@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=latin-ext");
+/*#37EEA3*/
+/*#24CE88*/
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, q, blockquote,
 a, p, u, em, i, b, strong, img,
@@ -157,7 +159,7 @@ input {
   background: transparent;
   height: initial;
   top: 4px;
-  color: #37EEA3; }
+  color: #EE3784; }
 
 .ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon {
   width: 36px; }
@@ -204,13 +206,14 @@ input {
 
 .headerWrapper .search-btn {
   border: none;
-  border-bottom: 3px solid #24CE88;
+  border-bottom: 3px solid #BE0754;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #37EEA3;
-  box-shadow: 0 25px 25px -15px rgba(55, 238, 163, 0.7); }
+  background-color: #EE3784;
+  box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
+  /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
   .headerWrapper .search-btn:hover {
     background-color: #32E99E; }
 
@@ -242,14 +245,15 @@ form.newsletter {
 
 form.newsletter button {
   border: none;
-  border-bottom: 3px solid #24CE88;
+  border-bottom: 3px solid #BE0754;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #37EEA3;
+  background-color: #EE3784;
   margin-left: 10px;
-  box-shadow: 0 25px 25px -15px rgba(55, 238, 163, 0.7); }
+  box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
+  /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
   form.newsletter button:hover {
     background-color: #32E99E; }
 
@@ -275,11 +279,11 @@ footer svg {
 
 .row.footerBottomContent a {
   font-weight: 300;
-  color: #37EEA3; }
+  color: #EE3784; }
 
 footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   font-weight: bold;
-  color: #37EEA3; }
+  color: #EE3784; }
 
 /* --- Responsive --- */
 @media only screen and (min-width: 768px) {
