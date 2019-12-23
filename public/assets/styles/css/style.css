@@ -150,6 +150,17 @@ input {
 .ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0; }
 
+.ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon::before {
+  content: "MENU";
+  font-size: 0.7rem;
+  font-weight: 500;
+  background: transparent;
+  height: initial;
+  top: 4px; }
+
+.ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon {
+  width: 36px; }
+
 /* 48em = 768px */
 @media (min-width: 48em) {
   .ham-nav li {
