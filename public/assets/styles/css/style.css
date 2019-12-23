@@ -101,7 +101,7 @@ input {
   cursor: pointer;
   display: inline-block;
   float: right;
-  /*padding: 28px 20px;*/
+  padding: 9px 0;
   position: relative;
   user-select: none; }
 
@@ -316,6 +316,8 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   section, footer, header {
     padding: 1.8rem;
     text-align: center; }
+  nav {
+    padding-bottom: 1rem; }
   .ham-nav {
     position: relative;
     display: inline-block; }
