@@ -237,7 +237,6 @@ input {
 
 .fastInfoWrapper .row {
   display: flex;
-  flex-flow: row;
   align-items: center; }
 
 .fastInfoIcon svg {
