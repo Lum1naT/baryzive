@@ -46,6 +46,13 @@ Route::add('/register',function(){
       'occupation' => 'gardener']);
 });
 
+Route::add('/login',function(){
+  $loader = new FilesystemLoader('assets/templates');
+  $twig = new Environment($loader);
+  echo $twig->render('login.html.twig', ['name' => 'John Doe',
+      'occupation' => 'gardener']);
+});
+
 // Post route example
 Route::add('/contact-form',function(){
     echo '<form method="post"><input type="text" name="test" /><input type="submit" value="send" /></form>';
