@@ -302,11 +302,11 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   right: 0;
   margin: 0 auto;
   text-align: center;
-  max-width: 420px;
-  box-shadow: 0 30px 60px -25px rgba(0, 0, 0, 0.7);
+  max-width: 400px;
+  /*box-shadow: 0 30px 60px -25px rgba(0, 0, 0, .7);*/
   border-radius: 6px;
   background-color: white;
-  padding: 20px; }
+  padding: 3rem; }
 
 .logIn-page .logIn-wrapper input {
   width: 100%;
