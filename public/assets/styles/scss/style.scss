@@ -357,7 +357,7 @@ body.logIn-page h2{
   color: #000666;
 }
 
-.logIn-page .logIn-wrapper input{
+.logIn-page .logIn-wrapper input:not([name="remember-me"]){
   width: 100%;
   margin: 5px 0;
   background-color: #fff;
