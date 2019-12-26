@@ -334,7 +334,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 /* ***--- LogIn Styles ---*** */
 .logIn-page {
     min-height: 100vh;
-    background-color: #f1f1f1;
+    background-color: #252b4a;
 }
 
 .logIn-wrapper {
@@ -348,23 +348,25 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
   max-width: 400px;
   /*box-shadow: 0 30px 60px -25px rgba(0, 0, 0, .7);*/
   border-radius: 6px;
-  background-color: white;
+  background-color: #222440;
   padding: 3rem;
 }
 
 .logIn-page .logIn-wrapper input{
   width: 100%;
   margin: 5px 0;
+  background-color: #252b4a;
+  border: 1px solid #252b4a;
 }
 
-.logIn-page .logIn-btn{
+body.logIn-page .logIn-btn{
   border: none;
-  border-bottom: $primaryBorder-underBtn;
+  border-bottom: 3px solid #343A59;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: $primary-btn;
+  background-color: #546285;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6); /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/
   &:hover{
     background-color: #DE2774;
