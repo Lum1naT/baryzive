@@ -331,6 +331,16 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
   color: #EE3784;
 }
 
+/* ***--- LogIn Styles ---*** */
+.logIn-wrapper{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 /* --- Responsive --- */
 @media only screen and (min-width: 768px){
   .hamMenu{
