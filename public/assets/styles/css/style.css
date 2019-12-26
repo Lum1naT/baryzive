@@ -359,7 +359,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
   top: 50%;
   transform: translateY(-50%); }
 
-.fb-logIn {
+.fb-logIn, .google-logIn {
   position: relative; }
 
 .logIn-page .logIn-wrapper .fb-logIn input {
@@ -368,18 +368,19 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
   border: none;
   padding-left: 35px; }
 
-.logIn-page .logIn-wrapper .fb-logIn svg {
+.logIn-page .logIn-wrapper .google-logIn input {
+  background-color: #dd4b39;
+  color: #fff;
+  border: none;
+  padding-left: 35px; }
+
+.logIn-page .logIn-wrapper .fb-logIn svg, .logIn-page .logIn-wrapper .google-logIn svg {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   max-width: 16px;
   height: auto;
   left: 15px; }
-
-.logIn-page .logIn-wrapper .google-logIn input {
-  background-color: #dd4b39;
-  color: #fff;
-  border: none; }
 
 /* ***--- End of LogIn page ---*** */
 /* --- Responsive --- */
