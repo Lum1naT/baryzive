@@ -352,6 +352,10 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
   padding: 3rem;
 }
 
+body.logIn-page h2{
+  color: #fff;
+}
+
 .logIn-page .logIn-wrapper input{
   width: 100%;
   margin: 5px 0;
@@ -361,13 +365,13 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 
 body.logIn-page .logIn-btn{
   border: none;
-  border-bottom: 3px solid #343A59;
+  border-bottom: 3px solid #ba1414;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #546285;
-  box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6); /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/
+  background-color: #da3434;
+  /*box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);*/ /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/
   &:hover{
     background-color: #DE2774;
   }
