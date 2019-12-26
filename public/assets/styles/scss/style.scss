@@ -387,6 +387,29 @@ body.logIn-page .logIn-btn{
     height: auto;
     margin-bottom: 10px;
 }
+
+.or-line {
+    position: relative;
+    padding: 10px 0;
+}
+
+.or-line span{
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 0 10px;
+}
+
+.or-line::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #dbdfe2;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 /* ***--- End of LogIn page ---*** */
 
 /* --- Responsive --- */
