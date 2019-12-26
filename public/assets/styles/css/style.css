@@ -306,7 +306,6 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   /*box-shadow: 0 0 10px rgba(0, 0, 0, .1);*/
   border-radius: 6px;
   background-color: #fff;
-  padding: 3rem;
   /*border: 1px solid #dbdfe2;*/ }
 
 body.logIn-page h2 {
@@ -391,11 +390,16 @@ input[name="remember-me"] {
   color: #6F83A8;
   font-weight: 500; }
 
+.logIn-page .forgotten-pass {
+  padding-top: 5px; }
+
 /* ***--- End of LogIn page ---*** */
 /* --- Responsive --- */
 @media only screen and (min-width: 768px) {
   .hamMenu {
     display: none; }
+  .logIn-wrapper {
+    padding: 3rem; }
   footer, section {
     padding: 4rem 20px; }
   header {
@@ -424,7 +428,7 @@ input[name="remember-me"] {
     font-size: .9rem; }
   input {
     width: 100%; }
-  section, footer, header {
+  section, footer, header, .logIn-wrapper {
     padding: 1.8rem;
     text-align: center; }
   nav {
