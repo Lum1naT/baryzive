@@ -364,12 +364,14 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
 
 .logIn-page .logIn-wrapper .fb-logIn input {
   background-color: #3b5998;
+  border-bottom: 3px solid #1b3978;
   color: #fff;
   border: none;
   padding-left: 35px; }
 
 .logIn-page .logIn-wrapper .google-logIn input {
   background-color: #dd4b39;
+  border-bottom: 3px solid #bd2b19;
   color: #fff;
   border: none;
   padding-left: 35px; }
@@ -381,6 +383,13 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
   max-width: 16px;
   height: auto;
   left: 15px; }
+
+input[name="remember-me"] {
+  margin: 10px 5px 0 0; }
+
+.logIn-form > span {
+  color: #6F83A8;
+  font-weight: 500; }
 
 /* ***--- End of LogIn page ---*** */
 /* --- Responsive --- */
