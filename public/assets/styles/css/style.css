@@ -332,7 +332,7 @@ body.logIn-page .logIn-btn {
     background-color: #DE2774; }
 
 .logIn-text {
-  padding: 1.8rem 0; }
+  padding: 1.8rem 0 10px 0; }
 
 .logIn-page .logIn-text svg {
   max-width: 44px;
