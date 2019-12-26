@@ -336,13 +336,23 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
     min-height: 100vh;
 }
 
-.logIn-wrapper{
+.logIn-wrapper {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
   right: 0;
-  text-align: center;
+  margin: 0 auto;
+  max-width: 480px;
+  box-shadow: 0 30px 60px -25px rgba(0, 0, 0, .7);
+  border-radius: 6px;
+  background-color: white;
+  padding: 20px;
+}
+
+.logIn-page .logIn-wrapper input{
+  width: 100%;
+  margin: 10px 0;
 }
 
 /* --- Responsive --- */
