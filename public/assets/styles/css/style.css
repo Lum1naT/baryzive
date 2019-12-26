@@ -318,7 +318,7 @@ body.logIn-page h2 {
   background-color: #fff;
   border: 1px solid #dbdfe2; }
 
-html body.logIn-page .logIn-btn {
+html body.logIn-page #logIn .logIn-form .logIn-btn {
   border: none;
   border-bottom: 3px solid #BE0754;
   border-radius: 4px;
@@ -328,7 +328,7 @@ html body.logIn-page .logIn-btn {
   background-color: #EE3784;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
-  html body.logIn-page .logIn-btn:hover {
+  html body.logIn-page #logIn .logIn-form .logIn-btn:hover {
     background-color: #DE2774; }
 
 .logIn-text {
