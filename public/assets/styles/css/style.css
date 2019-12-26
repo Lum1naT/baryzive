@@ -303,7 +303,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   margin: 0 auto;
   text-align: center;
   max-width: 400px;
-  /*box-shadow: 0 30px 60px -25px rgba(0, 0, 0, .7);*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   background-color: #fff;
   padding: 3rem;
@@ -326,7 +326,7 @@ body.logIn-page .logIn-btn {
   font-weight: 500;
   color: white;
   background-color: #EE3784;
-  /*box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);*/
+  box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
   body.logIn-page .logIn-btn:hover {
     background-color: #DE2774; }
