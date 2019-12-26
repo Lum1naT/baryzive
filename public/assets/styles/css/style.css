@@ -292,6 +292,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
 /* ***--- LogIn Styles ---*** */
 .logIn-wrapper {
   position: absolute;
+  width: 100%;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
