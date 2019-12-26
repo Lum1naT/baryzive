@@ -371,6 +371,17 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
   }
 }
 
+.logIn-text {
+    padding: 1.8rem 0;
+}
+
+.logIn-page .logIn-text svg {
+    max-width: 44px;
+    height: auto;
+    margin-bottom: 10px;
+}
+/* ***--- End of LogIn page ---*** */
+
 /* --- Responsive --- */
 @media only screen and (min-width: 768px){
   .hamMenu{
