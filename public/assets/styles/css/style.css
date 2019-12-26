@@ -292,7 +292,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
 /* ***--- LogIn Styles ---*** */
 .logIn-page {
   min-height: 100vh;
-  background-color: #252b4a; }
+  background-color: #fff; }
 
 .logIn-wrapper {
   position: absolute;
@@ -305,26 +305,27 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   max-width: 400px;
   /*box-shadow: 0 30px 60px -25px rgba(0, 0, 0, .7);*/
   border-radius: 6px;
-  background-color: #222440;
-  padding: 3rem; }
+  background-color: #fff;
+  padding: 3rem;
+  border: 1px solid #dbdfe2; }
 
 body.logIn-page h2 {
-  color: #fff; }
+  color: #000666; }
 
 .logIn-page .logIn-wrapper input {
   width: 100%;
   margin: 5px 0;
-  background-color: #252b4a;
-  border: 1px solid #252b4a; }
+  background-color: #fff;
+  border: 1px solid #dbdfe2; }
 
 body.logIn-page .logIn-btn {
   border: none;
-  border-bottom: 3px solid #ba1414;
+  border-bottom: 3px solid #BE0754;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #da3434;
+  background-color: #EE3784;
   /*box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);*/
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
   body.logIn-page .logIn-btn:hover {
