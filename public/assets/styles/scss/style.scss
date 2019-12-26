@@ -410,6 +410,18 @@ body.logIn-page .logIn-btn{
     top: 50%;
     transform: translateY(-50%);
 }
+
+.logIn-page .logIn-wrapper .fb-logIn input{
+  background-color: #3b5998;
+  color: #fff;
+  border: none;
+}
+
+.logIn-page .logIn-wrapper .google-logIn input {
+  background-color: #dd4b39;
+  color: #fff;
+  border: none;
+}
 /* ***--- End of LogIn page ---*** */
 
 /* --- Responsive --- */
