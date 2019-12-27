@@ -452,9 +452,11 @@ input[name="remember-me"] {
     font-size: .9rem; }
   input:not([type="checkbox"]) {
     width: 100%; }
-  section, footer, header, .logIn-wrapper {
+  section, footer, header {
     padding: 1.8rem;
     text-align: center; }
+  .logIn-wrapper {
+    padding: 0 1.8rem 1.8rem 1.8rem; }
   .logIn-page header {
     padding: 1.8rem 1.8rem 0 1.8rem; }
   nav {
