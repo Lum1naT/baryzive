@@ -146,6 +146,7 @@ input{
 
 .ham-nav .menu-btn:checked ~ .menu {
   	max-height: 240px;
+    padding: 1rem;
 }
 
 .ham-nav .menu-btn:checked ~ .menu-icon .navicon {
@@ -579,7 +580,10 @@ input[name="remember-me"] {
   .ham-nav .menu {
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 45px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .25);
   }
 
   .headerContent{
