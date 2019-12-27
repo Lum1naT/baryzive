@@ -363,15 +363,13 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
   background-color: #3b5998;
   color: #fff;
   border: none;
-  border-bottom: 3px solid #1b3978;
-  padding-left: 35px; }
+  border-bottom: 3px solid #1b3978; }
 
 .logIn-page .logIn-wrapper .google-logIn input {
   background-color: #dd4b39;
   color: #fff;
   border: none;
-  border-bottom: 3px solid #bd2b19;
-  padding-left: 35px; }
+  border-bottom: 3px solid #bd2b19; }
 
 .logIn-page .logIn-wrapper .fb-logIn svg, .logIn-page .logIn-wrapper .google-logIn svg {
   position: absolute;
@@ -422,7 +420,9 @@ input[name="remember-me"] {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    right: 0; } }
+    right: 0; }
+  .logIn-page .logIn-wrapper .fb-logIn input, .logIn-page .logIn-wrapper .google-logIn input {
+    padding-left: 35px; } }
 
 @media only screen and (max-width: 767px) {
   body .row {

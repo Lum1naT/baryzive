@@ -418,7 +418,6 @@ html body.logIn-page #logIn .logIn-form .logIn-btn{
   color: #fff;
   border: none;
   border-bottom: 3px solid #1b3978;
-  padding-left: 35px;
 }
 
 .logIn-page .logIn-wrapper .google-logIn input {
@@ -426,7 +425,6 @@ html body.logIn-page #logIn .logIn-form .logIn-btn{
   color: #fff;
   border: none;
   border-bottom: 3px solid #bd2b19;
-  padding-left: 35px;
 }
 
 .logIn-page .logIn-wrapper .fb-logIn svg, .logIn-page .logIn-wrapper .google-logIn svg{
@@ -501,6 +499,10 @@ input[name="remember-me"] {
     transform: translateY(-50%);
     left: 0;
     right: 0;
+  }
+
+  .logIn-page .logIn-wrapper .fb-logIn input, .logIn-page .logIn-wrapper .google-logIn input{
+    padding-left: 35px;
   }
 }
 
