@@ -291,7 +291,6 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
 
 /* ***--- LogIn Styles ---*** */
 .logIn-page {
-  min-height: 100vh;
   background-color: #f1f1f1; }
 
 .logIn-wrapper {
@@ -393,7 +392,9 @@ input[name="remember-me"] {
 /* --- Responsive --- */
 @media only screen and (min-width: 480px) {
   .logIn-wrapper {
-    max-width: 400px; } }
+    max-width: 400px; }
+  .logIn-page {
+    min-height: 100vh; } }
 
 @media only screen and (max-width: 479px) {
   .logIn-page #logIn {
