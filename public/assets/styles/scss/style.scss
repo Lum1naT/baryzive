@@ -461,6 +461,10 @@ input[name="remember-me"] {
 }
 
 @media only screen and (max-width: 479px){
+  .logIn-page{
+    background-color: #fff;
+  }
+
   .logIn-page #logIn{
     padding: 0;
   }
