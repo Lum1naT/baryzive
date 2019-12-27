@@ -338,11 +338,6 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 }
 
 .logIn-wrapper {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
   margin: 0 auto;
   text-align: center;
   max-width: 400px;
@@ -486,6 +481,15 @@ input[name="remember-me"] {
 
   .col-md-6.copyright {
     text-align: right;
+  }
+
+  /* ***--- LogIn page ---*** */
+  .logIn-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
   }
 }
 
