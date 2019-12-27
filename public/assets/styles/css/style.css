@@ -69,6 +69,9 @@ input {
   top: 0;
   left: 0; }
 
+.logIn-nav a, .register-nav a {
+  color: #EE3784; }
+
 .ham-nav ul {
   margin: 0;
   padding: 0;

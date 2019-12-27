@@ -61,6 +61,10 @@ input{
   left: 0;
 }
 
+.logIn-nav a, .register-nav a{
+  color: $link-color;
+}
+
 .ham-nav ul {
   	margin: 0;
   	padding: 0;
