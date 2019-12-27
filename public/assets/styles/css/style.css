@@ -69,6 +69,12 @@ input {
   top: 0;
   left: 0; }
 
+.ham-nav li a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #6F83A8; }
+
 .logIn-nav a, .register-nav a {
   color: #EE3784; }
 
@@ -77,11 +83,6 @@ input {
   padding: 0;
   list-style: none;
   overflow: hidden; }
-
-.ham-nav li a {
-  display: block;
-  text-decoration: none;
-  font-weight: bold; }
 
 .ham-nav li a:hover,
 .ham-nav .menu-btn:hover {
