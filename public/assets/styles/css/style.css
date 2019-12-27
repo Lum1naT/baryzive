@@ -75,7 +75,7 @@ input {
   font-weight: bold;
   color: #6F83A8; }
 
-.logIn-nav a, .register-nav a {
+.ham-nav .logIn-nav a, .ham-nav .register-nav a {
   color: #EE3784; }
 
 .ham-nav ul {
