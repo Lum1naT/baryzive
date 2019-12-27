@@ -309,7 +309,8 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   /*border: 1px solid #dbdfe2;*/ }
 
 .logIn-page .logIn-wrapper a {
-  color: #EE3784; }
+  color: #EE3784;
+  font-weight: bold; }
 
 body.logIn-page h2 {
   color: #000666; }
@@ -366,16 +367,16 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
 
 .logIn-page .logIn-wrapper .fb-logIn input {
   background-color: #3b5998;
-  border-bottom: 3px solid #1b3978;
   color: #fff;
   border: none;
+  border-bottom: 3px solid #1b3978;
   padding-left: 35px; }
 
 .logIn-page .logIn-wrapper .google-logIn input {
   background-color: #dd4b39;
-  border-bottom: 3px solid #bd2b19;
   color: #fff;
   border: none;
+  border-bottom: 3px solid #bd2b19;
   padding-left: 35px; }
 
 .logIn-page .logIn-wrapper .fb-logIn svg, .logIn-page .logIn-wrapper .google-logIn svg {
@@ -427,9 +428,9 @@ input[name="remember-me"] {
     font-size: 1.4rem; }
   h3 {
     font-size: 1rem; }
-  a, p, li, input {
+  a, p, li, input, span {
     font-size: .9rem; }
-  input {
+  input:not([type="checkbox"]) {
     width: 100%; }
   section, footer, header, .logIn-wrapper {
     padding: 1.8rem;
