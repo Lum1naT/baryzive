@@ -397,7 +397,9 @@ input[name="remember-me"] {
 
 @media only screen and (max-width: 479px) {
   .logIn-page #logIn {
-    padding: 0; } }
+    padding: 0; }
+  .logIn-page .logIn-text {
+    padding: 0 0 10px 0; } }
 
 @media only screen and (min-width: 768px) {
   .hamMenu {
