@@ -381,14 +381,14 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
   left: 15px; }
 
 input[name="remember-me"] {
-  margin: 10px 5px 0 0; }
+  margin: 5px 5px 5px 0; }
 
 .logIn-form .remember-me span {
   color: #6F83A8;
   font-weight: 500; }
 
 .logIn-page .forgotten-pass {
-  padding-top: 5px; }
+  padding-top: 1.8rem; }
 
 /* ***--- End of LogIn page ---*** */
 /* --- Responsive --- */
