@@ -324,7 +324,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
   font-weight: 500;
   color: white;
   background-color: #EE3784;
-  /*box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);*/
+  box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
   html body.logIn-page #logIn .logIn-form .logIn-btn:hover {
     background-color: #DE2774; }
@@ -380,8 +380,11 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
   height: auto;
   left: 15px; }
 
-input[name="remember-me"] {
-  margin: 5px 5px 5px 0; }
+.remember-me {
+  text-align: left; }
+
+.remember-me input[name="remember-me"] {
+  margin: 5px 5px 15px 0; }
 
 .logIn-form .remember-me span {
   color: #6F83A8;
