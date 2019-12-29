@@ -387,7 +387,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 .remember-me {
   text-align: left; }
 
-.remember-me input[name="remember-me"] {
+input[type="checkbox"] {
   margin: 5px 5px 15px 0; }
 
 .logIn-form .remember-me span {
