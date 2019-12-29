@@ -365,12 +365,16 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   color: #fff;
   border: none;
   border-bottom: 3px solid #1b3978; }
+  .logIn-page .logIn-wrapper .fb-logIn input:hover, .register-page .register-wrapper .fb-register input:hover {
+    background-color: #2b4988; }
 
 .logIn-page .logIn-wrapper .google-logIn input, .register-page .register-wrapper .google-register input {
   background-color: #dd4b39;
   color: #fff;
   border: none;
   border-bottom: 3px solid #bd2b19; }
+  .logIn-page .logIn-wrapper .google-logIn input:hover, .register-page .register-wrapper .google-register input:hover {
+    background-color: #cd3b29; }
 
 .logIn-page .logIn-wrapper .fb-logIn svg, .logIn-page .logIn-wrapper .google-logIn svg, .register-page .register-wrapper .fb-register svg, .register-page .register-wrapper .google-register svg {
   position: absolute;
