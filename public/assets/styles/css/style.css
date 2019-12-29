@@ -291,11 +291,11 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   font-weight: bold;
   color: #EE3784; }
 
-/* ***--- LogIn Styles ---*** */
-.logIn-page {
+/* ***--- LogIn, Register Styles ---*** */
+.logIn-page, .register-page {
   background-color: #f1f1f1; }
 
-.logIn-wrapper {
+.logIn-wrapper, .register-wrapper {
   margin: 0 auto;
   text-align: center;
   /*box-shadow: 0 0 10px rgba(0, 0, 0, .1);*/
@@ -303,11 +303,11 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   background-color: #fff;
   /*border: 1px solid #dbdfe2;*/ }
 
-.logIn-page .logIn-wrapper a {
+.logIn-page .logIn-wrapper a, .register-page .register-wrapper a {
   color: #EE3784;
   font-weight: bold; }
 
-body.logIn-page h2 {
+body.logIn-page h2, body.register-page h2 {
   color: #000666; }
 
 .logIn-page .logIn-wrapper input:not([name="remember-me"]) {
@@ -316,7 +316,7 @@ body.logIn-page h2 {
   background-color: #fff;
   border: 1px solid #dbdfe2; }
 
-html body.logIn-page #logIn .logIn-form .logIn-btn {
+html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #register .register-form .register-btn {
   border: none;
   border-bottom: 3px solid #BE0754;
   border-radius: 4px;
@@ -326,13 +326,13 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
   background-color: #EE3784;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
-  html body.logIn-page #logIn .logIn-form .logIn-btn:hover {
+  html body.logIn-page #logIn .logIn-form .logIn-btn:hover, html body.register-page #register .register-form .register-btn:hover {
     background-color: #DE2774; }
 
-.logIn-text {
+.logIn-text, .register-text {
   padding: 1.8rem 0 10px 0; }
 
-.logIn-page .logIn-text svg {
+.logIn-page .logIn-text svg, .register-page .register-text svg {
   max-width: 44px;
   height: auto;
   margin-bottom: 10px; }
@@ -357,22 +357,22 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
   top: 50%;
   transform: translateY(-50%); }
 
-.fb-logIn, .google-logIn {
+.fb-logIn, .google-logIn, .fb-register, .google-register {
   position: relative; }
 
-.logIn-page .logIn-wrapper .fb-logIn input {
+.logIn-page .logIn-wrapper .fb-logIn input, .register-page .register-wrapper .fb-register input {
   background-color: #3b5998;
   color: #fff;
   border: none;
   border-bottom: 3px solid #1b3978; }
 
-.logIn-page .logIn-wrapper .google-logIn input {
+.logIn-page .logIn-wrapper .google-logIn input, .register-page .register-wrapper .google-register input {
   background-color: #dd4b39;
   color: #fff;
   border: none;
   border-bottom: 3px solid #bd2b19; }
 
-.logIn-page .logIn-wrapper .fb-logIn svg, .logIn-page .logIn-wrapper .google-logIn svg {
+.logIn-page .logIn-wrapper .fb-logIn svg, .logIn-page .logIn-wrapper .google-logIn svg, .register-page .register-wrapper .fb-register svg, .register-page .register-wrapper .google-register svg {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -396,23 +396,23 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
 /* ***--- End of LogIn page ---*** */
 /* --- Responsive --- */
 @media only screen and (min-width: 480px) {
-  .logIn-wrapper {
+  .logIn-wrapper, .register-wrapper {
     max-width: 400px; }
-  .logIn-page {
+  .logIn-page, .register-page {
     min-height: 100vh; } }
 
 @media only screen and (max-width: 479px) {
-  .logIn-page {
+  .logIn-page, .register-page {
     background-color: #fff; }
-  .logIn-page #logIn {
+  .logIn-page #logIn, .register-page #register {
     padding: 0; }
-  .logIn-page .logIn-text {
+  .logIn-page .logIn-text, .register-page .register-text {
     padding: 0 0 10px 0; } }
 
 @media only screen and (min-width: 768px) {
   .hamMenu {
     display: none; }
-  .logIn-wrapper {
+  .logIn-wrapper, .register-wrapper {
     padding: 3rem; }
   footer, section {
     padding: 4rem 20px; }
@@ -425,17 +425,17 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
   .col-md-6.copyright {
     text-align: right; }
   /* ***--- LogIn page ---*** */
-  .logIn-wrapper {
+  .logIn-wrapper, .register-wrapper {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     right: 0; }
-  .logIn-wrapper > .row .col-md-6:first-child {
+  .logIn-wrapper > .row .col-md-6:first-child, .register-wrapper > .row .col-md-6:first-child {
     padding-right: 5px; }
-  .logIn-wrapper > .row .col-md-6:last-child {
+  .logIn-wrapper > .row .col-md-6:last-child, .register-wrapper > .row .col-md-6:last-child {
     padding-left: 5px; }
-  .logIn-page .logIn-wrapper .fb-logIn input, .logIn-page .logIn-wrapper .google-logIn input {
+  .logIn-page .logIn-wrapper .fb-logIn input, .logIn-page .logIn-wrapper .google-logIn input, .register-page .register-wrapper .fb-register input, .register-page .register-wrapper .google-register input {
     padding-left: 35px; } }
 
 @media only screen and (max-width: 767px) {
@@ -458,9 +458,9 @@ html body.logIn-page #logIn .logIn-form .logIn-btn {
   section, footer, header {
     padding: 1.8rem;
     text-align: center; }
-  .logIn-wrapper {
+  .logIn-wrapper, .register-wrapper {
     padding: 0 1.8rem 1.8rem 1.8rem; }
-  .logIn-page header {
+  .logIn-page header, .register-page header {
     padding: 1.8rem 1.8rem 0 1.8rem; }
   nav {
     padding-bottom: 1rem; }
