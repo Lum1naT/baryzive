@@ -10,8 +10,7 @@
         {% endblock %}
 
         {% block stylesheets %}
-        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous" />-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous" />
         <link rel="stylesheet" href="assets/styles/css/style.css" type="text/css" />
         {% endblock %}
     </head>
@@ -20,142 +19,15 @@
         <header>
         {{ include('navigation.html.twig') }}
         </header>
-        <section id="stepWizard">
-            <div class="row">
-                <div class="wizard">
-                    <div class="wizard-inner">
-                        <div class="connecting-line"></div>
 
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active">
-                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
-                                    <span class="round-tab">
-                                        <i class="glyphicon glyphicon-folder-open"></i>
-                                    </span>
-                                </a>
-                            </li>
+        <section>
 
-                            <li role="presentation" class="disabled">
-                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
-                                    <span class="round-tab">
-                                        <i class="glyphicon glyphicon-pencil"></i>
-                                    </span>
-                                </a>
-                            </li>
-
-                            <li role="presentation" class="disabled">
-                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
-                                    <span class="round-tab">
-                                        <i class="glyphicon glyphicon-picture"></i>
-                                    </span>
-                                </a>
-                            </li>
-
-                            <li role="presentation" class="disabled">
-                                <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
-                                    <span class="round-tab">
-                                        <i class="glyphicon glyphicon-ok"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <form role="form">
-                        <div class="tab-content">
-                            <div class="tab-pane active" role="tabpanel" id="step1">
-                                <h3>Step 1</h3>
-                                <div class="bs-calltoaction bs-calltoaction-primary">
-                                    <div class="row">
-                                        <div class="col-md-9 cta-contents">
-                                            <h1 class="cta-title">Its a Call To Action</h1>
-                                            <div class="cta-desc">
-                                                <p>Describe the action here.</p>
-                                                <p>Describe the action here.</p>
-                                                <p>Describe the action here.</p>
-                                            </div>
-                                        </div>
-                                        <p>Step - 1</p>
-                                    </div>
-                                </div>
-                                <ul class="list-inline pull-right">
-                                    <li>
-                                        <button type="button" class="btn btn-primary next-step">Save and continue</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        <!--<div class="tab-pane" role="tabpanel" id="step2">
-                            <h3>Step 2</h3>
-                            <div class="bs-calltoaction bs-calltoaction-info">
-                        <div class="row">
-                            <div class="col-md-9 cta-contents">
-                                <h1 class="cta-title">Its a Call To Action</h1>
-                                <div class="cta-desc">
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                    <p>Describe the action here.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 cta-button">
-                                <a href="#" class="btn btn-lg btn-block btn-info">Go for It!</a>
-                            </div>
-                         </div>
-                    </div>
-                            <ul class="list-inline pull-right">
-                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
-                            </ul>
-                        </div>-->
-                            <div class="tab-pane" role="tabpanel" id="step2">
-                                <h3>Step 3</h3>
-                                <div class="bs-calltoaction bs-calltoaction-success">
-                                    <div class="row">
-                                        <div class="col-md-9 cta-contents">
-                                            <h1 class="cta-title">Its a Call To Action</h1>
-                                            <div class="cta-desc">
-                                                <p>Describe the action here.</p>
-                                                <p>Describe the action here.</p>
-                                                <p>Describe the action here.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 cta-button">
-                                            <a href="#" class="btn btn-lg btn-block btn-success">Go for It!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="list-inline pull-right">
-                                    <li>
-                                        <button type="button" class="btn btn-default prev-step">Previous</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="btn btn-default next-step">Skip</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane" role="tabpanel" id="complete">
-                                <h3>Complete</h3>
-                                <div class="container">
-                                    <p>Text</p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </section>
 
         {% block javascripts %}
-
-        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-        <script type="text/javascript" src="assets/scripts/stepWizard.js"></script>
-        <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
         {% endblock %}
         {% endblock %}
     </body>
