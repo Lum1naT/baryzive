@@ -310,7 +310,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
 body.logIn-page h2, body.register-page h2 {
   color: #000666; }
 
-.logIn-page .logIn-wrapper input:not([name="remember-me"]) {
+.logIn-page .logIn-wrapper input:not([name="remember-me"]), .register-page .register-wrapper input:not([type="checkbox"]) {
   width: 100%;
   margin: 5px 0;
   background-color: #fff;
