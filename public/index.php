@@ -42,14 +42,14 @@ Route::add('/',function(){
 Route::add('/register',function(){
   $loader = new FilesystemLoader('assets/templates');
   $twig = new Environment($loader);
-  echo $twig->render('register.html.twig', ['name' => 'John Doe',
+  echo $twig->render('register.php.twig', ['name' => 'John Doe',
       'occupation' => 'gardener']);
 });
 
 Route::add('/login',function(){
   $loader = new FilesystemLoader('assets/templates');
   $twig = new Environment($loader);
-  echo $twig->render('login.html.twig', ['name' => 'John Doe',
+  echo $twig->render('login.php.twig', ['name' => 'John Doe',
       'occupation' => 'gardener']);
 });
 
