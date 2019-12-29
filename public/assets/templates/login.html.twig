@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block accountTitle %}Login{% endblock %}</title>
 
+
+                <meta name="google-signin-scope" content="profile email">
+                <meta name="google-signin-client_id" content="500004357895-e8pjfbmghees1dfgf43gfvmm4o35tqph.apps.googleusercontent.com">
+                <script src="https://apis.google.com/js/platform.js" async defer></script>
+
         {% block fonts %}
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
         {% endblock %}
@@ -46,6 +51,25 @@
               </div>
               <div class="col-md-6">
                 <div class="google-logIn">
+                  <!--
+                  <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+                     <script>
+                       function onSignIn(googleUser) {
+                         // Useful data for your client-side scripts:
+                         var profile = googleUser.getBasicProfile();
+                         console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+                         console.log('Full Name: ' + profile.getName());
+                         console.log('Given Name: ' + profile.getGivenName());
+                         console.log('Family Name: ' + profile.getFamilyName());
+                         console.log("Image URL: " + profile.getImageUrl());
+                         console.log("Email: " + profile.getEmail());
+
+                         // The ID token you need to pass to your backend:
+                         var id_token = googleUser.getAuthResponse().id_token;
+                         console.log("ID Token: " + id_token);
+                       }
+                     </script>
+                   -->
                   <input type="submit" name="google-logIn" value="Google">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 210 210" style="enable-background:new 0 0 210 210;" xml:space="preserve">
                     <g>
