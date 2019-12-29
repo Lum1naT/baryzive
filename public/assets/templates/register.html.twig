@@ -20,8 +20,52 @@
         {{ include('navigation.html.twig') }}
         </header>
 
-        <section>
-
+        <section id="register">
+          <div class="register-wrapper">
+            <div class="register-text">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g>
+	               <g>
+		                 <path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#6F83A8"/>
+	               </g>
+              </svg>
+              <h2>Registrace</h2>
+              <p>Již máte účet? <a href="#">Přihlašte se</a>.</p>
+              <p>Zaregistrujte se pomocí sociální sítě</p>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="fb-register">
+                  <input type="submit" name="fb-register" value="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve">
+                    <g>
+                      <g>
+	                       <path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="google-register">
+                  <input type="submit" name="google-register" value="Google">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 210 210" style="enable-background:new 0 0 210 210;" xml:space="preserve">
+                    <g>
+                      <path d="M0,105C0,47.103,47.103,0,105,0c23.383,0,45.515,7.523,64.004,21.756l-24.4,31.696C133.172,44.652,119.477,40,105,40  c-35.841,0-65,29.159-65,65s29.159,65,65,65c28.867,0,53.398-18.913,61.852-45H105V85h105v20c0,57.897-47.103,105-105,105  S0,162.897,0,105z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="or-line"><span>nebo</span></p>
+            <form class="register-form" method="post">
+              <input type="text" name="user-name" placeholder="#">
+              <input type="text" name="user-pass" placeholder="#">
+              <!--<div class="remember-me">
+                <input type="checkbox" name="remember-me" value="Pamatovat si mě"><span>Zapamatovat si mě</span>
+              </div>-->
+              <input type="submit" name="register-btn" value="Registrovat se" class="register-btn">
+            </form>
+          </div>
         </section>
 
         {% block javascripts %}
