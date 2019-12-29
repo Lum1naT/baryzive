@@ -20,14 +20,14 @@ include_once("assets/phpscripts/Route.php");
 Route::add('/',function(){
   $loader = new FilesystemLoader('assets/templates');
   $twig = new Environment($loader);
-  echo $twig->render('base.html.twig', ['name' => 'John Doe',
+  echo $twig->render('base.php.twig', ['name' => 'John Doe',
       'occupation' => 'gardener']);
     }, 'get');
 
     Route::add('/finder',function(){
       $loader = new FilesystemLoader('assets/templates');
       $twig = new Environment($loader);
-      echo $twig->render('base.html.twig', ['search' => $_POST['search'],
+      echo $twig->render('base.php.twig', ['search' => $_POST['search'],
           'occupation' => 'gardener']);
         }, 'post');
 
@@ -35,7 +35,7 @@ Route::add('/',function(){
         Route::add('/finder',function(){
           $loader = new FilesystemLoader('assets/templates');
           $twig = new Environment($loader);
-          echo $twig->render('base.html.twig');
+          echo $twig->render('base.php.twig');
             }, 'get');
 
 // Simple test route that simulates static html file
