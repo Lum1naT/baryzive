@@ -464,8 +464,14 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   text-align: left;
 }
 
-input[type="checkbox"] {
-    margin: 5px 5px 15px 0;
+.register-page .terms-and-conditions, .register-page .newsletter-conditions{
+  position: relative;
+  padding-left: 20px;
+}
+
+.register-page input[type="checkbox"], .logIn-page input[type="checkbox"] {
+    position: absolute;
+    left: 0;
 }
 
 .logIn-form .remember-me span{
