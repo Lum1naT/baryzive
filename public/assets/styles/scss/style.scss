@@ -464,17 +464,23 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   text-align: left;
 }
 
+.register-conditions {
+    text-align: left;
+}
+
 .register-page .terms-and-conditions, .register-page .newsletter-conditions{
   position: relative;
   padding-left: 20px;
+  margin: 5px 0;
 }
 
 .register-page input[type="checkbox"], .logIn-page input[type="checkbox"] {
     position: absolute;
     left: 0;
+    top: 5px;
 }
 
-.logIn-form .remember-me span{
+.logIn-form .remember-me span, .register-conditions span{
   color: #6F83A8;
   font-weight: 500;
 }
