@@ -393,13 +393,10 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   height: auto;
   left: 15px; }
 
-.remember-me {
+.remember-me, .register-conditions {
   text-align: left; }
 
-.register-conditions {
-  text-align: left; }
-
-.register-page .terms-and-conditions, .register-page .newsletter-conditions {
+.remember-me, .register-page .terms-and-conditions, .register-page .newsletter-conditions {
   position: relative;
   padding-left: 20px;
   margin: 5px 0; }
