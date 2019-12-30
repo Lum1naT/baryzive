@@ -406,7 +406,7 @@ input[type="checkbox"] {
 .logIn-page .forgotten-pass {
   padding-top: 1.8rem; }
 
-/* ***--- End of LogIn page ---*** */
+/* ***--- End of LogIn and Register page ---*** */
 /* --- Responsive --- */
 @media only screen and (min-width: 480px) {
   .logIn-wrapper, .register-wrapper {
@@ -431,8 +431,10 @@ input[type="checkbox"] {
     padding: 4rem 20px; }
   header {
     padding: 2rem 20px 4rem 20px; }
-  .register-page header, .logIn-page header, .register-page #register, .logIn-page #logIn {
+  .register-page header, .logIn-page header {
     padding: 2rem 20px; }
+  .register-page #register, .logIn-page #logIn {
+    padding: 2rem 20px 4rem 20px; }
   nav {
     padding: 0 0 2rem 0; }
   .register-page nav, .logIn-page nav {
