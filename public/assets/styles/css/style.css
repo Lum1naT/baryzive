@@ -438,12 +438,13 @@ input[type="checkbox"] {
   .col-md-6.copyright {
     text-align: right; }
   /* ***--- LogIn page ---*** */
-  .logIn-wrapper, .register-wrapper {
+  /*.logIn-wrapper, .register-wrapper {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    right: 0; }
+    right: 0;
+  }*/
   .logIn-wrapper > .row .col-md-6:first-child, .register-wrapper > .row .col-md-6:first-child {
     padding-right: 5px; }
   .logIn-wrapper > .row .col-md-6:last-child, .register-wrapper > .row .col-md-6:last-child {

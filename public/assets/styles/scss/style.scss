@@ -533,13 +533,13 @@ input[type="checkbox"] {
   }
 
   /* ***--- LogIn page ---*** */
-  .logIn-wrapper, .register-wrapper {
+  /*.logIn-wrapper, .register-wrapper {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     right: 0;
-  }
+  }*/
 
   .logIn-wrapper > .row .col-md-6:first-child, .register-wrapper > .row .col-md-6:first-child{
     padding-right: 5px;
