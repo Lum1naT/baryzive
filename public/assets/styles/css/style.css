@@ -60,15 +60,15 @@ input {
   margin: 0 auto; }
 
 /* --- Navigation --- */
-/*.ham-nav {
-  background: linear-gradient(120deg, #4986F2 20%, #964BF2 80%);
+.ham-nav {
+  width: 100%;
+  /*background: linear-gradient(120deg, #4986F2 20%, #964BF2 80%);
 	box-shadow: none;
   position: fixed;
-  width: 100%;
   z-index: 10;
 	top: 0;
-  left: 0;
-}*/
+  left: 0;*/ }
+
 .ham-nav li a {
   display: block;
   text-decoration: none;
