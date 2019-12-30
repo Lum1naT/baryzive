@@ -520,8 +520,16 @@ input[type="checkbox"] {
     padding: 2rem 20px 4rem 20px;
   }
 
+  .register-page header, .logIn-page header, .register-page #register, .logIn-page #logIn {
+    padding: 2rem 20px;
+  }
+
   nav{
     padding: 0 0 2rem 0;
+  }
+
+  .register-page nav, .logIn-page nav{
+    padding: 0;
   }
 
   .row.footerBottomContent {
