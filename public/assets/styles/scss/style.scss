@@ -748,25 +748,25 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 
 /* DARK THEME -------------------------------------------------------------------------------------------------------- */
 #dark-theme .logIn-wrapper, #dark-theme .register-wrapper {
-    background-color: #1E1F26;
+    background-color: $dark-lighter-bg;
 }
 
 #dark-theme .or-line span {
-    background-color: #1E1F26;
+    background-color: $dark-lighter-bg;
 }
 
 #dark-theme .or-line::after{
-	background: #9b9dad;
+	background: $dark-text;
 }
 
 #dark-theme .logIn-form input:not(.logIn-btn){
-    background-color: #2a2d34 !important;
-	border: 1px solid #2a2d34 !important;
-    color: #9b9dad;
+  background-color: $dark-input !important;
+	border: 1px solid $dark-input !important;
+  color: $dark-text;
 }
 
 #dark-theme .ham-nav .menu-icon .navicon, #dark-theme .ham-nav .menu-icon .navicon::after {
-    background: #fff;
+  background: #fff;
 }
 
 #dark-theme .ham-nav .menu-btn:checked ~ .menu-icon .navicon{
@@ -778,11 +778,11 @@ body#dark-theme.logIn-page h2, body#dark-theme.register-page h2 {
 }
 
 #dark-theme .logIn-text .active-path {
-    fill: #9b9dad;
+    fill: $dark-text;
 }
 
 #dark-theme .logIn-form .remember-me span, #dark-theme .register-conditions span, p, li {
-    color: #9b9dad;
+    color: $dark-text;
 }
 
 html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-theme.register-page #register .register-form .register-btn{
@@ -791,12 +791,12 @@ html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-th
 
 @media only screen and (min-width: 768px){
   #dark-theme.logIn-page, #dark-theme.register-page {
-      background-color: #131417;
+      background-color: $dark-darker-bg;
   }
 }
 
 @media only screen and (max-width: 767px){
   #dark-theme.logIn-page, #dark-theme.register-page{
-    background-color: #1E1F26;
+    background-color: $dark-lighter-bg;
   }
 }
