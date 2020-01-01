@@ -769,6 +769,10 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     background: #fff;
 }
 
+#dark-theme .ham-nav .menu-btn:checked ~ .menu-icon .navicon{
+  background: transparent;
+}
+
 body#dark-theme.logIn-page h2, body#dark-theme.register-page h2 {
     color: #fff;
 }

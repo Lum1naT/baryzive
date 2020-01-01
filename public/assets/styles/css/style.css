@@ -608,6 +608,9 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 #dark-theme .ham-nav .menu-icon .navicon, #dark-theme .ham-nav .menu-icon .navicon::after {
   background: #fff; }
 
+#dark-theme .ham-nav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent; }
+
 body#dark-theme.logIn-page h2, body#dark-theme.register-page h2 {
   color: #fff; }
 
