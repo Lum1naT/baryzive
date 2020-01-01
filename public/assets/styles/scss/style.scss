@@ -298,10 +298,6 @@ input{
     left:-35px;
 }
 
-#dark-theme{
-  background: #131417;
-}
-
 /* --- Header --- */
 .headerWrapper{
     position: relative;
@@ -792,5 +788,11 @@ html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-th
 @media only screen and (min-width: 768px){
   #dark-theme.logIn-page, #dark-theme.register-page {
       background-color: #131417;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  #dark-theme.logIn-page, #dark-theme.register-page{
+    background-color: #1E1F26;
   }
 }
