@@ -601,7 +601,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 #dark-theme .or-line::after {
   background: #9b9dad; }
 
-#dark-theme input:not(.logIn-btn):not(.register-btn) {
+#dark-theme .logIn-form input:not(.logIn-btn), #dark-theme .register-form input:not(.register-btn) {
   background-color: #2a2d34 !important;
   border: 1px solid #2a2d34 !important;
   color: #9b9dad; }

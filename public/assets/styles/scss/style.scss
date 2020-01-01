@@ -759,7 +759,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 	background: $dark-text;
 }
 
-#dark-theme input:not(.logIn-btn):not(.register-btn){
+#dark-theme .logIn-form input:not(.logIn-btn), #dark-theme .register-form input:not(.register-btn){
   background-color: $dark-input !important;
 	border: 1px solid $dark-input !important;
   color: $dark-text;
