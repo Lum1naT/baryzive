@@ -217,6 +217,91 @@ input{
   	}
 }
 
+/* --- Swipe btn --- */
+.swipe-btn {
+    display: inline-block;
+    width: 70px;
+    height: 36px;
+    position: relative;
+    border-radius: 20px;
+    color: #FFF;
+    overflow: hidden;
+    /*box-shadow: 0 1px 0 #CCC;*/
+    border: 2px solid #D3D2D2;
+}
+
+.swipe-btn label {
+    width: 200%;
+    height: 36px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: 0.13s;
+    -moz-transition: 0.13s;
+    transition: 0.13s;
+    font-size: 12px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.swipe-btn label::before {
+    content: "ON";
+    width: 50px;
+    height: 36px;
+    float: left;
+    margin-right:-20px;
+    padding: 3px 0 0 4px;
+    text-align: center;
+    background: #E8F0F6;
+    text-indent: -16px;
+}
+
+.swipe-btn label::after {
+    content: "OFF";
+    width: 50px;
+    height: 36px;
+    float: left;
+    margin-left:-15px;
+    padding: 3px 0 0 6px;
+    text-align: center;
+    color: #999;
+    background: #ccc;
+}
+
+.swipe-btn label b {
+    display: block;
+    width: 36px;
+    height: 36px;
+    float: left;
+    position: relative;
+    z-index: 1;
+    /*border: 1px solid #D3D2D2;*/
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 4px 0 10px 1px rgba(0, 0, 0, .5);
+}
+
+.swipe-btn input:checked ~ label b{
+  background: #131417;
+  box-shadow: 4px 0 10px 1px #000;
+  border: none;
+}
+
+.swipe-btn input:checked ~ label::after{
+  background: #1E1F26;
+}
+
+.swipe-btn input {display: none;}
+
+.swipe-btn input:checked ~ label {
+    left:-35px;
+}
+
+#dark-theme{
+  background: #131417;
+}
+
 /* --- Header --- */
 .headerWrapper{
     position: relative;
