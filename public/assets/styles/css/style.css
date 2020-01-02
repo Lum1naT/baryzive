@@ -606,7 +606,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   border: 1px solid #2a2d34 !important;
   color: #9b9dad; }
 
-#dark-theme .ham-nav .menu-icon .navicon, #dark-theme .ham-nav .menu-icon .navicon::after {
+#dark-theme .ham-nav .menu-icon .navicon::before, #dark-theme .ham-nav .menu-icon .navicon::after, #dark-theme .ham-nav .menu-icon .navicon, #dark-theme .ham-nav .menu-icon .navicon::after {
   background: #fff; }
 
 #dark-theme .ham-nav .menu-btn:checked ~ .menu-icon .navicon {
