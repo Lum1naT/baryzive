@@ -765,7 +765,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   color: $dark-text;
 }
 
-#dark-theme .ham-nav .menu-icon .navicon::before, #dark-theme .ham-nav .menu-icon .navicon, #dark-theme .ham-nav .menu-icon .navicon::after {
+#dark-theme .ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before, #dark-theme .ham-nav .menu-icon .navicon, #dark-theme .ham-nav .menu-icon .navicon::after {
   background: #fff;
 }
 
