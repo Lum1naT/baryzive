@@ -221,7 +221,7 @@ input {
   width: 50px;
   height: 36px;
   float: left;
-  margin-right: -15px;
+  margin-right: -16px;
   padding: 3px 0 0 4px;
   text-align: center;
   background: #E8F0F6;
@@ -240,8 +240,8 @@ input {
 
 .swipe-btn label b {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 33px;
+  height: 33px;
   float: left;
   position: relative;
   z-index: 1;
