@@ -46,6 +46,30 @@
         <section id="aboutUs">
           <div class="aboutUsWrapper">
             <h2>Vygeneruj si slevu každý den!</h2>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
             <p>Slevy každý den a zdarma! Uplatni je ve svém oblíbeném baru, restauraci nebo se svez levněji taxíkem!</p>
           </div>
         </section>
