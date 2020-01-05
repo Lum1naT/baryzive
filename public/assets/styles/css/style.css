@@ -200,7 +200,8 @@ input {
   color: #FFF;
   overflow: hidden;
   /*box-shadow: 0 1px 0 #CCC;*/
-  border: 2px solid #D3D2D2; }
+  border: 2px solid #D3D2D2;
+  margin-left: 10px; }
 
 .swipe-btn label {
   width: 200%;
