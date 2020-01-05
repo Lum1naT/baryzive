@@ -717,6 +717,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     background: #fff;
     border-radius: 4px;
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .25);
+    z-index: 10;
   }
 
   .headerContent{
