@@ -171,12 +171,6 @@ input {
     display: flex;
     flex-flow: row wrap;
     align-items: center; }
-  .logo-wrapper, .nav-menu-wrapper {
-    flex-grow: 1; }
-  .nav-menu-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; }
   .ham-nav #logo {
     flex-grow: 1; }
   .ham-nav .menu {
@@ -574,7 +568,14 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     padding-bottom: 1rem; }
   .ham-nav {
     position: relative;
-    display: inline-block; }
+    display: flex;
+    align-items: center; }
+  .logo-wrapper, .nav-menu-wrapper {
+    flex-grow: 1; }
+  .nav-menu-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
   .ham-nav .menu {
     width: 100%;
     position: absolute;

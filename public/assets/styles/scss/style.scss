@@ -184,16 +184,6 @@ input{
       align-items: center;
     }
 
-    .logo-wrapper, .nav-menu-wrapper {
-      flex-grow: 1;
-    }
-
-    .nav-menu-wrapper {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-
     .ham-nav #logo{
       flex-grow: 1;
     }
@@ -717,7 +707,18 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 
   .ham-nav {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-wrapper, .nav-menu-wrapper {
+    flex-grow: 1;
+  }
+
+  .nav-menu-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .ham-nav .menu {
