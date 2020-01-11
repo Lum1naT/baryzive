@@ -2,107 +2,6 @@
 @import "partials/variables.scss";
 @import "partials/reset.scss";
 
-/* DARK THEME -------------------------------------------------------------------------------------------------------- */
-body#dark-theme{
-  background: $dark-darker-bg;
-}
-
-#dark-theme .headerContentWrapper{
-  background-color: $dark-darker-bg;
-}
-
-html body#dark-theme input, html body#dark-theme button{
-  box-shadow: none;
-}
-
-#dark-theme .dark-input{
-  background-color: $dark-input;
-  border: 1px solid $dark-input;
-  color: $dark-text;
-}
-
-#dark-theme .fastInfoIcon svg .active-path{
-  fill: #fff;
-}
-
-#dark-theme #fastInfo{
-  background: $dark-lighter-bg;
-}
-
-#dark-theme h1, #dark-theme h2, #dark-theme h3{
-  color: #fff;
-}
-
-#dark-theme h1 span{
-  color: #EE3784;
-}
-
-#dark-theme p, #dark-theme li, #dark-theme a{
-  color: $dark-text;
-}
-
-#dark-theme .ham-nav li:not(.logIn-nav):not(.register-nav) a{
-  color: #fff;
-}
-
-#dark-theme .logIn-wrapper, #dark-theme .register-wrapper {
-    background-color: $dark-lighter-bg;
-}
-
-#dark-theme .or-line span {
-    background-color: $dark-lighter-bg;
-}
-
-#dark-theme .or-line::after{
-	background: $dark-text;
-}
-
-#dark-theme .ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before, #dark-theme .ham-nav .menu-icon .navicon, #dark-theme .ham-nav .menu-icon .navicon::after {
-  background: #fff;
-}
-
-#dark-theme .ham-nav .menu-btn:checked ~ .menu-icon .navicon{
-  background: transparent;
-}
-
-body#dark-theme.logIn-page h2, body#dark-theme.register-page h2 {
-    color: #fff;
-}
-
-#dark-theme .logIn-text .active-path, #dark-theme .register-text .active-path {
-    fill: $dark-text;
-}
-
-#dark-theme .logIn-form .remember-me span, #dark-theme .register-conditions span, p, li {
-    color: $dark-text;
-}
-
-html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-theme.register-page #register .register-form .register-btn{
-	box-shadow: none;
-}
-
-#dark-theme.logIn-page, #dark-theme.register-page {
-    background-color: $dark-darker-bg;
-}
-
-@media only screen and (max-width: 479px){
-  #dark-theme.logIn-page, #dark-theme.register-page{
-    background-color: $dark-lighter-bg;
-  }
-}
-
-@media only screen and (max-width: 767px){
-  #dark-theme .ham-nav .menu {
-    background: #1e1f26;
-    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .5);
-  }
-
-  #dark-theme .ham-nav li a{
-    border-bottom: 1px solid #24262b;
-  }
-}
-/* END OF DART THEME -------------------------------------------------------------------------------------------------------- */
-
 body{
   font-family: $primary-font;
   line-height: 1.5;
@@ -117,7 +16,7 @@ h1, h2, h3{
 
 h1{
   font-size: 3rem;
-  margin: 20px 0;
+  margin: 1rem 0;
 }
 
 h2{
@@ -879,3 +778,104 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     padding-top: 1.8rem;
   }
 }
+
+/* DARK THEME -------------------------------------------------------------------------------------------------------- */
+body#dark-theme{
+  background: $dark-darker-bg;
+}
+
+#dark-theme .headerContentWrapper{
+  background-color: $dark-darker-bg;
+}
+
+html body#dark-theme input, html body#dark-theme button{
+  box-shadow: none;
+}
+
+#dark-theme .dark-input{
+  background-color: $dark-input;
+  border: 1px solid $dark-input;
+  color: $dark-text;
+}
+
+#dark-theme .fastInfoIcon svg .active-path{
+  fill: #fff;
+}
+
+#dark-theme #fastInfo{
+  background: $dark-lighter-bg;
+}
+
+#dark-theme h1, #dark-theme h2, #dark-theme h3{
+  color: #fff;
+}
+
+#dark-theme h1 span{
+  color: #EE3784;
+}
+
+#dark-theme p, #dark-theme li, #dark-theme a{
+  color: $dark-text;
+}
+
+#dark-theme .ham-nav li:not(.logIn-nav):not(.register-nav) a{
+  color: #fff;
+}
+
+#dark-theme .logIn-wrapper, #dark-theme .register-wrapper {
+    background-color: $dark-lighter-bg;
+}
+
+#dark-theme .or-line span {
+    background-color: $dark-lighter-bg;
+}
+
+#dark-theme .or-line::after{
+	background: $dark-text;
+}
+
+#dark-theme .ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before, #dark-theme .ham-nav .menu-icon .navicon, #dark-theme .ham-nav .menu-icon .navicon::after {
+  background: #fff;
+}
+
+#dark-theme .ham-nav .menu-btn:checked ~ .menu-icon .navicon{
+  background: transparent;
+}
+
+body#dark-theme.logIn-page h2, body#dark-theme.register-page h2 {
+    color: #fff;
+}
+
+#dark-theme .logIn-text .active-path, #dark-theme .register-text .active-path {
+    fill: $dark-text;
+}
+
+#dark-theme .logIn-form .remember-me span, #dark-theme .register-conditions span, p, li {
+    color: $dark-text;
+}
+
+html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-theme.register-page #register .register-form .register-btn{
+	box-shadow: none;
+}
+
+#dark-theme.logIn-page, #dark-theme.register-page {
+    background-color: $dark-darker-bg;
+}
+
+@media only screen and (max-width: 479px){
+  #dark-theme.logIn-page, #dark-theme.register-page{
+    background-color: $dark-lighter-bg;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  #dark-theme .ham-nav .menu {
+    background: #1e1f26;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .5);
+  }
+
+  #dark-theme .ham-nav li a{
+    border-bottom: 1px solid #24262b;
+  }
+}
+/* END OF DARK THEME -------------------------------------------------------------------------------------------------------- */
