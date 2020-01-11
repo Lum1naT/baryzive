@@ -78,8 +78,7 @@ input {
   display: block;
   font-weight: bold;
   color: #000666;
-  padding: 13px 0;
-  border-bottom: 1px solid #f1f1f1; }
+  padding: 13px 0; }
 
 .ham-nav li:last-child a, #dark-theme .ham-nav li:last-child a {
   border: none; }
@@ -598,6 +597,8 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     border-radius: 4px;
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.25);
     z-index: 10; }
+  .ham-nav li a {
+    border-bottom: 1px solid #f1f1f1; }
   .headerContent {
     height: initial; }
   .headerContentWrapper {
@@ -616,9 +617,6 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 /* DARK THEME -------------------------------------------------------------------------------------------------------- */
 #dark-theme .ham-nav li:not(.logIn-nav):not(.register-nav) a {
   color: #fff; }
-
-#dark-theme .ham-nav li a {
-  border-bottom: 1px solid #24262b; }
 
 #dark-theme .logIn-wrapper, #dark-theme .register-wrapper {
   background-color: #1E1F26; }
@@ -662,4 +660,6 @@ html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-th
 @media only screen and (max-width: 767px) {
   #dark-theme .ham-nav .menu {
     background: #1e1f26;
-    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5); } }
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5); }
+  #dark-theme .ham-nav li a {
+    border-bottom: 1px solid #24262b; } }
