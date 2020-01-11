@@ -89,8 +89,6 @@ html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-th
     background-color: #1E1F26; } }
 
 @media only screen and (max-width: 767px) {
-  #dark-theme h1 span {
-    font-size: 2rem; }
   #dark-theme .ham-nav .menu {
     background: #1e1f26;
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5); }
@@ -597,6 +595,8 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     padding: 0 0 10px 0; } }
 
 @media only screen and (min-width: 768px) {
+  h1 span {
+    font-size: 2rem; }
   .hamMenu {
     display: none; }
   .logIn-wrapper, .register-wrapper {
