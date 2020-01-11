@@ -179,7 +179,7 @@ input{
 }
 
 .ham-nav .logIn-nav a, .ham-nav .register-nav a{
-  color: #EE3784 !important;
+  color: $link-color;
 }
 
 .ham-nav li:last-child a, #dark-theme .ham-nav li:last-child a{
@@ -570,7 +570,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 }
 
 .logIn-page .logIn-wrapper a, .register-page .register-wrapper a{
-  color: $link-color !important;
+  color: $link-color;
   font-weight: bold;
 }
 
