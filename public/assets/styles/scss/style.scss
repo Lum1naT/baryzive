@@ -811,7 +811,7 @@ body#dark-theme.logIn-page h2, body#dark-theme.register-page h2 {
     color: #fff;
 }
 
-#dark-theme .logIn-text .active-path {
+#dark-theme .logIn-text .active-path, #dark-theme .register-text .active-path {
     fill: $dark-text;
 }
 

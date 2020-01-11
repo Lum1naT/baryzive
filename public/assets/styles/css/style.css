@@ -643,7 +643,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 body#dark-theme.logIn-page h2, body#dark-theme.register-page h2 {
   color: #fff; }
 
-#dark-theme .logIn-text .active-path {
+#dark-theme .logIn-text .active-path, #dark-theme .register-text .active-path {
   fill: #9b9dad; }
 
 #dark-theme .logIn-form .remember-me span, #dark-theme .register-conditions span, p, li {
