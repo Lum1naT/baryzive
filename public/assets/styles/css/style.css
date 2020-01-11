@@ -603,7 +603,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     padding-top: 1.8rem; } }
 
 /* DARK THEME -------------------------------------------------------------------------------------------------------- */
-#dark-theme .ham-nav li a {
+#dark-theme .ham-nav li:not(.logIn-nav):not(.register-nav) a {
   color: #fff; }
 
 #dark-theme .logIn-wrapper, #dark-theme .register-wrapper {
