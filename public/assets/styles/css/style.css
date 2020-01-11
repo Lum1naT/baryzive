@@ -641,13 +641,15 @@ body#dark-theme.logIn-page h2, body#dark-theme.register-page h2 {
 html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-theme.register-page #register .register-form .register-btn {
   box-shadow: none; }
 
+@media only screen and (max-width: 479px) {
+  #dark-theme.logIn-page, #dark-theme.register-page {
+    background-color: #1E1F26; } }
+
 @media only screen and (min-width: 768px) {
   #dark-theme.logIn-page, #dark-theme.register-page {
     background-color: #131417; } }
 
 @media only screen and (max-width: 767px) {
-  #dark-theme.logIn-page, #dark-theme.register-page {
-    background-color: #1E1F26; }
   #dark-theme .ham-nav .menu {
     background: #1e1f26;
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5); } }

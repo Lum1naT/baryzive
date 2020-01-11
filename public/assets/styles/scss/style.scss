@@ -810,6 +810,12 @@ html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-th
 	box-shadow: none;
 }
 
+@media only screen and (max-width: 479px){
+  #dark-theme.logIn-page, #dark-theme.register-page{
+    background-color: $dark-lighter-bg;
+  }
+}
+
 @media only screen and (min-width: 768px){
   #dark-theme.logIn-page, #dark-theme.register-page {
       background-color: $dark-darker-bg;
@@ -817,10 +823,6 @@ html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-th
 }
 
 @media only screen and (max-width: 767px){
-  #dark-theme.logIn-page, #dark-theme.register-page{
-    background-color: $dark-lighter-bg;
-  }
-
   #dark-theme .ham-nav .menu {
     background: #1e1f26;
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .5);
