@@ -612,10 +612,6 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 }
 
 @media only screen and (min-width: 768px){
-  h1 span{
-    font-size: 2rem;
-  }
-
   .hamMenu{
     display: none;
   }
@@ -692,6 +688,10 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   }
 
   h1{
+    font-size: 2rem;
+  }
+
+  h1 span{
     font-size: 2rem;
   }
 

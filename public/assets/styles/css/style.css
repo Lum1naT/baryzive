@@ -520,8 +520,6 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     padding: 0 0 10px 0; } }
 
 @media only screen and (min-width: 768px) {
-  h1 span {
-    font-size: 2rem; }
   .hamMenu {
     display: none; }
   .logIn-wrapper, .register-wrapper {
@@ -565,6 +563,8 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   .headerImg {
     display: none; }
   h1 {
+    font-size: 2rem; }
+  h1 span {
     font-size: 2rem; }
   h2 {
     font-size: 1.4rem; }
