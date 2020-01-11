@@ -15,59 +15,12 @@
         <link rel="stylesheet" type="text/css" href="assets/styles/css/style.css">
         {% endblock %}
     </head>
-    <body>
+    <body class="city-layout">
         {% block body %}
 
         <header>
           {{ include('navigation.html.twig') }}
-          <div class="headerWrapper">
-            <div class="headerContent">
-              <div class="headerContentWrapper">
-                <p>Noční život na jednom místě.</p>
-                <h1>Podívejte se živě, kde to nejvíc žije!</h1>
-                <h2>{{ search }}</h2>
-                <form class="search" method="post" action="/finder">
-                  <input class="add-city-bar" required type="text" name="search" placeholder="Zadejte město nebo oblíbený bar">
-                  <input class="search-btn" type="submit" value="Vyhledat" name="search-button">
-                </form>
-              </div>
-            </div>
-            <div class="headerImg">
-              <img src="assets/imgs/header-bg.png" alt="Obrázek v hlavičce">
-            </div>
-          </div>
         </header>
-
-        <section id="aboutUs">
-          <div class="aboutUsWrapper">
-            <h2>Vygeneruj si slevu každý den!</h2>
-<!-- Až bude HTTPS, tohle začne fungovat -->
-<p>Click the button to get your coordinates.</p>
-
-<button onclick="getLocation()">Try It</button>
-
-<p id="demo"></p>
-
-<script>
-var x = document.getElementById("demo");
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
-}
-</script>
-
-            <p>Slevy každý den a zdarma! Uplatni je ve svém oblíbeném baru, restauraci nebo se svez levněji taxíkem!</p>
-          </div>
-        </section>
 
         <section id="fastInfo">
             <div class="fastInfoWrapper">
