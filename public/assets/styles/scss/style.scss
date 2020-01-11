@@ -781,7 +781,7 @@ body#dark-theme{
 }
 
 #dark-theme .headerContentWrapper{
-  background-color: transparent;
+  background-color: $dark-darker-bg;
 }
 
 html body#dark-theme input, html body#dark-theme button{
@@ -804,7 +804,7 @@ html body#dark-theme input, html body#dark-theme button{
   color: #EE3784;
 }
 
-#dark-theme p, #dark-theme li{
+#dark-theme p, #dark-theme li, #dark-theme a{
   color: $dark-text;
 }
 
