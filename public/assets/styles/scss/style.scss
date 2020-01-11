@@ -810,15 +810,13 @@ html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-th
 	box-shadow: none;
 }
 
+#dark-theme.logIn-page, #dark-theme.register-page {
+    background-color: $dark-darker-bg;
+}
+
 @media only screen and (max-width: 479px){
   #dark-theme.logIn-page, #dark-theme.register-page{
     background-color: $dark-lighter-bg;
-  }
-}
-
-@media only screen and (min-width: 768px){
-  #dark-theme.logIn-page, #dark-theme.register-page {
-      background-color: $dark-darker-bg;
   }
 }
 
