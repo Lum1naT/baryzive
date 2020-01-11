@@ -760,6 +760,10 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 }
 
 /* DARK THEME -------------------------------------------------------------------------------------------------------- */
+#dark-theme .ham-nav li a{
+  color: #fff;
+}
+
 #dark-theme .logIn-wrapper, #dark-theme .register-wrapper {
     background-color: $dark-lighter-bg;
 }
