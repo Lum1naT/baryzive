@@ -656,11 +656,6 @@ html body#dark-theme input, html body#dark-theme button {
 #dark-theme .or-line::after {
   background: #9b9dad; }
 
-#dark-theme .logIn-form input:not(.logIn-btn), #dark-theme .register-form input:not(.register-btn) {
-  background-color: #2a2d34 !important;
-  border: 1px solid #2a2d34 !important;
-  color: #9b9dad; }
-
 #dark-theme .ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before, #dark-theme .ham-nav .menu-icon .navicon, #dark-theme .ham-nav .menu-icon .navicon::after {
   background: #fff; }
 

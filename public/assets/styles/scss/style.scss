@@ -830,12 +830,6 @@ html body#dark-theme input, html body#dark-theme button{
 	background: $dark-text;
 }
 
-#dark-theme .logIn-form input:not(.logIn-btn), #dark-theme .register-form input:not(.register-btn){
-  background-color: $dark-input !important;
-	border: 1px solid $dark-input !important;
-  color: $dark-text;
-}
-
 #dark-theme .ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before, #dark-theme .ham-nav .menu-icon .navicon, #dark-theme .ham-nav .menu-icon .navicon::after {
   background: #fff;
 }
