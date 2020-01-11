@@ -618,6 +618,12 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 body#dark-theme {
   background: #131417; }
 
+#dark-theme .headerContentWrapper {
+  background-color: transparent; }
+
+html body#dark-theme input {
+  box-shadow: none; }
+
 #dark-theme #fastInfo {
   background: #1E1F26; }
 
@@ -673,6 +679,8 @@ html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-th
     background-color: #1E1F26; } }
 
 @media only screen and (max-width: 767px) {
+  #dark-theme h1 span {
+    font-size: 2rem; }
   #dark-theme .ham-nav .menu {
     background: #1e1f26;
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5); }
