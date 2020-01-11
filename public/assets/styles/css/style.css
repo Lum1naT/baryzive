@@ -81,7 +81,7 @@ input {
   padding: 13px 0;
   border-bottom: 1px solid #f1f1f1; }
 
-.ham-nav li:last-child a {
+.ham-nav li:last-child a, #dark-theme .ham-nav li:last-child a {
   border: none; }
 
 .ham-nav .logIn-nav a, .ham-nav .register-nav a {
