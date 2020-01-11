@@ -776,6 +776,26 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 }
 
 /* DARK THEME -------------------------------------------------------------------------------------------------------- */
+body#dark-theme{
+  background: $dark-darker-bg;
+}
+
+#dark-theme #fastInfo{
+  background: $dark-lighter-bg;
+}
+
+#dark-theme h1, #dark-theme h2, #dark-theme h3{
+  color: #fff;
+}
+
+#dark-theme h1 span{
+  color: #EE3784;
+}
+
+#dark-theme p, #dark-theme li{
+  color: $dark-text;
+}
+
 #dark-theme .ham-nav li:not(.logIn-nav):not(.register-nav) a{
   color: #fff;
 }

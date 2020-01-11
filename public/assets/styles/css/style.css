@@ -615,6 +615,21 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     padding-top: 1.8rem; } }
 
 /* DARK THEME -------------------------------------------------------------------------------------------------------- */
+body#dark-theme {
+  background: #131417; }
+
+#dark-theme #fastInfo {
+  background: #1E1F26; }
+
+#dark-theme h1, #dark-theme h2, #dark-theme h3 {
+  color: #fff; }
+
+#dark-theme h1 span {
+  color: #EE3784; }
+
+#dark-theme p, #dark-theme li {
+  color: #9b9dad; }
+
 #dark-theme .ham-nav li:not(.logIn-nav):not(.register-nav) a {
   color: #fff; }
 
