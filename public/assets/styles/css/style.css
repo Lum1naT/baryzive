@@ -461,7 +461,7 @@ footer svg {
 
 .row.footerBottomContent a {
   font-weight: 300;
-  color: #EE3784; }
+  color: #EE3784 !important; }
 
 footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   font-weight: bold;
@@ -480,7 +480,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   /*border: 1px solid #dbdfe2;*/ }
 
 .logIn-page .logIn-wrapper a, .register-page .register-wrapper a {
-  color: #EE3784 !important;
+  color: #EE3784 !important !important;
   font-weight: bold; }
 
 body.logIn-page h2, body.register-page h2 {
