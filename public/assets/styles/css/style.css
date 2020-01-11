@@ -78,7 +78,11 @@ input {
   display: block;
   font-weight: bold;
   color: #000666;
-  margin: 5px 0; }
+  padding: 13px 0;
+  border-bottom: 1px solid #f1f1f1; }
+
+.ham-nav li:last-child a {
+  border: none; }
 
 .ham-nav .logIn-nav a, .ham-nav .register-nav a {
   color: #EE3784; }
@@ -612,6 +616,9 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 /* DARK THEME -------------------------------------------------------------------------------------------------------- */
 #dark-theme .ham-nav li:not(.logIn-nav):not(.register-nav) a {
   color: #fff; }
+
+#dark-theme .ham-nav li a {
+  border-bottom: 1px solid #24262b; }
 
 #dark-theme .logIn-wrapper, #dark-theme .register-wrapper {
   background-color: #1E1F26; }
