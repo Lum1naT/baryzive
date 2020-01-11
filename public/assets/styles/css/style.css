@@ -621,8 +621,11 @@ body#dark-theme {
 #dark-theme .headerContentWrapper {
   background-color: transparent; }
 
-html body#dark-theme input {
+html body#dark-theme input, html body#dark-theme button {
   box-shadow: none; }
+
+#dark-theme .fastInfoIcon svg .active-path {
+  fill: #fff; }
 
 #dark-theme #fastInfo {
   background: #1E1F26; }
