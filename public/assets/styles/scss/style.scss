@@ -788,6 +788,12 @@ html body#dark-theme input, html body#dark-theme button{
   box-shadow: none;
 }
 
+#dark-theme .dark-input{
+  background-color: $dark-input;
+  border: 1px solid $dark-input;
+  color: $dark-text;
+}
+
 #dark-theme .fastInfoIcon svg .active-path{
   fill: #fff;
 }

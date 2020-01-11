@@ -624,6 +624,11 @@ body#dark-theme {
 html body#dark-theme input, html body#dark-theme button {
   box-shadow: none; }
 
+#dark-theme .dark-input {
+  background-color: #2a2d34;
+  border: 1px solid #2a2d34;
+  color: #9b9dad; }
+
 #dark-theme .fastInfoIcon svg .active-path {
   fill: #fff; }
 
