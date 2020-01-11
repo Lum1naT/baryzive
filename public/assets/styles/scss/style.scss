@@ -73,6 +73,10 @@ input{
   padding: 13px 0;
 }
 
+.ham-nav .logIn-nav a, .ham-nav .register-nav a{
+  color: #EE3784 !important;
+}
+
 .ham-nav li:last-child a, #dark-theme .ham-nav li:last-child a{
   border: none;
 }
@@ -875,7 +879,3 @@ html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-th
   }
 }
 /* END OF DART THEME */
-
-.ham-nav .logIn-nav a, .ham-nav .register-nav a{
-  color: $link-color;
-}
