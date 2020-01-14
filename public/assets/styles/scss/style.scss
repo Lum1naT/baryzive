@@ -187,7 +187,7 @@ input{
   transparent;
   height: initial;
   top: 4px;
-  color: #EE3784;
+  color: $focus-color;
 }
 
 .ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon{
@@ -811,7 +811,7 @@ html body#dark-theme input, html body#dark-theme button{
 }
 
 #dark-theme h1 span{
-  color: #EE3784;
+  color: $focus-color;
 }
 
 #dark-theme p, #dark-theme li, #dark-theme a{

@@ -81,7 +81,7 @@ input {
   padding: 13px 0; }
 
 .ham-nav .logIn-nav a, .ham-nav .register-nav a {
-  color: #EE3784 !important; }
+  color: #C10F77 !important; }
 
 .ham-nav li:last-child a, #dark-theme .ham-nav li:last-child a {
   border: none; }
@@ -174,7 +174,7 @@ input {
   background: transparent;
   height: initial;
   top: 4px;
-  color: #EE3784; }
+  color: #C10F77; }
 
 .ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon {
   width: 36px; }
@@ -312,7 +312,7 @@ input {
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #EE3784;
+  background-color: #C10F77;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
   .headerWrapper .search-btn:hover {
@@ -355,7 +355,7 @@ form.newsletter button {
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #EE3784;
+  background-color: #C10F77;
   margin-left: 10px;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
@@ -384,11 +384,11 @@ footer svg {
 
 .row.footerBottomContent a {
   font-weight: 300;
-  color: #EE3784 !important; }
+  color: #C10F77 !important; }
 
 footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   font-weight: bold;
-  color: #EE3784 !important; }
+  color: #C10F77 !important; }
 
 /* ***--- LogIn, Register Styles ---*** */
 .logIn-page, .register-page {
@@ -403,7 +403,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   /*border: 1px solid #dbdfe2;*/ }
 
 .logIn-page .logIn-wrapper a, .register-page .register-wrapper a {
-  color: #EE3784 !important;
+  color: #C10F77 !important;
   font-weight: bold; }
 
 body.logIn-page h2, body.register-page h2 {
@@ -422,7 +422,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #EE3784;
+  background-color: #C10F77;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
   html body.logIn-page #logIn .logIn-form .logIn-btn:hover, html body.register-page #register .register-form .register-btn:hover {
@@ -641,7 +641,7 @@ html body#dark-theme input, html body#dark-theme button {
   color: #fff; }
 
 #dark-theme h1 span {
-  color: #EE3784; }
+  color: #C10F77; }
 
 #dark-theme p, #dark-theme li, #dark-theme a {
   color: #9b9dad; }
