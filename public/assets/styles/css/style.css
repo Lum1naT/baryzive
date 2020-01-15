@@ -290,8 +290,7 @@ input {
     position: relative;
     z-index: 2;
     height: 480px;*/
-  text-align: center;
-  background-image: url("../../imgs/head-bg.png"); }
+  text-align: center; }
 
 .headerContentWrapper {
   /*position: relative;
@@ -530,7 +529,8 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   footer, section {
     padding: 4rem 20px; }
   header {
-    padding: 2rem 20px 4rem 20px; }
+    padding: 2rem 20px 4rem 20px;
+    background-image: url("../../imgs/head-bg.png"); }
   .register-page header, .logIn-page header {
     padding: 2rem 20px; }
   .register-page #register, .logIn-page #logIn {
@@ -623,9 +623,9 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 body#dark-theme {
   background: #131417; }
 
-#dark-theme .headerContentWrapper {
-  background-color: #131417; }
-
+/*#dark-theme .headerContentWrapper{
+  background-color: $dark-darker-bg;
+}*/
 html body#dark-theme input, html body#dark-theme button {
   box-shadow: none; }
 

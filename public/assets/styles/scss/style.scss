@@ -330,7 +330,6 @@ input{
     z-index: 2;
     height: 480px;*/
     text-align: center;
-    background-image: url('../../imgs/head-bg.png');
 }
 
 .headerContentWrapper {
@@ -629,6 +628,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 
   header{
     padding: 2rem 20px 4rem 20px;
+    background-image: url('../../imgs/head-bg.png');
   }
 
   .register-page header, .logIn-page header{
@@ -787,9 +787,9 @@ body#dark-theme{
   background: $dark-darker-bg;
 }
 
-#dark-theme .headerContentWrapper{
+/*#dark-theme .headerContentWrapper{
   background-color: $dark-darker-bg;
-}
+}*/
 
 html body#dark-theme input, html body#dark-theme button{
   box-shadow: none;
