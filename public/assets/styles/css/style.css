@@ -151,7 +151,7 @@ input {
   display: none; }
 
 .ham-nav .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: initial;
   padding: 1rem; }
 
 .ham-nav .menu-btn:checked ~ .menu-icon .navicon {
@@ -215,7 +215,7 @@ input {
   overflow: hidden;
   /*box-shadow: 0 1px 0 #CCC;*/
   border: 2px solid #D3D2D2;
-  margin-left: 10px; }
+  /*margin-left: 10px;*/ }
 
 .swipe-btn label {
   width: 200%;
@@ -614,7 +614,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     height: initial; }
   .headerContentWrapper {
     width: 100%;
-    padding: 0; }
+    padding: 5rem 0 0 0; }
   body .newsletter-box {
     padding-bottom: 1.8rem; }
   body .newsletter button {
