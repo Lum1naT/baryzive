@@ -318,6 +318,13 @@ input{
 }
 
 /* --- Header --- */
+header{
+  padding: 2rem 20px 4rem 20px;
+  background-image: url('../../imgs/head-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .headerWrapper{
     position: relative;
 }
@@ -628,7 +635,6 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 
   header{
     padding: 2rem 20px 4rem 20px;
-    background-image: url('../../imgs/head-bg.png');
   }
 
   .register-page header, .logIn-page header{

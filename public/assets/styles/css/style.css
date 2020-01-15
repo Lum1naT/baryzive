@@ -280,6 +280,12 @@ input {
   left: -35px; }
 
 /* --- Header --- */
+header {
+  padding: 2rem 20px 4rem 20px;
+  background-image: url("../../imgs/head-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .headerWrapper {
   position: relative; }
 
@@ -529,8 +535,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   footer, section {
     padding: 4rem 20px; }
   header {
-    padding: 2rem 20px 4rem 20px;
-    background-image: url("../../imgs/head-bg.png"); }
+    padding: 2rem 20px 4rem 20px; }
   .register-page header, .logIn-page header {
     padding: 2rem 20px; }
   .register-page #register, .logIn-page #logIn {
