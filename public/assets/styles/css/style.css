@@ -284,7 +284,8 @@ header {
   padding: 2rem 20px 4rem 20px;
   background-image: url("../../imgs/head-bg.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: right; }
 
 .headerWrapper {
   position: relative; }
