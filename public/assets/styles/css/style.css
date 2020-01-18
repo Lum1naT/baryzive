@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=latin-ext");
 /*#C10F77*/
-/*#BE0754*/
+/*#8C0042*/
 /* DARK THEME -------------------------- */
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, q, blockquote,
@@ -35,8 +35,14 @@ h1 {
   font-size: 3rem;
   margin: 1rem 0; }
 
+h1 strong {
+  text-shadow: 3px 4px rgba(61, 191, 174, 0.7), -2px -3px rgba(218, 46, 143, 0.7); }
+
 h2 {
   font-size: 1.8rem; }
+
+h2 strong {
+  color: #3DBFAE; }
 
 h3 {
   font-size: 18px; }
@@ -316,7 +322,7 @@ input {
 
 .headerWrapper .search-btn {
   border: none;
-  border-bottom: 3px solid #BE0754;
+  border-bottom: 3px solid #8C0042;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
@@ -359,7 +365,7 @@ form.newsletter {
 
 form.newsletter button {
   border: none;
-  border-bottom: 3px solid #BE0754;
+  border-bottom: 3px solid #8C0042;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
@@ -426,7 +432,7 @@ body.logIn-page h2, body.register-page h2 {
 
 html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #register .register-form .register-btn {
   border: none;
-  border-bottom: 3px solid #BE0754;
+  border-bottom: 3px solid #8C0042;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
