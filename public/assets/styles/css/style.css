@@ -583,7 +583,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   .headerImg {
     display: none; }
   .home header {
-    padding: 2rem 20px; }
+    padding: 2rem 1.8rem; }
   h1 {
     font-size: 2rem; }
   /*h1 span{
