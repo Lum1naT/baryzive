@@ -101,6 +101,11 @@ input {
 .ham-nav #logo {
   float: left; }
 
+.ham-nav #logo svg {
+  width: 100%;
+  max-width: 200px;
+  height: auto; }
+
 .ham-nav #logo img {
   max-width: 50px;
   width: 100%; }
