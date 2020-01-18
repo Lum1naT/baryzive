@@ -701,9 +701,9 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     font-size: 2rem;
   }
 
-  h1 span{
+  /*h1 span{
     font-size: 2rem;
-  }
+  }*/
 
   h2{
     font-size: 1.4rem;
@@ -820,9 +820,9 @@ html body#dark-theme input, html body#dark-theme button{
   color: #fff;
 }
 
-#dark-theme h1 span{
+/*#dark-theme h1 span{
   color: $focus-color;
-}
+}*/
 
 #dark-theme p, #dark-theme li, #dark-theme a{
   color: $dark-text;

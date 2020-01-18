@@ -81,7 +81,7 @@ input {
   padding: 13px 0; }
 
 .ham-nav .logIn-nav a, .ham-nav .register-nav a {
-  color: #3DBFAE !important; }
+  color: #C10F77 !important; }
 
 .ham-nav li:last-child a, #dark-theme .ham-nav li:last-child a {
   border: none; }
@@ -316,12 +316,12 @@ input {
 
 .headerWrapper .search-btn {
   border: none;
-  border-bottom: 3px solid #007F6E;
+  border-bottom: 3px solid #BE0754;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #3DBFAE;
+  background-color: #C10F77;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
   .headerWrapper .search-btn:hover {
@@ -359,12 +359,12 @@ form.newsletter {
 
 form.newsletter button {
   border: none;
-  border-bottom: 3px solid #007F6E;
+  border-bottom: 3px solid #BE0754;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #3DBFAE;
+  background-color: #C10F77;
   margin-left: 10px;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
@@ -393,11 +393,11 @@ footer svg {
 
 .row.footerBottomContent a {
   font-weight: 300;
-  color: #3DBFAE !important; }
+  color: #C10F77 !important; }
 
 footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   font-weight: bold;
-  color: #3DBFAE !important; }
+  color: #C10F77 !important; }
 
 /* ***--- LogIn, Register Styles ---*** */
 .logIn-page, .register-page {
@@ -412,7 +412,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   /*border: 1px solid #dbdfe2;*/ }
 
 .logIn-page .logIn-wrapper a, .register-page .register-wrapper a {
-  color: #3DBFAE !important;
+  color: #C10F77 !important;
   font-weight: bold; }
 
 body.logIn-page h2, body.register-page h2 {
@@ -426,12 +426,12 @@ body.logIn-page h2, body.register-page h2 {
 
 html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #register .register-form .register-btn {
   border: none;
-  border-bottom: 3px solid #007F6E;
+  border-bottom: 3px solid #BE0754;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #3DBFAE;
+  background-color: #C10F77;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
   html body.logIn-page #logIn .logIn-form .logIn-btn:hover, html body.register-page #register .register-form .register-btn:hover {
@@ -573,8 +573,9 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     display: none; }
   h1 {
     font-size: 2rem; }
-  h1 span {
-    font-size: 2rem; }
+  /*h1 span{
+    font-size: 2rem;
+  }*/
   h2 {
     font-size: 1.4rem; }
   h3 {
@@ -649,9 +650,9 @@ html body#dark-theme input, html body#dark-theme button {
 #dark-theme h1, #dark-theme h2, #dark-theme h3 {
   color: #fff; }
 
-#dark-theme h1 span {
-  color: #3DBFAE; }
-
+/*#dark-theme h1 span{
+  color: $focus-color;
+}*/
 #dark-theme p, #dark-theme li, #dark-theme a {
   color: #9b9dad; }
 
