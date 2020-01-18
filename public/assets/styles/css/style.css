@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=latin-ext");
-/*#37EEA3*/
-/*#24CE88*/
+/*#C10F77*/
+/*#BE0754*/
 /* DARK THEME -------------------------- */
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, q, blockquote,
@@ -81,7 +81,7 @@ input {
   padding: 13px 0; }
 
 .ham-nav .logIn-nav a, .ham-nav .register-nav a {
-  color: #C10F77 !important; }
+  color: #3DBFAE !important; }
 
 .ham-nav li:last-child a, #dark-theme .ham-nav li:last-child a {
   border: none; }
@@ -174,7 +174,7 @@ input {
   background: transparent;
   height: initial;
   top: 4px;
-  color: #C10F77; }
+  color: #3DBFAE; }
 
 .ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon {
   width: 36px; }
@@ -280,7 +280,7 @@ input {
   left: -35px; }
 
 /* --- Header --- */
-header {
+.home header {
   padding: 2rem 20px 4rem 20px;
   background-image: url("../../imgs/head-bg04.png");
   background-size: cover;
@@ -316,12 +316,12 @@ header {
 
 .headerWrapper .search-btn {
   border: none;
-  border-bottom: 3px solid #BE0754;
+  border-bottom: 3px solid #007F6E;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #C10F77;
+  background-color: #3DBFAE;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
   .headerWrapper .search-btn:hover {
@@ -359,12 +359,12 @@ form.newsletter {
 
 form.newsletter button {
   border: none;
-  border-bottom: 3px solid #BE0754;
+  border-bottom: 3px solid #007F6E;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #C10F77;
+  background-color: #3DBFAE;
   margin-left: 10px;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
@@ -393,11 +393,11 @@ footer svg {
 
 .row.footerBottomContent a {
   font-weight: 300;
-  color: #C10F77 !important; }
+  color: #3DBFAE !important; }
 
 footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   font-weight: bold;
-  color: #C10F77 !important; }
+  color: #3DBFAE !important; }
 
 /* ***--- LogIn, Register Styles ---*** */
 .logIn-page, .register-page {
@@ -412,7 +412,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   /*border: 1px solid #dbdfe2;*/ }
 
 .logIn-page .logIn-wrapper a, .register-page .register-wrapper a {
-  color: #C10F77 !important;
+  color: #3DBFAE !important;
   font-weight: bold; }
 
 body.logIn-page h2, body.register-page h2 {
@@ -426,12 +426,12 @@ body.logIn-page h2, body.register-page h2 {
 
 html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #register .register-form .register-btn {
   border: none;
-  border-bottom: 3px solid #BE0754;
+  border-bottom: 3px solid #007F6E;
   border-radius: 4px;
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #C10F77;
+  background-color: #3DBFAE;
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
   html body.logIn-page #logIn .logIn-form .logIn-btn:hover, html body.register-page #register .register-form .register-btn:hover {
@@ -650,7 +650,7 @@ html body#dark-theme input, html body#dark-theme button {
   color: #fff; }
 
 #dark-theme h1 span {
-  color: #C10F77; }
+  color: #3DBFAE; }
 
 #dark-theme p, #dark-theme li, #dark-theme a {
   color: #9b9dad; }
