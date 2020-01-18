@@ -650,9 +650,6 @@ html body#dark-theme input, html body#dark-theme button {
 #dark-theme h1, #dark-theme h2, #dark-theme h3 {
   color: #fff; }
 
-/*#dark-theme h1 span{
-  color: $focus-color;
-}*/
 #dark-theme p, #dark-theme li, #dark-theme a {
   color: #9b9dad; }
 
