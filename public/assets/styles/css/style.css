@@ -577,6 +577,8 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     padding: 0; }
   .headerImg {
     display: none; }
+  .home header {
+    padding: 2rem 20px; }
   h1 {
     font-size: 2rem; }
   /*h1 span{
