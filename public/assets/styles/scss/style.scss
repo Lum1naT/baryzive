@@ -19,16 +19,16 @@ h1{
   margin: 1rem 0;
 }
 
-h1 strong{
+/*h1 strong{
   text-shadow: 3px 4px rgba(61, 191, 174, .7), -2px -3px rgba(218, 46, 143, .7);
-}
+}*/
 
 h2{
   font-size: 1.8rem;
 }
 
 h2 strong{
-  color: $menthol-color;
+  color: $focus-color;
 }
 
 h3{
@@ -201,7 +201,7 @@ input{
   transparent;
   height: initial;
   top: 4px;
-  color: $menthol-color;
+  color: #fff;
 }
 
 .ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon{

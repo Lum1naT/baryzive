@@ -35,14 +35,14 @@ h1 {
   font-size: 3rem;
   margin: 1rem 0; }
 
-h1 strong {
-  text-shadow: 3px 4px rgba(61, 191, 174, 0.7), -2px -3px rgba(218, 46, 143, 0.7); }
-
+/*h1 strong{
+  text-shadow: 3px 4px rgba(61, 191, 174, .7), -2px -3px rgba(218, 46, 143, .7);
+}*/
 h2 {
   font-size: 1.8rem; }
 
 h2 strong {
-  color: #3DBFAE; }
+  color: #C10F77; }
 
 h3 {
   font-size: 18px; }
@@ -185,7 +185,7 @@ input {
   background: transparent;
   height: initial;
   top: 4px;
-  color: #3DBFAE; }
+  color: #fff; }
 
 .ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon {
   width: 36px; }
