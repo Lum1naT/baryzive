@@ -640,6 +640,10 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   .footerBottomContent {
     padding-top: 1.8rem; } }
 
+@media only screen and (max-width: 959px) {
+  .headerContentWrapper svg {
+    max-width: 285px; } }
+
 /* DARK THEME -------------------------------------------------------------------------------------------------------- */
 body#dark-theme {
   background: #131417; }
