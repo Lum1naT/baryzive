@@ -102,7 +102,7 @@ input{
 
 .ham-nav #logo svg{
   width: 100%;
-  max-width: 30px;
+  max-width: 25px;
   height: auto;
 }
 
@@ -196,7 +196,7 @@ input{
 .ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon::before {
   content: "MENU";
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: normal;
   background:
   transparent;
   height: initial;
