@@ -716,7 +716,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   }
 
   h1{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   /*h1 span{
@@ -808,9 +808,9 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 }
 
 @media only screen and (max-width: 959px){
-  .headerContentWrapper svg{
+  /*.headerContentWrapper svg{
     max-width: 285px;
-  }
+  }*/
 }
 
 /* DARK THEME -------------------------------------------------------------------------------------------------------- */
