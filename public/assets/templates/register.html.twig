@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block accountTitle %}Register{% endblock %}</title>
 
+
+                        <meta name="google-signin-scope" content="profile email">
+                        <meta name="google-signin-client_id" content="500004357895-e8pjfbmghees1dfgf43gfvmm4o35tqph.apps.googleusercontent.com">
+                        <script src="https://apis.google.com/js/platform.js" async defer></script>
+
         {% block stylesheets %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous" />
         <link rel="stylesheet" href="assets/styles/css/style.css" type="text/css" />
@@ -63,7 +68,7 @@
                          console.log("ID Token: " + id_token);
                        }
                      </script>
-                   
+
                 </div>
               </div>
             </div>
