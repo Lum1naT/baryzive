@@ -822,6 +822,14 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 }
 
 /* LIGHT THEME -------------------------------------------------------------------------------------------------------- */
+body#light-theme{
+  background: $light-bg;
+}
+
+#light-theme h1, #light-theme h2, #light-theme h3{
+  color: $light-primary-color;
+}
+
 #light-theme #fastInfo{
  background: $light-darker-bg;
 }

@@ -649,6 +649,12 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   }*/ }
 
 /* LIGHT THEME -------------------------------------------------------------------------------------------------------- */
+body#light-theme {
+  background: #FFFFFF; }
+
+#light-theme h1, #light-theme h2, #light-theme h3 {
+  color: #000666; }
+
 #light-theme #fastInfo {
   background: #e8f0f6; }
 
