@@ -241,8 +241,6 @@ input.dark-input{
     .ham-nav .menu{
       flex-grow: 2;
       text-align: right;
-      background: $dark-lighter-bg;
-      box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .5);
     }
 
     .ham-nav li {
@@ -252,7 +250,6 @@ input.dark-input{
   	.ham-nav li a {
     	padding: 0;
 		  margin: 0 20px;
-      border-bottom: 1px solid #24262b;
   	}
 
   	.ham-nav .menu {
@@ -784,14 +781,14 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #fff;
+    background: $dark-lighter-bg;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .5);
     border-radius: 4px;
-    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .25);
     z-index: 10;
   }
 
   .ham-nav li a {
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #24262b;
   }
 
   .headerContent{
@@ -851,6 +848,17 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 @media only screen and (max-width: 479px){
   #light-theme .logIn-page, #light-theme .register-page{
     background-color: $light-bg;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  #light-theme .ham-nav .menu {
+    background: $light-bg;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .25);
+  }
+
+  #light-theme .ham-nav li a {
+    border-bottom: 1px solid #f1f1f1;
   }
 }
 /* END OF LIGHT THEME -------------------------------------------------------------------------------------------------------- */
