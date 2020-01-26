@@ -660,14 +660,15 @@ body#light-theme {
 #light-theme .fastInfoIcon svg .active-path {
   fill: #000666; }
 
-#light-theme .or-line span, #light-theme .logIn-wrapper, #light-theme .register-wrapper {
+#light-theme .or-line span {
   background-color: #FFFFFF; }
 
 #light-theme .headerWrapper .search-btn, #light-theme form.newsletter button, html body#light-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#light-theme.register-page #register .register-form .register-btn {
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
 
-#light-theme .logIn-page, #light-theme .register-page {
+/*#light-theme .logIn-page, #light-theme .register-page*/
+#light-theme .logIn-wrapper, #light-theme .register-wrapper {
   background-color: #e8f0f6; }
 
 @media only screen and (max-width: 479px) {
@@ -680,6 +681,6 @@ body#light-theme {
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.25); }
   #light-theme .ham-nav li a {
     border-bottom: 1px solid #f1f1f1;
-    color: #000666; } }
+    color: #000666 !important; } }
 
 /* END OF LIGHT THEME -------------------------------------------------------------------------------------------------------- */
