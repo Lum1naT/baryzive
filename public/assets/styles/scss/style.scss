@@ -845,12 +845,12 @@ body#light-theme{
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6); /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/
 }
 
-#light-theme .logIn-page, #light-theme .register-page{
+#light-theme.logIn-page, #light-theme.register-page{
   background-color: $light-darker-bg;
 }
 
 @media only screen and (max-width: 479px){
-  #light-theme .logIn-page, #light-theme .register-page{
+  #light-theme.logIn-page, #light-theme.register-page{
     background-color: $light-bg;
   }
 }
@@ -876,7 +876,7 @@ body#light-theme{
     color: $light-primary-color;
   }
 
-  .ham-nav li:not(.logIn-nav):not(.register-nav) a{
+  #light-theme .ham-nav li:not(.logIn-nav):not(.register-nav) a{
     color: $light-primary-color;
   }
 }
