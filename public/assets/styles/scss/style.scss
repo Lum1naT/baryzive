@@ -729,7 +729,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   }
 
   a, p, li, input, span{
-    font-size: .9rem;
+    font-size: $phone-fontSize;
   }
 
   input:not([type="checkbox"]){

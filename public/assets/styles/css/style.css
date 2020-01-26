@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=latin-ext");
-/*#C10F77*/
-/*#8C0042*/
 /* DARK THEME -------------------------- */
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, q, blockquote,
@@ -589,7 +587,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   h3 {
     font-size: 1rem; }
   a, p, li, input, span {
-    font-size: .9rem; }
+    font-size: 0.9rem; }
   input:not([type="checkbox"]) {
     width: 100%; }
   section, footer, header {
