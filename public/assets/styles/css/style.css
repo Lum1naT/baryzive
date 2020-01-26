@@ -214,16 +214,15 @@ input.dark-input {
     flex-grow: 1; }
   .ham-nav .menu {
     flex-grow: 2;
-    text-align: right; }
+    text-align: right;
+    clear: none;
+    float: none;
+    max-height: none; }
   .ham-nav li {
     display: inline-block; }
   .ham-nav li a {
     padding: 0;
     margin: 0 20px; }
-  .ham-nav .menu {
-    clear: none;
-    float: none;
-    max-height: none; }
   .ham-nav #logo {
     float: none; }
   .ham-nav .menu-icon {
