@@ -664,8 +664,7 @@ body#light-theme {
   background-color: #FFFFFF; }
 
 #light-theme .headerWrapper .search-btn, #light-theme form.newsletter button, html body#light-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#light-theme.register-page #register .register-form .register-btn {
-  box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
-  /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
+  box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6); }
 
 #light-theme.logIn-page, #light-theme.register-page {
   background-color: #e8f0f6; }
