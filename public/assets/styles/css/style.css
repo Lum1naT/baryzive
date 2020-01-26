@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=latin-ext");
 /* DARK THEME -------------------------- */
+/* LIGHT THEME -------------------------- */
+/*e8f0f6, #F1F1F1*/
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, q, blockquote,
 a, p, u, em, i, b, strong, img,
@@ -21,8 +23,12 @@ table {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: #131417;
   line-height: 1.5;
   overflow-x: hidden; }
+
+html body input, html body button {
+  box-shadow: none; }
 
 h1, h2, h3 {
   color: #FFFFFF;
@@ -63,6 +69,10 @@ input {
   border-radius: 4px;
   color: #9b9dad; }
 
+input.dark-input {
+  background-color: #2a2d34;
+  border: 1px solid #2a2d34; }
+
 .fastInfoWrapper, .footerWrapper, .headerWrapper, .aboutUsWrapper, .ham-nav {
   max-width: 1350px;
   width: 100%;
@@ -86,6 +96,9 @@ input {
 
 .ham-nav .logIn-nav a, .ham-nav .register-nav a {
   color: #C10F77 !important; }
+
+.ham-nav li:not(.logIn-nav):not(.register-nav) a {
+  color: #fff; }
 
 .ham-nav li:last-child a {
   border: none; }
@@ -176,6 +189,9 @@ input {
 .ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0; }
 
+.ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before, .ham-nav .menu-icon .navicon, .ham-nav .menu-icon .navicon::after {
+  background: #fff; }
+
 .ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon::before {
   content: "MENU";
   font-size: 0.7rem;
@@ -198,12 +214,15 @@ input {
     flex-grow: 1; }
   .ham-nav .menu {
     flex-grow: 2;
-    text-align: right; }
+    text-align: right;
+    background: #1E1F26;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5); }
   .ham-nav li {
     display: inline-block; }
   .ham-nav li a {
     padding: 0;
-    margin: 0 20px; }
+    margin: 0 20px;
+    border-bottom: 1px solid #24262b; }
   .ham-nav .menu {
     clear: none;
     float: none;
@@ -348,7 +367,7 @@ input {
 
 /* --- Fast Info --- */
 #fastInfo {
-  background-color: #e8f0f6; }
+  background: #1E1F26; }
 
 #fastInfo .col-md-4 {
   text-align: center; }
@@ -361,6 +380,9 @@ input {
   max-width: 55px;
   height: auto;
   margin-bottom: 10px; }
+
+.fastInfoIcon svg .active-path {
+  fill: #fff; }
 
 form.newsletter {
   margin-top: 10px; }
@@ -407,14 +429,14 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
 
 /* ***--- LogIn, Register Styles ---*** */
 .logIn-page, .register-page {
-  background-color: #f1f1f1; }
+  background-color: #131417; }
 
 .logIn-wrapper, .register-wrapper {
   margin: 0 auto;
   text-align: center;
   /*box-shadow: 0 0 10px rgba(0, 0, 0, .1);*/
   border-radius: 6px;
-  background-color: #fff;
+  background-color: #1E1F26;
   /*border: 1px solid #dbdfe2;*/ }
 
 .logIn-page .logIn-wrapper a, .register-page .register-wrapper a {
@@ -454,7 +476,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   padding: 10px 0; }
 
 .or-line span {
-  background-color: #fff;
+  background-color: #1E1F26;
   position: relative;
   z-index: 1;
   padding: 0 10px; }
@@ -526,7 +548,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 
 @media only screen and (max-width: 479px) {
   .logIn-page, .register-page {
-    background-color: #fff; }
+    background-color: #1E1F26; }
   .logIn-page #logIn, .register-page #register {
     padding: 0; }
   .logIn-page .logIn-text, .register-page .register-text {
@@ -554,13 +576,6 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   .col-md-6.copyright {
     text-align: right; }
   /* ***--- LogIn page ---*** */
-  /*.logIn-wrapper, .register-wrapper {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
-  }*/
   .logIn-wrapper > .row .col-md-6:first-child, .register-wrapper > .row .col-md-6:first-child {
     padding-right: 5px; }
   .logIn-wrapper > .row .col-md-6:last-child, .register-wrapper > .row .col-md-6:last-child {
@@ -637,66 +652,25 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     max-width: 285px;
   }*/ }
 
-/* DARK THEME -------------------------------------------------------------------------------------------------------- */
-body {
-  background: #131417; }
-
-/* .headerContentWrapper{
-  background-color: $dark-darker-bg;
-}*/
-html body input, html body button {
-  box-shadow: none; }
-
-.dark-input {
-  background-color: #2a2d34;
-  border: 1px solid #2a2d34; }
-
-.fastInfoIcon svg .active-path {
-  fill: #fff; }
-
-#fastInfo {
-  background: #1E1F26; }
-
-h1, h2, h3 {
-  color: #fff; }
-
-.ham-nav li:not(.logIn-nav):not(.register-nav) a {
-  color: #fff; }
-
-.logIn-wrapper, .register-wrapper {
-  background-color: #1E1F26; }
-
-.or-line span {
-  background-color: #1E1F26; }
-
-.ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before, .ham-nav .menu-icon .navicon, .ham-nav .menu-icon .navicon::after {
-  background: #fff; }
-
-.ham-nav .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent; }
-
-body.logIn-page h2, body.register-page h2 {
-  color: #fff; }
-
-html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #register .register-form .register-btn {
-  box-shadow: none; }
-
-.logIn-page, .register-page {
-  background-color: #131417; }
-
-@media only screen and (max-width: 479px) {
-  .logIn-page, .register-page {
-    background-color: #1E1F26; } }
-
-@media only screen and (max-width: 767px) {
-  .ham-nav .menu {
-    background: #1e1f26;
-    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5); }
-  .ham-nav li a {
-    border-bottom: 1px solid #24262b; } }
-
-/* END OF DARK THEME -------------------------------------------------------------------------------------------------------- */
 /* LIGHT THEME -------------------------------------------------------------------------------------------------------- */
+#light-theme #fastInfo {
+  background: #e8f0f6; }
+
+#light-theme .fastInfoIcon svg .active-path {
+  fill: #e8f0f6; }
+
+#light-theme .or-line span, #light-theme .logIn-wrapper, #light-theme .register-wrapper {
+  background-color: #FFFFFF; }
+
 #light-theme .headerWrapper .search-btn, #light-theme form.newsletter button, html body#light-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#light-theme.register-page #register .register-form .register-btn {
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
+
+#light-theme .logIn-page, #light-theme .register-page {
+  background-color: #e8f0f6; }
+
+@media only screen and (max-width: 479px) {
+  #light-theme .logIn-page, #light-theme .register-page {
+    background-color: #FFFFFF; } }
+
+/* END OF LIGHT THEME -------------------------------------------------------------------------------------------------------- */

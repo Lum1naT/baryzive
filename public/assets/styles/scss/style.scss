@@ -4,8 +4,13 @@
 
 body{
   font-family: $primary-font;
+  background: $dark-darker-bg;
   line-height: 1.5;
   overflow-x: hidden;
+}
+
+html body input, html body button{
+  box-shadow: none;
 }
 
 h1, h2, h3{
@@ -57,6 +62,11 @@ input{
   color: $secondary-color;
 }
 
+input.dark-input{
+  background-color: $dark-input;
+  border: 1px solid $dark-input;
+}
+
 .fastInfoWrapper, .footerWrapper, .headerWrapper, .aboutUsWrapper, .ham-nav{
   max-width: $max-width;
   width: 100%;
@@ -83,6 +93,10 @@ input{
 
 .ham-nav .logIn-nav a, .ham-nav .register-nav a{
   color: $link-color;
+}
+
+.ham-nav li:not(.logIn-nav):not(.register-nav) a{
+  color: #fff;
 }
 
 .ham-nav li:last-child a{
@@ -193,6 +207,10 @@ input{
   	top: 0;
 }
 
+.ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before,  .ham-nav .menu-icon .navicon,  .ham-nav .menu-icon .navicon::after {
+ background: #fff;
+}
+
 .ham-nav .menu-btn:not(:checked) ~ .menu-icon .navicon::before {
   content: "MENU";
   font-size: 0.7rem;
@@ -223,6 +241,8 @@ input{
     .ham-nav .menu{
       flex-grow: 2;
       text-align: right;
+      background: $dark-lighter-bg;
+      box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .5);
     }
 
     .ham-nav li {
@@ -232,6 +252,7 @@ input{
   	.ham-nav li a {
     	padding: 0;
 		  margin: 0 20px;
+      border-bottom: 1px solid #24262b;
   	}
 
   	.ham-nav .menu {
@@ -400,7 +421,7 @@ input{
 
 /* --- Fast Info --- */
 #fastInfo{
-  background-color: #e8f0f6;
+  background: $dark-lighter-bg;
 }
 
 #fastInfo .col-md-4{
@@ -416,6 +437,10 @@ input{
   max-width: 55px;
   height: auto;
   margin-bottom: 10px;
+}
+
+.fastInfoIcon svg .active-path{
+  fill: #fff;
 }
 
 // Newsletter preview
@@ -474,7 +499,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 
 /* ***--- LogIn, Register Styles ---*** */
 .logIn-page, .register-page {
-    background-color: #f1f1f1;
+    background-color: $dark-darker-bg;
 }
 
 .logIn-wrapper, .register-wrapper {
@@ -482,7 +507,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
   text-align: center;
   /*box-shadow: 0 0 10px rgba(0, 0, 0, .1);*/
   border-radius: 6px;
-  background-color: #fff;
+  background-color: $dark-lighter-bg;
   /*border: 1px solid #dbdfe2;*/
 }
 
@@ -531,7 +556,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 }
 
 .or-line span{
-  background-color: #fff;
+  background-color: $dark-lighter-bg;
   position: relative;
   z-index: 1;
   padding: 0 10px;
@@ -620,7 +645,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 
 @media only screen and (max-width: 479px){
   .logIn-page, .register-page{
-    background-color: #fff;
+    background-color: $dark-lighter-bg;
   }
 
   .logIn-page #logIn, .register-page #register{
@@ -674,14 +699,6 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   }
 
   /* ***--- LogIn page ---*** */
-  /*.logIn-wrapper, .register-wrapper {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
-  }*/
-
   .logIn-wrapper > .row .col-md-6:first-child, .register-wrapper > .row .col-md-6:first-child{
     padding-right: 5px;
   }
@@ -810,87 +827,30 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   }*/
 }
 
-/* DARK THEME -------------------------------------------------------------------------------------------------------- */
-body{
-  background: $dark-darker-bg;
-}
-
-/* .headerContentWrapper{
-  background-color: $dark-darker-bg;
-}*/
-
-html body input, html body button{
-  box-shadow: none;
-}
-
- .dark-input{
-  background-color: $dark-input;
-  border: 1px solid $dark-input;
-}
-
- .fastInfoIcon svg .active-path{
-  fill: #fff;
-}
-
- #fastInfo{
-  background: $dark-lighter-bg;
-}
-
- h1,  h2,  h3{
-  color: #fff;
-}
-
- .ham-nav li:not(.logIn-nav):not(.register-nav) a{
-  color: #fff;
-}
-
- .logIn-wrapper,  .register-wrapper {
-    background-color: $dark-lighter-bg;
-}
-
- .or-line span {
-    background-color: $dark-lighter-bg;
-}
-
- .ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before,  .ham-nav .menu-icon .navicon,  .ham-nav .menu-icon .navicon::after {
-  background: #fff;
-}
-
- .ham-nav .menu-btn:checked ~ .menu-icon .navicon{
-  background: transparent;
-}
-
-body.logIn-page h2, body.register-page h2 {
-    color: #fff;
-}
-
-html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #register .register-form .register-btn{
-	box-shadow: none;
-}
-
-.logIn-page, .register-page {
-    background-color: $dark-darker-bg;
-}
-
-@media only screen and (max-width: 479px){
-  .logIn-page, .register-page{
-    background-color: $dark-lighter-bg;
-  }
-}
-
-@media only screen and (max-width: 767px){
-   .ham-nav .menu {
-    background: #1e1f26;
-    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .5);
-  }
-
-   .ham-nav li a{
-    border-bottom: 1px solid #24262b;
-  }
-}
-/* END OF DARK THEME -------------------------------------------------------------------------------------------------------- */
-
 /* LIGHT THEME -------------------------------------------------------------------------------------------------------- */
+#light-theme #fastInfo{
+ background: $light-darker-bg;
+}
+
+#light-theme .fastInfoIcon svg .active-path{
+ fill: $light-darker-bg;
+}
+
+#light-theme .or-line span, #light-theme .logIn-wrapper, #light-theme .register-wrapper {
+   background-color: $light-bg;
+}
+
 #light-theme .headerWrapper .search-btn, #light-theme form.newsletter button, html body#light-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#light-theme.register-page #register .register-form .register-btn{
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6); /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/
 }
+
+#light-theme .logIn-page, #light-theme .register-page {
+    background-color: $light-darker-bg;
+}
+
+@media only screen and (max-width: 479px){
+  #light-theme .logIn-page, #light-theme .register-page{
+    background-color: $light-bg;
+  }
+}
+/* END OF LIGHT THEME -------------------------------------------------------------------------------------------------------- */
