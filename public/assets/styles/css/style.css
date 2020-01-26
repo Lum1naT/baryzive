@@ -27,7 +27,7 @@ body {
   overflow-x: hidden; }
 
 h1, h2, h3 {
-  color: #000666;
+  color: #FFFFFF;
   font-weight: bold;
   margin-bottom: 10px; }
 
@@ -333,9 +333,7 @@ input {
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #C10F77;
-  box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
-  /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
+  background-color: #C10F77; }
   .headerWrapper .search-btn:hover {
     background-color: #DE2774; }
 
@@ -377,9 +375,7 @@ form.newsletter button {
   font-weight: 500;
   color: white;
   background-color: #C10F77;
-  margin-left: 10px;
-  box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
-  /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
+  margin-left: 10px; }
   form.newsletter button:hover {
     background-color: #DE2774; }
 
@@ -443,9 +439,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   padding: 15px;
   font-weight: 500;
   color: white;
-  background-color: #C10F77;
-  box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
-  /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
+  background-color: #C10F77; }
   html body.logIn-page #logIn .logIn-form .logIn-btn:hover, html body.register-page #register .register-form .register-btn:hover {
     background-color: #DE2774; }
 
@@ -704,3 +698,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     border-bottom: 1px solid #24262b; } }
 
 /* END OF DARK THEME -------------------------------------------------------------------------------------------------------- */
+/* LIGHT THEME -------------------------------------------------------------------------------------------------------- */
+#light-theme .headerWrapper .search-btn, #light-theme form.newsletter button, html body#light-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#light-theme.register-page #register .register-form .register-btn {
+  box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
+  /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
