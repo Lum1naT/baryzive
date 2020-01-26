@@ -439,7 +439,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   font-weight: bold; }
 
 body.logIn-page h2, body.register-page h2 {
-  color: #000666; }
+  color: #FFFFFF; }
 
 .logIn-page .logIn-wrapper input:not([name="remember-me"]), .register-page .register-wrapper input:not([type="checkbox"]) {
   width: 100%;
@@ -651,7 +651,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 body#light-theme {
   background: #FFFFFF; }
 
-#light-theme h2, #light-theme h3 {
+#light-theme h2, #light-theme h3, body#light-theme.logIn-page h2, body#light-theme.register-page h2 {
   color: #000666; }
 
 #light-theme #fastInfo {

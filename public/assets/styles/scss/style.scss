@@ -510,7 +510,7 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
 }
 
 body.logIn-page h2, body.register-page h2{
-  color: #000666;
+  color: $primary-color;
 }
 
 .logIn-page .logIn-wrapper input:not([name="remember-me"]), .register-page .register-wrapper input:not([type="checkbox"]){
@@ -825,7 +825,7 @@ body#light-theme{
   background: $light-bg;
 }
 
-#light-theme h2, #light-theme h3{
+#light-theme h2, #light-theme h3, body#light-theme.logIn-page h2, body#light-theme.register-page h2{
   color: $light-primary-color;
 }
 
