@@ -48,7 +48,7 @@ h3 {
   font-size: 18px; }
 
 p, li {
-  color: #6F83A8;
+  color: #9b9dad;
   font-weight: 500; }
 
 a {
@@ -63,7 +63,7 @@ input {
   padding: 15px;
   font-weight: 500;
   border-radius: 4px;
-  color: #6F83A8; }
+  color: #9b9dad; }
 
 .fastInfoWrapper, .footerWrapper, .headerWrapper, .aboutUsWrapper, .ham-nav {
   max-width: 1350px;
@@ -89,7 +89,7 @@ input {
 .ham-nav .logIn-nav a, .ham-nav .register-nav a {
   color: #C10F77 !important; }
 
-.ham-nav li:last-child a, #dark-theme .ham-nav li:last-child a {
+.ham-nav li:last-child a {
   border: none; }
 
 .ham-nav ul {
@@ -389,7 +389,7 @@ footer h4 {
 
 footer .footerBox ul li a, footer .footerBox ul li {
   /*font-weight: 300;*/
-  color: #6F83A8; }
+  color: #9b9dad; }
 
 footer .footerBox ul li strong {
   font-weight: bold; }
@@ -646,74 +646,61 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   }*/ }
 
 /* DARK THEME -------------------------------------------------------------------------------------------------------- */
-body#dark-theme {
+body {
   background: #131417; }
 
-/*#dark-theme .headerContentWrapper{
+/* .headerContentWrapper{
   background-color: $dark-darker-bg;
 }*/
-html body#dark-theme input, html body#dark-theme button {
+html body input, html body button {
   box-shadow: none; }
 
-#dark-theme .dark-input {
+.dark-input {
   background-color: #2a2d34;
-  border: 1px solid #2a2d34;
-  color: #9b9dad; }
+  border: 1px solid #2a2d34; }
 
-#dark-theme .fastInfoIcon svg .active-path {
+.fastInfoIcon svg .active-path {
   fill: #fff; }
 
-#dark-theme #fastInfo {
+#fastInfo {
   background: #1E1F26; }
 
-#dark-theme h1, #dark-theme h2, #dark-theme h3 {
+h1, h2, h3 {
   color: #fff; }
 
-#dark-theme p, #dark-theme li, #dark-theme a {
-  color: #9b9dad; }
-
-#dark-theme .ham-nav li:not(.logIn-nav):not(.register-nav) a {
+.ham-nav li:not(.logIn-nav):not(.register-nav) a {
   color: #fff; }
 
-#dark-theme .logIn-wrapper, #dark-theme .register-wrapper {
+.logIn-wrapper, .register-wrapper {
   background-color: #1E1F26; }
 
-#dark-theme .or-line span {
+.or-line span {
   background-color: #1E1F26; }
 
-#dark-theme .or-line::after {
-  background: #9b9dad; }
-
-#dark-theme .ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before, #dark-theme .ham-nav .menu-icon .navicon, #dark-theme .ham-nav .menu-icon .navicon::after {
+.ham-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before, .ham-nav .menu-icon .navicon, .ham-nav .menu-icon .navicon::after {
   background: #fff; }
 
-#dark-theme .ham-nav .menu-btn:checked ~ .menu-icon .navicon {
+.ham-nav .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent; }
 
-body#dark-theme.logIn-page h2, body#dark-theme.register-page h2 {
+body.logIn-page h2, body.register-page h2 {
   color: #fff; }
 
-#dark-theme .logIn-text .active-path, #dark-theme .register-text .active-path {
-  fill: #9b9dad; }
-
-#dark-theme .logIn-form .remember-me span, #dark-theme .register-conditions span, p, li {
-  color: #9b9dad; }
-
-html body#dark-theme.logIn-page #logIn .logIn-form .logIn-btn, html body#dark-theme.register-page #register .register-form .register-btn {
+html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #register .register-form .register-btn {
   box-shadow: none; }
 
-#dark-theme.logIn-page, #dark-theme.register-page {
+.logIn-page, .register-page {
   background-color: #131417; }
 
 @media only screen and (max-width: 479px) {
-  #dark-theme.logIn-page, #dark-theme.register-page {
+  .logIn-page, .register-page {
     background-color: #1E1F26; } }
 
 @media only screen and (max-width: 767px) {
-  #dark-theme .ham-nav .menu {
+  .ham-nav .menu {
     background: #1e1f26;
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5); }
-  #dark-theme .ham-nav li a {
+  .ham-nav li a {
     border-bottom: 1px solid #24262b; } }
 
 /* END OF DARK THEME -------------------------------------------------------------------------------------------------------- */

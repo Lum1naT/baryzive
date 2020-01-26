@@ -18,12 +18,12 @@ $(document).ready (function(){
   });
 
   if(swipeBtn.is(':checked')){
-    body.attr('id', 'dark-theme');
+    body.attr('id', 'light-theme');
   }
 
   swipeBtn.click(function(){
     if(swipeBtn.is(':checked')){
-      body.attr('id', 'dark-theme');
+      body.attr('id', 'light-theme');
     }
 
     else {
