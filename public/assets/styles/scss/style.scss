@@ -826,7 +826,7 @@ body#light-theme{
   background: $light-bg;
 }
 
-#light-theme h1, #light-theme h2, #light-theme h3{
+#light-theme h2, #light-theme h3{
   color: $light-primary-color;
 }
 
@@ -835,7 +835,7 @@ body#light-theme{
 }
 
 #light-theme .fastInfoIcon svg .active-path{
- fill: $light-darker-bg;
+ fill: $light-primary-color;
 }
 
 #light-theme .or-line span, #light-theme .logIn-wrapper, #light-theme .register-wrapper {

@@ -652,14 +652,14 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 body#light-theme {
   background: #FFFFFF; }
 
-#light-theme h1, #light-theme h2, #light-theme h3 {
+#light-theme h2, #light-theme h3 {
   color: #000666; }
 
 #light-theme #fastInfo {
   background: #e8f0f6; }
 
 #light-theme .fastInfoIcon svg .active-path {
-  fill: #e8f0f6; }
+  fill: #000666; }
 
 #light-theme .or-line span, #light-theme .logIn-wrapper, #light-theme .register-wrapper {
   background-color: #FFFFFF; }
