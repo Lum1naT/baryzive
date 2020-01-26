@@ -668,12 +668,13 @@ body#light-theme {
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
 
 /*#light-theme .logIn-page, #light-theme .register-page*/
-#light-theme .logIn-wrapper, #light-theme .register-wrapper {
-  background-color: #e8f0f6; }
-
 @media only screen and (max-width: 479px) {
   #light-theme .logIn-page, #light-theme .register-page {
     background-color: #FFFFFF; } }
+
+@media only screen and (min-width: 768px) {
+  #light-theme .logIn-wrapper, #light-theme .register-wrapper {
+    background-color: #e8f0f6; } }
 
 @media only screen and (max-width: 767px) {
   #light-theme .ham-nav .menu {

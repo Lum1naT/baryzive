@@ -847,13 +847,15 @@ body#light-theme{
 
 /*#light-theme .logIn-page, #light-theme .register-page*/
 
-#light-theme .logIn-wrapper, #light-theme .register-wrapper {
-    background-color: $light-darker-bg;
-}
-
 @media only screen and (max-width: 479px){
   #light-theme .logIn-page, #light-theme .register-page{
     background-color: $light-bg;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  #light-theme .logIn-wrapper, #light-theme .register-wrapper {
+      background-color: $light-darker-bg;
   }
 }
 
