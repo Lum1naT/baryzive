@@ -667,21 +667,27 @@ body#light-theme {
   box-shadow: 0 25px 25px -15px rgba(238, 55, 132, 0.6);
   /*0 25px 25px -15px rgba(55, 238, 163, 0.7)*/ }
 
-/*#light-theme .logIn-page, #light-theme .register-page*/
+#light-theme .logIn-page, #light-theme .register-page {
+  background-color: #e8f0f6; }
+
 @media only screen and (max-width: 479px) {
   #light-theme .logIn-page, #light-theme .register-page {
     background-color: #FFFFFF; } }
 
 @media only screen and (min-width: 768px) {
   #light-theme .logIn-wrapper, #light-theme .register-wrapper {
-    background-color: #e8f0f6; } }
+    background-color: #FFFFFF; } }
 
 @media only screen and (max-width: 767px) {
   #light-theme .ham-nav .menu {
     background: #FFFFFF;
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.25); }
+  #light-theme .logIn-page, #light-theme .register-page {
+    background-color: #FFFFFF; }
   #light-theme .ham-nav li a {
     border-bottom: 1px solid #f1f1f1;
-    color: #000666 !important; } }
+    color: #000666; }
+  .ham-nav li:not(.logIn-nav):not(.register-nav) a {
+    color: #000666; } }
 
 /* END OF LIGHT THEME -------------------------------------------------------------------------------------------------------- */
