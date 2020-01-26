@@ -87,7 +87,6 @@ input.dark-input{
 .ham-nav li a {
   display: block;
 	font-weight: bold;
-  color: #000666;
   padding: 13px 0;
 }
 
@@ -864,6 +863,7 @@ body#light-theme{
 
   #light-theme .ham-nav li a {
     border-bottom: 1px solid #f1f1f1;
-  }
+    color: #000666;
+  }  
 }
 /* END OF LIGHT THEME -------------------------------------------------------------------------------------------------------- */
