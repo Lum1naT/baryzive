@@ -2,6 +2,13 @@
 @import "partials/variables.scss";
 @import "partials/reset.scss";
 
+@media only screen and (max-width: 767px){
+  .my-video-dimensions {
+      width: 100%;
+      height: 220px;
+  }
+}
+
 body{
   font-family: $primary-font;
   background: $dark-darker-bg;
