@@ -471,7 +471,7 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   height: auto;
   margin-bottom: 10px; }
 
-body.register-page .register-text svg path, body.login-page .login-text svg path {
+body.register-page .register-text svg path, body.logIn-page .logIn-text svg path {
   fill: #9b9dad; }
 
 .or-line {
