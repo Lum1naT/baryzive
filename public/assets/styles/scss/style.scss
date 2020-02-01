@@ -646,7 +646,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     display: inline-block;
     position: relative;
     margin: 5px;
-    background: red;
+    background: transparent;
     vertical-align: top;
     box-sizing: border-box;
 }
@@ -668,7 +668,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 @media only screen and (max-width: 767px){
   .voucher-cat-box img{
-    max-width: 145px;
+    max-width: 120px;
   }
 }
 
