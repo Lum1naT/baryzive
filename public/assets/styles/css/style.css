@@ -607,6 +607,9 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     font-size: 0.9rem; }
   input:not([type="checkbox"]) {
     width: 100%; }
+  .search {
+    max-width: 298px;
+    margin: 0 auto; }
   section, footer, header {
     padding: 1.8rem;
     text-align: center; }
