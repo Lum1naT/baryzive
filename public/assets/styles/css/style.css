@@ -541,6 +541,11 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   padding-top: 1.8rem; }
 
 /* ***--- End of LogIn and Register page ---*** */
+.add-voucher.voucher-cat-box {
+  width: 100%;
+  background: red;
+  border-radius: 4px; }
+
 .voucher-cats-wrapper {
   overflow-x: scroll;
   width: 100%;
@@ -570,7 +575,11 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 @media only screen and (max-width: 767px) {
   .voucher-cat-box img {
-    max-width: 120px; } }
+    max-width: 120px; }
+  .add-voucher.voucher-cat-box {
+    width: 100%;
+    max-width: 120px;
+    min-height: 166px; } }
 
 /* --- Responsive --- */
 @media only screen and (min-width: 480px) {

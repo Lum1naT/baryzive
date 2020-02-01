@@ -635,6 +635,12 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 /* ***--- End of LogIn and Register page ---*** */
 
+.add-voucher.voucher-cat-box {
+    width: 100%;
+    background: red;
+    border-radius: 4px;
+}
+
 .voucher-cats-wrapper {
     overflow-x: scroll;
     width: 100%;
@@ -669,6 +675,12 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 @media only screen and (max-width: 767px){
   .voucher-cat-box img{
     max-width: 120px;
+  }
+
+  .add-voucher.voucher-cat-box {
+    width: 100%;
+    max-width: 120px;
+    min-height: 166px;
   }
 }
 
