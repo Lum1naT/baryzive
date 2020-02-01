@@ -338,7 +338,7 @@ input {
 
 .search input {
   width: 100%;
-  max-width: 20rem; }
+  /*max-width: 20rem;*/ }
 
 .headerWrapper .add-city-bar {
   margin: 0 0 10px 0; }
@@ -610,6 +610,8 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
   section, footer, header {
     padding: 1.8rem;
     text-align: center; }
+  .headerContentWrapper svg {
+    max-width: 298px; }
   .logIn-wrapper, .register-wrapper {
     padding: 0 1.8rem 1.8rem 1.8rem; }
   .logIn-page header, .register-page header {
