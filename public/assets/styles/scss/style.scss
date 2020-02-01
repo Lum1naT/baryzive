@@ -644,20 +644,26 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .voucher-cat-box {
     display: inline-block;
+    position: relative;
     margin: 5px;
     background: red;
     vertical-align: top;
     box-sizing: border-box;
-    border-radius: 4px;
 }
 
 .voucher-cat-box img{
   width: 100%;
   display: block;
+  border-radius: 4px;
 }
 
 .voucher-cat-box p{
-  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  font-weight: bold;
+  color: white;
 }
 
 @media only screen and (max-width: 767px){
