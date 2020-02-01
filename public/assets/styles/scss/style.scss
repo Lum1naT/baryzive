@@ -27,7 +27,7 @@ h1, h2, h3{
 }
 
 h1{
-  font-size: 3rem;
+  /*font-size: 3rem;*/
   margin: 1rem 0;
 }
 
@@ -69,7 +69,7 @@ input{
   color: $secondary-color;
 }
 
-input.dark-input{
+input{
   background-color: $dark-input;
   border: 1px solid $dark-input;
 }
@@ -660,6 +660,10 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 @media only screen and (min-width: 768px){
   .hamMenu{
     display: none;
+  }
+
+  h1 {
+    font-size: 1.75rem;
   }
 
   .logIn-wrapper, .register-wrapper{
