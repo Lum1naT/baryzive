@@ -565,6 +565,8 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     padding: 4rem 20px; }
   header {
     padding: 2rem 20px 4rem 20px; }
+  .headerWrapper {
+    padding: 5rem 0; }
   .register-page header, .logIn-page header {
     padding: 2rem 20px; }
   .register-page #register, .logIn-page #logIn {
