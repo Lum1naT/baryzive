@@ -635,6 +635,21 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 /* ***--- End of LogIn and Register page ---*** */
 
+.voucher-cats-wrapper {
+    overflow-x: scroll;
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.voucher-cat-box {
+    display: inline-block;
+    margin: 5px;
+    background: red;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 /* --- Responsive --- */
 @media only screen and (min-width: 480px){
     .logIn-wrapper, .register-wrapper{
