@@ -118,7 +118,7 @@ input {
 
 .ham-nav #logo svg {
   width: 100%;
-  max-width: 25px;
+  max-width: 35px;
   height: auto; }
 
 .ham-nav #logo img {
@@ -449,8 +449,8 @@ body.logIn-page h2, body.register-page h2 {
 .logIn-page .logIn-wrapper input:not([name="remember-me"]), .register-page .register-wrapper input:not([type="checkbox"]) {
   width: 100%;
   margin: 5px 0;
-  background-color: #fff;
-  border: 1px solid #dbdfe2; }
+  /*background-color: #fff;
+  border: 1px solid #dbdfe2;*/ }
 
 html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #register .register-form .register-btn {
   border: none;
@@ -607,6 +607,8 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     font-size: 1rem; }
   a, p, li, input, span {
     font-size: 0.9rem; }
+  .ham-nav #logo svg {
+    max-width: 25px; }
   input:not([type="checkbox"]) {
     width: 100%; }
   .search {
