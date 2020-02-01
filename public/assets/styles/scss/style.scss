@@ -646,8 +646,19 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     display: inline-block;
     margin: 5px;
     background: red;
-    padding: 20px;
+    vertical-align: top;
     box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.voucher-cat-box img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px){
+  .voucher-cat-box img{
+    max-width: 145px;
+  }
 }
 
 /* --- Responsive --- */
