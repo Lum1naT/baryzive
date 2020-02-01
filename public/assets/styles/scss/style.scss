@@ -653,6 +653,11 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .voucher-cat-box img{
   width: 100%;
+  display: block;
+}
+
+.voucher-cat-box p{
+  display: none;
 }
 
 @media only screen and (max-width: 767px){
