@@ -47,7 +47,7 @@ h3{
   font-size: 18px;
 }
 
-p, li {
+p, li, span {
   color: $secondary-color;
   font-weight: 500;
 }
@@ -550,6 +550,10 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
     margin-bottom: 10px;
 }
 
+body.register-page .register-text svg path, body.login-page .login-text svg path {
+    fill: #9b9dad;
+}
+
 .or-line {
     position: relative;
     padding: 10px 0;
@@ -623,7 +627,6 @@ html body.logIn-page #logIn .logIn-form .logIn-btn, html body.register-page #reg
 }
 
 .logIn-form .remember-me span, .register-conditions span{
-  color: #6F83A8;
   font-weight: 500;
 }
 
