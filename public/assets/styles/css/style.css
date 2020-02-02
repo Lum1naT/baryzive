@@ -560,6 +560,9 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   vertical-align: top;
   box-sizing: border-box; }
 
+.voucher-list {
+  padding-top: 1.4rem; }
+
 .voucher-list-item {
   display: flex;
   flex-flow: row;
@@ -698,7 +701,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     max-width: 298px;
     margin: 0 auto; }
   section, footer, header {
-    padding: 1.8rem;
+    padding: 1.4rem;
     text-align: center; }
   .headerContentWrapper svg {
     max-width: 298px; }
