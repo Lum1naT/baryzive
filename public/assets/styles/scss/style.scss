@@ -689,6 +689,10 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     margin-right: 5px;
 }
 
+.add-voucher-content{
+  white-space: initial;
+}
+
 .voucher-cat-box img{
   width: 100%;
   display: block;
@@ -705,7 +709,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     margin: 0;
 }
 
-.voucher-cat-box p{
+.voucher-cat-box > p{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
