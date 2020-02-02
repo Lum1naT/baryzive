@@ -665,14 +665,14 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .voucher-item-info{
   float: left;
-  width: 70%;
+  width: 75%;
   text-align: left;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 
 .voucher-item-btn{
   float: right;
-  width: 30%;
+  width: 25%;
   text-align: right;
 }
 
@@ -723,6 +723,10 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 @media only screen and (max-width: 767px){
   .voucher-cat-box img{
     max-width: 120px;
+  }
+
+  .voucher-item-text h3, .voucher-item-text p{
+    max-width: 110px;
   }
 
   .add-voucher.voucher-cat-box {
