@@ -667,6 +667,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   float: left;
   width: 70%;
   text-align: left;
+  white-space: nowrap;
 }
 
 .voucher-item-btn{
@@ -833,7 +834,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   }
 
   .home header{
-    padding: 1.8rem;
+    padding: 1.4rem;
   }
 
   h1{
