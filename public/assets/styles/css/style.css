@@ -601,6 +601,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .voucher-list-wrapper ul li {
   padding: 10px;
+  border-radius: 4px;
   box-sizing: border-box; }
 
 .voucher-list-wrapper ul li:nth-child(2n) {
