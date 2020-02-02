@@ -657,6 +657,29 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     box-sizing: border-box;
 }
 
+.voucher-list-item {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.voucher-item-info{
+  float: left;
+  width: 70%;
+  text-align: left;
+}
+
+.voucher-item-btn{
+  float: right;
+  width: 30%;
+  text-align: right;
+}
+
+.voucher-item-img, .voucher-item-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .voucher-cat-box img{
   width: 100%;
   display: block;
