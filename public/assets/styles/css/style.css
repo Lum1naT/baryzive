@@ -599,6 +599,13 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   font-weight: bold;
   color: white; }
 
+.voucher-list-wrapper ul li {
+  padding: 10px;
+  box-sizing: border-box; }
+
+.voucher-list-wrapper ul li:nth-child(2n) {
+  background: #18191C; }
+
 @media only screen and (max-width: 767px) {
   .voucher-cat-box img {
     max-width: 120px; }
