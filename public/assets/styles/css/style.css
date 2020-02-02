@@ -587,7 +587,20 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   margin-right: 5px; }
 
 .add-voucher-content {
-  white-space: initial; }
+  white-space: initial;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  box-sizing: border-box; }
+
+.add-voucher-content svg {
+  max-width: 40px;
+  background: linear-gradient(-45deg, #964BF2, #C10F77);
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 5px; }
 
 .voucher-cat-box img {
   width: 100%;
@@ -695,7 +708,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   h3 {
     font-size: 1rem; }
   a, p, li, input, span {
-    font-size: 0.9rem; }
+    font-size: 0.8rem; }
   .ham-nav #logo svg {
     max-width: 25px; }
   input:not([type="checkbox"]) {
