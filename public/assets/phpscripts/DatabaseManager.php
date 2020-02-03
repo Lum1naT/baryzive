@@ -46,22 +46,78 @@ function listAllUsers($pdoInstance){
   }
  }
 
+ function authenticateUser($pdoInstance, $email, $authenticationCode){
+   // TODO: check if $email and $authenticationCode match
+   $stmt = $pdoInstance->query('SELECT authentication_code FROM users WHERE email = ?');
+
+   return true;
+ }
+
+ /*
+ *  @name generateRandomString
+ *
+ * @returns string
+ *
+ * @parameters
+ *  $length [int]
+ *  $characterSwitch [int (7)]
+ *
+ *
+ */
+
+ function generateRandomString($length, $characterSwitch) {
+
+   switch ($characterSwitch) {
+     case 1:
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        break;
+     case 2:
+        $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        break;
+     case 3:
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyz';
+        break;
+      case 4:
+        $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        break;
+      case 5:
+        $characters = '0123456789';
+        break;
+      case 6:
+        $characters = 'abcdefghijklmnopqrstuvwxyz';
+        break;
+      case 7:
+        $characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        break;
+     default:
+       break;
+   }
+
+     $charactersLength = strlen($characters);
+     $randomString = '';
+     for ($i = 0; $i < $length; $i++) {
+         $randomString .= $characters[rand(0, $charactersLength - 1)];
+     }
+     return $randomString;
+ }
 
  function createNewUser($pdoInstance, $oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale, $link){
-  /*
 
-          $stmt = $pdo->prepare("INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link, role, account_status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+
+
+          $stmt = $pdo->prepare("INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link, role, account_status, authenticationCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
   try {
       $pdo->beginTransaction();
 
-      $stmt->execute(["intern", "42069", "David", "Vítek", "K0jnCZ@gmail.com", "M", "cz_cs",  "customlink", "1", "0"]);
+      $stmt->execute(["intern", "42069", "David", "Vítek", "K0jnCZ@gmail.com", "M", "cz_cs",  "customlink", "1", "0", generateRandomString(6,2)]);
 
       $pdo->commit();
   }catch (Exception $e){
       $pdo->rollback();
       throw $e;
   }
-  */
+
 
 
  }

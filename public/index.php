@@ -84,7 +84,7 @@ Route::add('/contact-form',function(){
 *
 */
 Route::add('/bar/(.*)/(.*)',function($barName, $cameraName){
-  // TODO: check if bar is in DB
+  // TODO: check if $barName is in DB
 
     echo $barName.' is a great bar! <br/> You are viewing '. $cameraName . ' camera.' ;
 });
