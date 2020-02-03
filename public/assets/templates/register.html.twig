@@ -115,9 +115,6 @@
              fjs.parentNode.insertBefore(js, fjs);
            }(document, 'script', 'facebook-jssdk'));
 
-           FB.login(function(response) {
-      console.log(response);
-   }, {scope: 'email'});
 
 FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
@@ -127,7 +124,7 @@ FB.getLoginStatus(function(response) {
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
-  });
+  }, {scope: 'email'});
 }
         </script>
 
