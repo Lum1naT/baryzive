@@ -44,8 +44,10 @@
               <div class="col-md-6">
                 <div class="fb-register">
 
-<div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
-                </div>
+                  <fb:login-button scope="public_profile" onlogin="checkLoginState();">
+                  </fb:login-button>
+
+                                </div>
               </div>
               <div class="col-md-6">
                 <div class="google-register">
@@ -113,6 +115,9 @@
              fjs.parentNode.insertBefore(js, fjs);
            }(document, 'script', 'facebook-jssdk'));
 
+           FB.login(function(response) {
+      console.log(response);
+   }, {scope: 'email'});
 
 FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
