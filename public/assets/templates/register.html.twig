@@ -47,6 +47,65 @@
                   <fb:login-button scope="public_profile" onlogin="checkLoginState();">
                   </fb:login-button>
 
+                  <div id="status"></div>
+                  <script>
+
+                    window.fbAsyncInit = function() {
+                      FB.init({
+                        appId      : '752564898557063',
+                        cookie     : true,
+                        xfbml      : true,
+                        version    : 'v5.0'
+                      });
+
+                      FB.AppEvents.logPageView();
+
+                    };
+
+                    (function(d, s, id){
+                       var js, fjs = d.getElementsByTagName(s)[0];
+                       if (d.getElementById(id)) {return;}
+                       js = d.createElement(s); js.id = id;
+                       js.src = "https://connect.facebook.net/en_US/sdk.js";
+                       fjs.parentNode.insertBefore(js, fjs);
+                     }(document, 'script', 'facebook-jssdk'));
+
+
+                     function statusChangeCallback(response) {
+                                     console.log('statusChangeCallback');
+                                     console.log(response);
+                                     // The response object is returned with a status field that lets the
+                                     // app know the current login status of the person.
+                                     // Full docs on the response object can be found in the documentation
+                                     // for FB.getLoginStatus().
+                                     if (response.status === 'connected') {
+                                         // Logged into your app and Facebook.
+                                         console.log('Welcome!  Fetching your information.... ');
+                                         FB.api('/me', function (response) {
+                                             console.log('Successful login for: ' + response.name);
+                                             document.getElementById('status').innerHTML =
+                                               'Thanks for logging in, ' + response.name + '!';
+                                         });
+                                     } else {
+                                         // The person is not logged into your app or we are unable to tell.
+                                         document.getElementById('status').innerHTML = 'Please log ' +
+                                           'into this app.';
+                                     }
+                                 }
+                                 
+          FB.getLoginStatus(function(response) {
+              statusChangeCallback(response);
+          });
+
+
+          function checkLoginState() {
+            FB.getLoginStatus(function(response) {
+              statusChangeCallback(response);
+            }, {scope: 'email'});
+          }
+                  </script>
+
+
                                 </div>
               </div>
               <div class="col-md-6">
@@ -99,39 +158,6 @@
 
         {% block javascripts %}
 
-        <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              appId      : '752564898557063',
-              cookie     : true,
-              xfbml      : true,
-              version    : 'v5.0'
-            });
-
-            FB.AppEvents.logPageView();
-
-          };
-
-          (function(d, s, id){
-             var js, fjs = d.getElementsByTagName(s)[0];
-             if (d.getElementById(id)) {return;}
-             js = d.createElement(s); js.id = id;
-             js.src = "https://connect.facebook.net/en_US/sdk.js";
-             fjs.parentNode.insertBefore(js, fjs);
-           }(document, 'script', 'facebook-jssdk'));
-
-
-FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-});
-
-
-function checkLoginState() {
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  }, {scope: 'email'});
-}
-        </script>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
