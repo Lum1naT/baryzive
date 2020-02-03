@@ -6,6 +6,7 @@
 
     <!-- ### Video.js ###-->
     <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/css/videojs.ads.css">
 
 <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
 <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
@@ -137,7 +138,14 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
  <!-- https://github.com/videojs/http-streaming/blob/master/README.md -->
 
  <h1>Video.js Example Embed</h1>
-
+ <script src="assets/scripts/videojs.ads.js"></script>
+ <script>
+ videojs('video', {}, function() {
+   var player = this;
+   player.ads(); // initialize the ad framework
+   // your custom ad integration code
+ });
+ </script>
   <video-js id="my_video_1" class="vjs-default-skin" controls preload="auto" width="640" height="268">
     <source src="http://stream.baryzive.cz/live/test/index.m3u8" type="application/x-mpegURL">
 
