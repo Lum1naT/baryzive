@@ -49,8 +49,14 @@ function listAllUsers($pdoInstance){
  function authenticateUser($pdoInstance, $email, $authenticationCode){
    // TODO: check if $email and $authenticationCode match
    $stmt = $pdoInstance->query('SELECT authentication_code FROM users WHERE email = ?');
+   $stmt->execute([$email]);
+   $user = $stmt->fetch();
+   if($user['authentication_code'] == $authenticationCode){
+     return true;
 
-   return true;
+   } else {
+     return false;
+   }
  }
 
  /*
