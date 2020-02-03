@@ -10,7 +10,7 @@ use Twig\Loader\FilesystemLoader;
 include_once("assets/phpscripts/DatabaseManager.php");
 include_once("assets/phpscripts/Route.php");
 
-
+/*
 $client = new Google_Client(['client_id' => $CLIENT_ID]);  // Specify the CLIENT_ID of the app that accesses the backend
 $payload = $client->verifyIdToken($id_token);
 if ($payload) {
@@ -21,6 +21,8 @@ if ($payload) {
 } else {
   // Invalid ID token
 }
+*/
+
 
 // ROUTING
 
