@@ -641,13 +641,19 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   z-index: 1;
 }
 
+#voucher-count {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #C10F77;
+}
+
 #voucher-list {
   background-color: #131417;
   position: relative;
   z-index: 2;
   box-shadow: 0 -10px 20px rgba(0, 0, 0, .4);
   border-radius: 45px 45px 0 0;
-  margin-top: 110px;
+  margin-top: 205px;
 }
 
 .add-voucher.voucher-cat-box {
