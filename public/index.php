@@ -17,9 +17,6 @@ if ($payload) {
   $userid = $payload['sub'];
   // If request specified a G Suite domain:
   //$domain = $payload['hd'];
-  $getLink = 'https://oauth2.googleapis.com/tokeninfo?id_token='.$id_token;
-  $xml = file_get_contents($getLink);
-  echo $xml;
 
 } else {
   // Invalid ID token
