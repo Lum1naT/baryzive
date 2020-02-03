@@ -11,7 +11,19 @@ include_once("assets/phpscripts/DatabaseManager.php");
 include_once("assets/phpscripts/Route.php");
 
 
+$client = new Google_Client(['client_id' => $CLIENT_ID]);  // Specify the CLIENT_ID of the app that accesses the backend
+$payload = $client->verifyIdToken($id_token);
+if ($payload) {
+  $userid = $payload['sub'];
+  // If request specified a G Suite domain:
+  //$domain = $payload['hd'];
+  $getLink = 'https://oauth2.googleapis.com/tokeninfo?id_token='.$id_token;
+  $xml = file_get_contents($getLink);
+  echo $xml;
 
+} else {
+  // Invalid ID token
+}
 
 // ROUTING
 
