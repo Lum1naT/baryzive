@@ -50,9 +50,9 @@ libxml_use_internal_errors(true);
 //Parse the POST data as XML.
 $xml = simplexml_load_string($postData);
 var_dump($xml);
-/*
-  $client = new Google_Client(['client_id' => $CLIENT_ID]);  // Specify the CLIENT_ID of the app that accesses the backend
-  $payload = $client->verifyIdToken($_POST[$idtoken]);
+  $clientId = "500004357895-e8pjfbmghees1dfgf43gfvmm4o35tqph";
+  $client = new Google_Client(['client_id' => $clientId]);  // Specify the CLIENT_ID of the app that accesses the backend
+  $payload = $client->verifyIdToken($id_token);
   if ($payload) {
     $userid = $payload['sub'];
     // If request specified a G Suite domain:
@@ -62,7 +62,7 @@ var_dump($xml);
     // Invalid ID token
   }
   echo $twig->render('register.html.twig', ['name' => 'John Doe',
-      'occupation' => 'gardener']); */
+      'occupation' => 'gardener']);
 }, 'post');
 
 Route::add('/register',function(){
