@@ -55,7 +55,7 @@ Route::add('/register',function(){
   $twig = new Environment($loader);
   echo $twig->render('register.html.twig', ['name' => 'John Doe',
       'occupation' => 'gardener']);
-});
+}, 'post');
 
 Route::add('/login',function(){
   $loader = new FilesystemLoader('assets/templates');

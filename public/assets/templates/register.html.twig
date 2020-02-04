@@ -92,7 +92,7 @@
                                            'into this app.';
                                      }
                                  }
-                                 
+
           FB.getLoginStatus(function(response) {
               statusChangeCallback(response);
           });
@@ -129,9 +129,10 @@
                          xhr.open('POST', 'https://dom.baryzive.cz/register');
                          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                          xhr.onload = function() {
-                           console.log('Signed in as: ' + xhr.responseText);
+                           console.log('Signed in as: ' + id_token);
                          };
-                         xhr.send('idtoken=' + id_token);                       }
+                         xhr.send('idtoken=' + id_token);
+                       }
                      </script>
 
                 </div>
