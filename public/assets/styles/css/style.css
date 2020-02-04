@@ -620,6 +620,9 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   border-radius: 50%;
   margin-bottom: 5px; }
 
+#voucher-eye-detail svg {
+  max-width: 16px; }
+
 .voucher-cat-box img {
   width: 100%;
   display: block;
