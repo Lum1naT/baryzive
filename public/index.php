@@ -118,9 +118,6 @@ Route::add('/fblogin',function(){
   echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
 },'post');
 
-
-
-
 Route::add('/fblogin',function(){
   $fb = new Facebook\Facebook([
     'app_id' => '752564898557063', // Replace {app-id} with your app id
@@ -134,7 +131,7 @@ Route::add('/fblogin',function(){
   $loginUrl = $helper->getLoginUrl('https://dom.baryzive.cz/fb-callback.php', $permissions);
 
   echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
-});
+}, 'get');
 
 /*
 * @param $barname (string, unique)
