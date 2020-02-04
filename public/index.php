@@ -14,7 +14,6 @@ include_once("assets/phpscripts/Route.php");
 
 
 
-
 // ROUTING
 
 
@@ -103,6 +102,21 @@ Route::add('/contact-form',function(){
     echo 'Hey! The form has been sent:<br/>';
     print_r($_POST);
 },'post');
+
+Route::add('/fblogin',function(){
+  $fb = new Facebook\Facebook([
+    'app_id' => '752564898557063', // Replace {app-id} with your app id
+    'app_secret' => 'e533ba2fc0fd1c72d72ebbb8c8feb8d5',
+    'default_graph_version' => 'v3.2',
+    ]);
+
+  $helper = $fb->getRedirectLoginHelper();
+
+  $permissions = ['email']; // Optional permissions
+  $loginUrl = $helper->getLoginUrl('https://example.com/fb-callback.php', $permissions);
+
+  echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
+
 
 /*
 * @param $barname (string, unique)
