@@ -721,15 +721,26 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .add-voucher-content svg {
-    max-width: 40px;
-    background: linear-gradient(-45deg, #964BF2, #C10F77);
-    padding: 10px;
-    border-radius: 50%;
-    margin-bottom: 5px;
+  max-width: 40px;
+  background: linear-gradient(-45deg, #964BF2, #C10F77);
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 5px;
 }
 
 #voucher-eye-detail svg{
   max-width: 16px;
+}
+
+#voucher-eye-detail {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.voucher-item-btn #get-voucher-btn{
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .voucher-cat-box img{
