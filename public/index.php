@@ -10,18 +10,9 @@ use Twig\Loader\FilesystemLoader;
 include_once("assets/phpscripts/DatabaseManager.php");
 include_once("assets/phpscripts/Route.php");
 
-/*
-$client = new Google_Client(['client_id' => $CLIENT_ID]);  // Specify the CLIENT_ID of the app that accesses the backend
-$payload = $client->verifyIdToken($id_token);
-if ($payload) {
-  $userid = $payload['sub'];
-  // If request specified a G Suite domain:
-  //$domain = $payload['hd'];
 
-} else {
-  // Invalid ID token
-}
-*/
+
+
 
 
 // ROUTING
@@ -53,8 +44,25 @@ Route::add('/',function(){
 Route::add('/register',function(){
   $loader = new FilesystemLoader('assets/templates');
   $twig = new Environment($loader);
+  $postData = trim(file_get_contents('php://input'));
+//Use internal errors for better error handling.
+libxml_use_internal_errors(true);
+//Parse the POST data as XML.
+$xml = simplexml_load_string($postData);
+var_dump($xml);
+/*
+  $client = new Google_Client(['client_id' => $CLIENT_ID]);  // Specify the CLIENT_ID of the app that accesses the backend
+  $payload = $client->verifyIdToken($_POST[$idtoken]);
+  if ($payload) {
+    $userid = $payload['sub'];
+    // If request specified a G Suite domain:
+    //$domain = $payload['hd'];
+
+  } else {
+    // Invalid ID token
+  }
   echo $twig->render('register.html.twig', ['name' => 'John Doe',
-      'occupation' => 'gardener']);
+      'occupation' => 'gardener']); */
 }, 'post');
 
 Route::add('/register',function(){
