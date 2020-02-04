@@ -132,7 +132,7 @@ Route::add('/fblogin',function(){
   $loginUrl = $helper->getLoginUrl('https://dom.baryzive.cz/fb-callback.php', $permissions);
 
   echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
-});
+}, 'get');
 /*
 * @param $barname (string, unique)
 * @param $cameraname (string, unique)
