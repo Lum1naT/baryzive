@@ -141,7 +141,7 @@ Route::add('/fblogin',function(){
 Route::add('/bar/(.*)/(.*)',function($barName, $cameraName){
   // TODO: check if $barName is in DB
 
-    echo $barName.' is a great bar! <br/> You are viewing '. $cameraName . ' camera.' ;
+    echo $barName.' is a great bar!!! <br/> You are viewing '. $cameraName . ' camera.' ;
 });
 
 
