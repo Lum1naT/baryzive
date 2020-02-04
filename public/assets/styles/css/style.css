@@ -624,14 +624,14 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   max-width: 16px; }
 
 #voucher-eye-detail {
-  display: inline-block;
-  vertical-align: middle;
+  display: inline;
+  /*vertical-align: middle;*/
   margin-right: 5px; }
 
-.voucher-item-btn #get-voucher-btn {
+/*.voucher-item-btn #get-voucher-btn{
   display: inline-block;
-  vertical-align: middle; }
-
+  vertical-align: middle;
+}*/
 .voucher-cat-box img {
   width: 100%;
   display: block;
