@@ -130,7 +130,7 @@ Route::add('/fblogin',function(){
   $permissions = ['email']; // Optional permissions
   $loginUrl = $helper->getLoginUrl('https://dom.baryzive.cz/fb-callback.php', $permissions);
 
-  echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
+  echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!!!</a>';
 }, 'get');
 
 /*
