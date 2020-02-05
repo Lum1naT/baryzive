@@ -748,6 +748,24 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   display: none;
 }
 
+.voucher-cat-box :checked + label img {
+  transform: scale(.9);
+}
+
+.voucher-cat-box > label{
+  position: relative;
+}
+
+.voucher-cat-box :checked + label::before {
+  content: "YES";
+  position: absolute;
+  color: white;
+  z-index: 3;
+  font-weight: bold;
+  top: 10px;
+  right: 10px;
+}
+
 .voucher-item-img img{
   border-radius: 4px;
   display: block;
@@ -758,7 +776,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   margin: 0;
 }
 
-.voucher-cat-box > p{
+.voucher-cat-box:not(.add-voucher) p{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
