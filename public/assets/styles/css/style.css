@@ -658,6 +658,10 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 .voucher-list-wrapper ul li:nth-child(2n) {
   background: #1D1E21; }
 
+@media only screen and (max-width: 479px) {
+  .voucher-item-btn {
+    text-align: center; } }
+
 @media only screen and (max-width: 767px) {
   .voucher-cat-box img {
     max-width: 120px; }

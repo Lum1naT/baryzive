@@ -707,7 +707,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .voucher-item-img {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .add-voucher-content{
@@ -751,7 +751,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .voucher-item-text h3 {
-    margin: 0;
+  margin: 0;
 }
 
 .voucher-cat-box > p{
@@ -764,13 +764,19 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .voucher-list-wrapper ul li {
-    padding: 10px;
-    border-radius: 4px;
-    box-sizing: border-box;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .voucher-list-wrapper ul li:nth-child(2n) {
     background: #1D1E21;
+}
+
+@media only screen and (max-width: 479px){
+  .voucher-item-btn{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 767px){
