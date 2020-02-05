@@ -634,6 +634,9 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   border-radius: 4px;
   opacity: .6; }
 
+.voucher-cat-box > input[type="checkbox"] {
+  display: none; }
+
 .voucher-item-img img {
   border-radius: 4px;
   display: block;
