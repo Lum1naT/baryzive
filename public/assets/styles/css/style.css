@@ -551,13 +551,14 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   font-weight: bold;
   color: #C10F77; }
 
-#voucher-list {
+.voucher-layout #voucher-list {
   background-color: #131417;
   position: relative;
   z-index: 2;
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.4);
   border-radius: 45px 45px 0 0;
-  /*margin-top: 205px;*/ }
+  /*margin-top: 205px;*/
+  padding-top: 0; }
 
 .add-voucher.voucher-cat-box {
   width: 100%;
@@ -639,7 +640,8 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   display: none; }
 
 .voucher-cat-box :checked + label img {
-  transform: scale(0.9); }
+  transform: scale(0.9);
+  opacity: .25; }
 
 .voucher-cat-box > label {
   position: relative; }
