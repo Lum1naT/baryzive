@@ -742,6 +742,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   display: block;
   border-radius: 4px;
   opacity: .6;
+  transition: all .3s ease;
 }
 
 .voucher-cat-box > input[type="checkbox"]{
