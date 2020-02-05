@@ -751,6 +751,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .voucher-cat-box :checked + label img {
   transform: scale(.9);
+  opacity: .25;
 }
 
 .voucher-cat-box > label{
