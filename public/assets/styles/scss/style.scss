@@ -743,7 +743,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   display: block;
   border-radius: 4px;
   opacity: .6;
-  transition: all .3s ease;
+  transition: all .15s ease;
 }
 
 .voucher-cat-box > input[type="checkbox"]{
@@ -751,8 +751,8 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .voucher-cat-box :checked + label img {
-  transform: scale(.9);
-  opacity: .25;
+  transform: scale(.95);
+  opacity: .20;
 }
 
 .voucher-cat-box > label{
@@ -760,7 +760,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .voucher-cat-box :checked + label::before {
-  content: "YES";
+  content: "\f14a";
   position: absolute;
   color: white;
   z-index: 3;

@@ -634,20 +634,20 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   display: block;
   border-radius: 4px;
   opacity: .6;
-  transition: all .3s ease; }
+  transition: all .15s ease; }
 
 .voucher-cat-box > input[type="checkbox"] {
   display: none; }
 
 .voucher-cat-box :checked + label img {
-  transform: scale(0.9);
-  opacity: .25; }
+  transform: scale(0.95);
+  opacity: .20; }
 
 .voucher-cat-box > label {
   position: relative; }
 
 .voucher-cat-box :checked + label::before {
-  content: "YES";
+  content: "\f14a";
   position: absolute;
   color: white;
   z-index: 3;
