@@ -644,7 +644,8 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   opacity: .20; }
 
 .voucher-cat-box > label {
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .voucher-cat-box :checked + label::before {
   content: "\f14a";
