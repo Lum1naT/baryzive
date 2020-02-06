@@ -45,12 +45,6 @@ Route::add('/',function(){
 Route::add('/register',function(){
   $loader = new FilesystemLoader('assets/templates');
   $twig = new Environment($loader);
-  $postData = trim(file_get_contents('php://input'));
-//Use internal errors for better error handling.
-libxml_use_internal_errors(true);
-//Parse the POST data as XML.
-$xml = simplexml_load_string($postData);
-var_dump($xml);
   $clientId = "500004357895-e8pjfbmghees1dfgf43gfvmm4o35tqph";
   $client = new Google_Client(['client_id' => $clientId]);  // Specify the CLIENT_ID of the app that accesses the backend
   $payload = $client->verifyIdToken($id_token);
