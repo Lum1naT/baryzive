@@ -647,13 +647,14 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     color: #C10F77;
 }
 
-#voucher-list {
+.voucher-layout #voucher-list {
   background-color: #131417;
   position: relative;
   z-index: 2;
-  box-shadow: 0 -10px 20px rgba(0, 0, 0, .4);
-  border-radius: 45px 45px 0 0;
+  /*box-shadow: 0 -10px 20px rgba(0, 0, 0, .4);*/
+  /*border-radius: 45px 45px 0 0;*/
   /*margin-top: 205px;*/
+  padding-top: 0;
 }
 
 .add-voucher.voucher-cat-box {
@@ -707,7 +708,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .voucher-item-img {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .add-voucher-content{
@@ -728,19 +729,13 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   margin-bottom: 5px;
 }
 
-#voucher-eye-detail svg{
+/*#voucher-eye-detail svg{
   max-width: 16px;
 }
 
 #voucher-eye-detail {
   display: inline;
-  /*vertical-align: middle;*/
   margin-right: 5px;
-}
-
-/*.voucher-item-btn #get-voucher-btn{
-  display: inline-block;
-  vertical-align: middle;
 }*/
 
 .voucher-cat-box img{
@@ -748,6 +743,30 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   display: block;
   border-radius: 4px;
   opacity: .6;
+  transition: all .3s ease;
+}
+
+.voucher-cat-box > input[type="checkbox"]{
+  display: none;
+}
+
+.voucher-cat-box :checked + label img {
+  transform: scale(.9);
+  opacity: .25;
+}
+
+.voucher-cat-box > label{
+  position: relative;
+}
+
+.voucher-cat-box :checked + label::before {
+  content: "YES";
+  position: absolute;
+  color: white;
+  z-index: 3;
+  font-weight: bold;
+  top: 10px;
+  right: 10px;
 }
 
 .voucher-item-img img{
@@ -757,10 +776,10 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .voucher-item-text h3 {
-    margin: 0;
+  margin: 0;
 }
 
-.voucher-cat-box > p{
+.voucher-cat-box:not(.add-voucher) p{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -770,13 +789,19 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .voucher-list-wrapper ul li {
-    padding: 10px;
-    border-radius: 4px;
-    box-sizing: border-box;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .voucher-list-wrapper ul li:nth-child(2n) {
     background: #1D1E21;
+}
+
+@media only screen and (max-width: 479px){
+  .voucher-item-btn{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 767px){
