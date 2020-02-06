@@ -116,7 +116,7 @@ Route::add('/fblogin',function(){
   $loginUrl = $helper->getLoginUrl('https://example.com/fb-callback.php', $permissions);
 
   echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
-},'post');
+});
 
 Route::add('/fblogin',function(){
   $fb = new Facebook\Facebook([
@@ -131,7 +131,7 @@ Route::add('/fblogin',function(){
   $loginUrl = $helper->getLoginUrl('https://dom.baryzive.cz/fb-callback.php', $permissions);
 
   echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!!!</a>';
-}, 'get');
+});
 
 /*
 * @param $barname (string, unique)
