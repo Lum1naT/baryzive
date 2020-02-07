@@ -658,26 +658,29 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .add-voucher.voucher-cat-box {
-    width: 100%;
-    background: #2a2d34;
-    border-radius: 4px;
+  width: 100%;
+  background: #2a2d34;
+  border-radius: 4px;
 }
 
 .voucher-cats-wrapper {
-    overflow-x: scroll;
-    width: 100%;
-    display: inline-block;
-    white-space: nowrap;
-    position: relative;
+  overflow-x: scroll;
+  width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.voucher-cats{
+  position: relative;
 }
 
 .voucher-cat-box {
-    display: inline-block;
-    position: relative;
-    margin: 5px 5px 5px 0;
-    background: transparent;
-    vertical-align: top;
-    box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  margin: 5px 5px 5px 0;
+  background: transparent;
+  vertical-align: top;
+  box-sizing: border-box;
 }
 
 .voucher-list{
@@ -685,9 +688,9 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .voucher-list-item {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
 }
 
 .voucher-item-info{
