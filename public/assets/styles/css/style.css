@@ -721,6 +721,11 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     max-width: 120px;
     min-height: 166px; } }
 
+/* --- City layout --- */
+.com-box {
+  background-color: #1E1F26;
+  border-radius: 4px; }
+
 /* --- Responsive --- */
 @media only screen and (min-width: 480px) {
   .logIn-wrapper, .register-wrapper {
