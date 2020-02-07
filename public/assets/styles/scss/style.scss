@@ -665,6 +665,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   width: 100%;
   background: #2a2d34;
   border-radius: 4px;
+  max-width: 150px;
 }
 
 .voucher-cats-wrapper {
@@ -748,6 +749,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .voucher-cat-box img{
   width: 100%;
+  max-width: 150px;
   display: block;
   border-radius: 4px;
   opacity: .6;
