@@ -497,6 +497,10 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number{
   color: $link-color;
 }
 
+.footerWrapper .row .col-md-4.footerBox:nth-child(2) li {
+    padding: 3px 0;
+}
+
 /* ***--- LogIn, Register Styles ---*** */
 .logIn-page, .register-page {
     background-color: $dark-darker-bg;

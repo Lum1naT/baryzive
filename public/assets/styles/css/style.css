@@ -427,6 +427,9 @@ footer .footerBox ul li a.email, footer .footerBox ul li a.phone-number {
   font-weight: bold;
   color: #C10F77 !important; }
 
+.footerWrapper .row .col-md-4.footerBox:nth-child(2) li {
+  padding: 3px 0; }
+
 /* ***--- LogIn, Register Styles ---*** */
 .logIn-page, .register-page {
   background-color: #131417; }
