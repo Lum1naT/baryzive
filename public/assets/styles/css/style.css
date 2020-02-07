@@ -685,8 +685,8 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 .voucher-cat-direction {
   position: absolute;
   top: 50%;
-  display: flex;
-  align-items: center; }
+  transform: translateY(-50%);
+  width: 100%; }
 
 .voucher-cat-direction i {
   font-size: 1.8rem; }
