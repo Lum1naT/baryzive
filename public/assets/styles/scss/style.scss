@@ -800,6 +800,27 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     background: #1D1E21;
 }
 
+.voucher-cat-direction {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.voucher-cat-direction i{
+  font-size: 1.8rem;
+}
+
+.voucher-cat-direction .fas.fa-chevron-left{
+  position: fixed;
+  left: 0;
+}
+
+.voucher-cat-direction .fas.fa-chevron-right{
+  position: fixed;
+  right: 0;
+}
+
 @media only screen and (max-width: 479px){
   .voucher-item-btn{
     text-align: center;
