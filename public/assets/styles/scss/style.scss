@@ -817,12 +817,12 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .voucher-cat-direction .fas.fa-chevron-left{
   position: fixed;
-  left: -10px;
+  left: 0;
 }
 
 .voucher-cat-direction .fas.fa-chevron-right{
   position: fixed;
-  right: -10px;
+  right: 0;
 }
 
 @media only screen and (max-width: 479px){
