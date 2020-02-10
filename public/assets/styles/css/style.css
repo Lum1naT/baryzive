@@ -742,6 +742,9 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   width: 100%;
   border-radius: 4px; }
 
+.com-advantages p::before {
+  content: "\f00c"; }
+
 /* --- Responsive --- */
 @media only screen and (min-width: 480px) {
   .logIn-wrapper, .register-wrapper {
