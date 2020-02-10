@@ -724,7 +724,8 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 /* --- City layout --- */
 .com-box {
   background-color: #1E1F26;
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin: 5px 0; }
 
 .com-parts-wrapper {
   overflow-x: scroll;
