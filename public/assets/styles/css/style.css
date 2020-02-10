@@ -733,6 +733,14 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 .com-part-box {
   display: inline-block; }
 
+.com-header {
+  padding: 10px;
+  box-sizing: border-box; }
+
+.com-header img {
+  width: 100%;
+  border-radius: 4px; }
+
 /* --- Responsive --- */
 @media only screen and (min-width: 480px) {
   .logIn-wrapper, .register-wrapper {
