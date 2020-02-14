@@ -878,6 +878,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 .com-content {
     padding: 0 10px 10px 10px;
     box-sizing: border-box;
+    display: inline-block;
 }
 
 .com-header img {
@@ -889,6 +890,11 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 .com-advantages p::before {
     content: "\f00c";
     font-family: "Font Awesome 5 Pro";
+}
+
+.com-advantages, .com-btns {
+    float: left;
+    width: 50%;
 }
 
 /* --- Responsive --- */
