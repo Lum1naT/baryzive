@@ -761,10 +761,9 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 .com-heading-title h3 {
   margin: 0; }
 
-/*.com-btns.com-small-info p{
-  display: inline-block;
-  margin: 0 3px;
-}*/
+.com-btns.com-small-info a {
+  margin: 0 3px; }
+
 .com-advantages p i {
   margin-right: 5px;
   color: #25ca7d; }
