@@ -749,6 +749,18 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   width: 50%;
   text-align: left; }
 
+.com-heading {
+  width: 100%;
+  display: inline-block; }
+
+.com-heading-title, .com-open-or-close {
+  float: left;
+  width: 50%;
+  text-align: left; }
+
+.com-heading-title h3 {
+  margin: 0; }
+
 .com-advantages p i {
   margin-right: 5px;
   color: #25ca7d; }
