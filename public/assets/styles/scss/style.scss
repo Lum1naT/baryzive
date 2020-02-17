@@ -903,8 +903,11 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   margin: 0;
 }
 
-.com-btns.com-small-info a{
+.com-btns.com-small-info > a{
   margin: 0 3px;
+}
+
+.com-btns.com-small-info a{
   color: #9b9dad;
 }
 
@@ -935,13 +938,16 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }
 
 .com-preview-reservation a i::before, .com-preview-direction a i::before{
-  content: "\f3cd";
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 1rem;
   color: #9b9dad;
+}
+
+.com-preview-direction {
+    margin: 3px 0;
 }
 
 /*.com-advantages p::before {
