@@ -905,6 +905,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .com-btns.com-small-info a{
   margin: 0 3px;
+  color: #9b9dad;
 }
 
 .com-advantages p i {
@@ -916,6 +917,31 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     width: 100%;
     border-radius: 4px;
     display: block;
+}
+
+.com-preview-reservation a{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.com-preview-reservation a i, .com-preview-direction a i{
+  min-width: 26px;
+  min-height: 26px;
+  background: #131417;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.com-preview-reservation a i::before, .com-preview-direction a i::before{
+  content: "\f3cd";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: #9b9dad;
 }
 
 /*.com-advantages p::before {
