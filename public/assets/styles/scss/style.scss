@@ -1256,7 +1256,9 @@ body#light-theme{
   display: inline-block;
   width: 100%;
   border-bottom: 1px solid $dark-lighter-bg;
+  color: $secondary-color;
   &:hover{
     background-color: $dark-lighter-bg;
+    text-decoration: none;
   }
 }
