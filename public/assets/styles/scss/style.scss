@@ -1242,7 +1242,7 @@ body#light-theme{
 }
 
 #customer-admin .incenterpage-admin{
-  padding-left: 320px;
+  padding: 20px 20px 20px 320px;
   background-color: #ccc;
   min-height: 100vh;
 }
@@ -1261,4 +1261,9 @@ body#light-theme{
     background-color: $dark-lighter-bg;
     text-decoration: none;
   }
+}
+
+.introduction-admin, .preview-admin-edit, .detail-admin-edit{
+  background-color: white;
+  border-radius: 4px;
 }

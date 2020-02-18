@@ -980,7 +980,7 @@ body#light-theme {
   background-color: #131417; }
 
 #customer-admin .incenterpage-admin {
-  padding-left: 320px;
+  padding: 20px 20px 20px 320px;
   background-color: #ccc;
   min-height: 100vh; }
 
@@ -991,6 +991,12 @@ body#light-theme {
   padding: 10px 20px;
   display: inline-block;
   width: 100%;
-  border-bottom: 1px solid #1E1F26; }
+  border-bottom: 1px solid #1E1F26;
+  color: #9b9dad; }
   #customer-admin aside ul li a:hover {
-    background-color: #1E1F26; }
+    background-color: #1E1F26;
+    text-decoration: none; }
+
+.introduction-admin, .preview-admin-edit, .detail-admin-edit {
+  background-color: white;
+  border-radius: 4px; }
