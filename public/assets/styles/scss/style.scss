@@ -1241,6 +1241,10 @@ body#light-theme{
   background-color: $dark-darker-bg;
 }
 
+#customer-admin h2{
+  color: $light-primary-color;
+}
+
 #customer-admin .incenterpage-admin{
   padding: 20px 20px 20px 320px;
   background-color: #ccc;
@@ -1266,4 +1270,5 @@ body#light-theme{
 .introduction-admin, .preview-admin-edit, .detail-admin-edit{
   background-color: white;
   border-radius: 4px;
+  padding: 10px;
 }
