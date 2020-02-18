@@ -992,4 +992,5 @@ body#light-theme {
 #customer-admin .left-side-bar ul li a {
   display: inline-block;
   width: 100%;
-  padding: 10px 0; }
+  padding: 10px 0;
+  color: #9b9dad; }
