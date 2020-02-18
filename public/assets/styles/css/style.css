@@ -991,13 +991,16 @@ body#light-theme {
   padding: 20px; }
 
 #customer-admin .admin-content-topBar {
-  background-color: #131417; }
+  background-color: #131417;
+  display: inline-block;
+  width: 100%; }
 
 #customer-admin .log-out i {
   width: 50px;
   height: 50px;
   background: #cc3232;
-  position: relative; }
+  position: relative;
+  float: right; }
 
 #customer-admin .log-out i::before {
   position: absolute;

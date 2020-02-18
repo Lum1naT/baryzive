@@ -1257,13 +1257,16 @@ body#light-theme{
 
 #customer-admin .admin-content-topBar{
   background-color: $dark-darker-bg;
+  display: inline-block;
+  width: 100%;
 }
 
 #customer-admin .log-out i {
-    width: 50px;
-    height: 50px;
-    background: #cc3232;
-    position: relative;
+  width: 50px;
+  height: 50px;
+  background: #cc3232;
+  position: relative;
+  float: right;
 }
 
 #customer-admin .log-out i::before{
