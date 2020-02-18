@@ -971,25 +971,3 @@ body#light-theme {
 
 /* END OF LIGHT THEME -------------------------------------------------------------------------------------------------------- */
 /* CUSTOMER ADMINISTRATION --------------------------------------------------------------------------------------------------- */
-#customer-admin .left-side-bar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  min-width: 230px;
-  background: #131417; }
-
-#customer-admin .incenterpage {
-  background: #1E1F26;
-  padding: 10px;
-  padding-left: 240px;
-  min-height: 100vh; }
-
-#customer-admin .left-side-bar ul li {
-  border-bottom: 1px solid #1E1F26; }
-
-#customer-admin .left-side-bar ul li a {
-  display: inline-block;
-  width: 100%;
-  padding: 10px;
-  color: #9b9dad; }
