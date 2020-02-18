@@ -977,7 +977,6 @@ body#light-theme {
   top: 0;
   bottom: 0;
   min-width: 230px;
-  padding: 10px;
   background: #131417; }
 
 #customer-admin .incenterpage {
@@ -992,5 +991,5 @@ body#light-theme {
 #customer-admin .left-side-bar ul li a {
   display: inline-block;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px;
   color: #9b9dad; }
