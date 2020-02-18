@@ -971,3 +971,14 @@ body#light-theme {
 
 /* END OF LIGHT THEME -------------------------------------------------------------------------------------------------------- */
 /* CUSTOMER ADMINISTRATION --------------------------------------------------------------------------------------------------- */
+#customer-admin aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  min-width: 300px;
+  background-color: #131417; }
+
+#customer-admin .incenterpage-admin {
+  padding-left: 320px;
+  background-color: #ccc; }
