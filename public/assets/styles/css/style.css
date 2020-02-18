@@ -56,7 +56,7 @@ h2 strong {
 h3 {
   font-size: 18px; }
 
-p, li, span {
+p, li, span, label {
   color: #9b9dad;
   font-weight: 500; }
 
@@ -870,7 +870,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     font-size: 1.4rem; }
   h3 {
     font-size: 1rem; }
-  a, p, li, input, span, button {
+  a, p, li, input, span, button, label {
     font-size: 0.8rem; }
   .ham-nav #logo svg {
     max-width: 25px; }
