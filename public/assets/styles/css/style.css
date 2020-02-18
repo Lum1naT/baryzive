@@ -982,7 +982,8 @@ body#light-theme {
 
 #customer-admin .incenterpage {
   background: #1E1F26;
-  padding-left: 180px;
+  padding: 10px;
+  padding-left: 230px;
   min-height: 100vh; }
 
 #customer-admin .left-side-bar ul li {
