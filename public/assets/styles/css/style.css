@@ -984,13 +984,27 @@ body#light-theme {
 
 #customer-admin .admin-content {
   background-color: #ccc;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding-left: 300px; }
 
 #customer-admin .admin-content-wrapper {
-  padding: 20px 20px 20px 320px; }
+  padding: 20px; }
 
 #customer-admin .admin-content-topBar {
   background-color: #131417; }
+
+#customer-admin .log-out i {
+  width: 50px;
+  height: 50px;
+  background: #cc3232;
+  position: relative; }
+
+#customer-admin .log-out i::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white; }
 
 #customer-admin aside ul {
   padding: 10px 0; }
