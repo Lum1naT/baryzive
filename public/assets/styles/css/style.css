@@ -981,4 +981,16 @@ body#light-theme {
 
 #customer-admin .incenterpage-admin {
   padding-left: 320px;
-  background-color: #ccc; }
+  background-color: #ccc;
+  min-height: 100vh; }
+
+#customer-admin aside ul {
+  padding: 10px 0; }
+
+#customer-admin aside ul li a {
+  padding: 10px 20px;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #1E1F26; }
+  #customer-admin aside ul li a:hover {
+    background-color: #1E1F26; }
