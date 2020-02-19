@@ -1295,12 +1295,12 @@ body#light-theme{
   display: inline-block;
   width: 100%;
   border-bottom: 1px solid $dark-lighter-bg;
-  border-left: 6px solid $dark-lighter-bg;
+  border-left: 4px solid $dark-lighter-bg;
   color: $secondary-color;
   position: relative;
   &:hover{
     background-color: $dark-lighter-bg;
-    border-left: 6px solid $focus-color;
+    border-left: 4px solid $focus-color;
     text-decoration: none;
   }
 }

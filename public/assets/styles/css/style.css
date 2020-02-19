@@ -1025,12 +1025,12 @@ body#light-theme {
   display: inline-block;
   width: 100%;
   border-bottom: 1px solid #1E1F26;
-  border-left: 6px solid #1E1F26;
+  border-left: 4px solid #1E1F26;
   color: #9b9dad;
   position: relative; }
   #customer-admin aside ul li a:hover {
     background-color: #1E1F26;
-    border-left: 6px solid #C10F77;
+    border-left: 4px solid #C10F77;
     text-decoration: none; }
 
 .side-bar-admin ul li a:hover::before {
