@@ -1355,9 +1355,31 @@ body#light-theme{
     position: relative;
 }
 
+.admin-hint-tooltip::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 8px solid
+    transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid $dark-darker-bg;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
 .admin-hint-tooltip{
   display: none;
   position: absolute;
+  background: $dark-darker-bg;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  max-width: 200px;
 }
 
 .admin-hint:hover > .admin-hint-tooltip{
