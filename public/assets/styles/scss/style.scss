@@ -1297,11 +1297,25 @@ body#light-theme{
   border-bottom: 1px solid $dark-lighter-bg;
   border-left: 6px solid $dark-lighter-bg;
   color: $secondary-color;
+  position: relative;
   &:hover{
     background-color: $dark-lighter-bg;
     border-left: 6px solid $focus-color;
     text-decoration: none;
   }
+}
+
+.side-bar-admin ul li a:hover::before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 6px solid $focus-color;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #customer-admin aside ul li a i {

@@ -1026,11 +1026,24 @@ body#light-theme {
   width: 100%;
   border-bottom: 1px solid #1E1F26;
   border-left: 6px solid #1E1F26;
-  color: #9b9dad; }
+  color: #9b9dad;
+  position: relative; }
   #customer-admin aside ul li a:hover {
     background-color: #1E1F26;
     border-left: 6px solid #C10F77;
     text-decoration: none; }
+
+.side-bar-admin ul li a:hover::before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 6px solid #C10F77;
+  border-bottom: 6px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); }
 
 #customer-admin aside ul li a i {
   margin-right: 5px; }
