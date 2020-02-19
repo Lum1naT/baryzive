@@ -1067,8 +1067,12 @@ body#light-theme {
   padding: 20px;
   border-bottom: 1px solid #1E1F26; }
 
+.customer-name p:first-child i {
+  margin-right: 5px; }
+
 .customer-name p:last-child {
-  padding-left: 20px; }
+  padding-left: 20px;
+  font-size: 14px; }
 
 .admin-hint {
   display: inline-block;
