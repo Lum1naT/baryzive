@@ -1082,7 +1082,7 @@ body#light-theme {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 10px solid #131417;
+  border-top: 10px solid #1E1F26;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -1091,7 +1091,7 @@ body#light-theme {
 .admin-hint-tooltip {
   display: none;
   position: absolute;
-  background: #131417;
+  background: #1E1F26;
   padding: 10px;
   font-size: 12px;
   border-radius: 4px;
