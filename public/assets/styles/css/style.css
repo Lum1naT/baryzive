@@ -1045,7 +1045,8 @@ body#light-theme {
   margin: 15px 0; }
 
 #customer-admin .side-bar-header {
-  padding: 20px; }
+  padding: 20px;
+  border-bottom: 3px solid #1E1F26; }
 
 @media only screen and (min-width: 768px) {
   .preview-form .field-box label {
