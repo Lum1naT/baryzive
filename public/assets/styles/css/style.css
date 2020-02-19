@@ -1044,6 +1044,9 @@ body#light-theme {
 .preview-form .field-box {
   margin: 15px 0; }
 
+#customer-page .side-bar-header {
+  padding: 20px; }
+
 @media only screen and (min-width: 768px) {
   .preview-form .field-box label {
     min-width: 170px; } }
