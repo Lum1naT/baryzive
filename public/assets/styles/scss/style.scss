@@ -1392,6 +1392,13 @@ body#light-theme{
   display: block;
 }
 
+.side-soc {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
 @media only screen and (min-width: 768px){
   .preview-form .field-box label {
     min-width: 200px;
