@@ -1291,15 +1291,21 @@ body#light-theme{
 }
 
 #customer-admin aside ul li a {
-  padding: 20px;
+  padding: 15px 20px;
   display: inline-block;
   width: 100%;
   border-bottom: 1px solid $dark-lighter-bg;
+  border-left: 3px solid $dark-lighter-bg;
   color: $secondary-color;
   &:hover{
     background-color: $dark-lighter-bg;
+    border-left: 3px solid $focus-color;
     text-decoration: none;
   }
+}
+
+#customer-admin aside ul li a i {
+  margin-right: 5px;
 }
 
 .introduction-admin, .preview-admin-edit, .detail-admin-edit{

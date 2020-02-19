@@ -1021,14 +1021,19 @@ body#light-theme {
   padding: 0 0 10px 0; }
 
 #customer-admin aside ul li a {
-  padding: 20px;
+  padding: 15px 20px;
   display: inline-block;
   width: 100%;
   border-bottom: 1px solid #1E1F26;
+  border-left: 3px solid #1E1F26;
   color: #9b9dad; }
   #customer-admin aside ul li a:hover {
     background-color: #1E1F26;
+    border-left: 3px solid #C10F77;
     text-decoration: none; }
+
+#customer-admin aside ul li a i {
+  margin-right: 5px; }
 
 .introduction-admin, .preview-admin-edit, .detail-admin-edit {
   background-color: white;
