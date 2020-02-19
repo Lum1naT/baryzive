@@ -980,7 +980,8 @@ body#light-theme {
   background-color: #131417; }
 
 #customer-admin h2 {
-  color: #000666; }
+  color: #000666;
+  display: inline-block; }
 
 #customer-admin .admin-content {
   background-color: #e6e6e6;
