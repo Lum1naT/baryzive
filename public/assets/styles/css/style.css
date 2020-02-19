@@ -1113,8 +1113,11 @@ body#light-theme {
   width: 100%;
   padding: 20px; }
 
+.side-soc a:last-child {
+  margin: 0 0 0 6px; }
+
 .side-soc a i {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin: 0 3px;
   color: #9b9dad; }
 
