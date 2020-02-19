@@ -1348,6 +1348,12 @@ body#light-theme{
     padding-left: 20px;
 }
 
+.admin-hint {
+    display: inline-block;
+    color: $secondary-color;
+    margin-left: 5px;
+}
+
 @media only screen and (min-width: 768px){
   .preview-form .field-box label {
     min-width: 200px;
