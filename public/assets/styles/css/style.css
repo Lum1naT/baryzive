@@ -992,8 +992,11 @@ body#light-theme {
 
 #customer-admin .admin-content-topBar {
   background-color: #131417;
-  display: inline-block;
-  width: 100%; }
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center; }
 
 #customer-admin .log-out {
   /*width: 50px;
@@ -1001,7 +1004,7 @@ body#light-theme {
   cursor: pointer;
   background-color: #cc3232;
   position: relative;
-  float: right;
+  /*float: right;*/
   padding: 20px; }
   #customer-admin .log-out:hover {
     background-color: #b71d1d; }
@@ -1030,5 +1033,17 @@ body#light-theme {
 .introduction-admin, .preview-admin-edit, .detail-admin-edit {
   background-color: white;
   border-radius: 4px;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 20px; }
+
+.preview-form .field-box input {
+  padding: 10px;
+  background: white;
+  border-color: #ccc; }
+
+.preview-form .field-box {
+  margin: 15px 0; }
+
+@media only screen and (min-width: 768px) {
+  .preview-form .field-box label {
+    min-width: 170px; } }
