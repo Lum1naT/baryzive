@@ -1096,8 +1096,8 @@ body#light-theme {
   border-radius: 4px;
   left: 50%;
   transform: translateX(-50%);
-  top: -50px;
-  max-width: 200px; }
+  bottom: 40px;
+  min-width: 200px; }
 
 .admin-hint:hover > .admin-hint-tooltip {
   display: block; }
