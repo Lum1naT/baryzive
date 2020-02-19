@@ -1072,7 +1072,15 @@ body#light-theme {
 .admin-hint {
   display: inline-block;
   color: #9b9dad;
-  margin-left: 5px; }
+  margin-left: 5px;
+  position: relative; }
+
+.admin-hint-tooltip {
+  display: none;
+  position: absolute; }
+
+.admin-hint:hover > .admin-hint-tooltip {
+  display: block; }
 
 @media only screen and (min-width: 768px) {
   .preview-form .field-box label {
