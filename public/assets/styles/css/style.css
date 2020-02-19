@@ -1025,11 +1025,11 @@ body#light-theme {
   display: inline-block;
   width: 100%;
   border-bottom: 1px solid #1E1F26;
-  border-left: 3px solid #1E1F26;
+  border-left: 6px solid #1E1F26;
   color: #9b9dad; }
   #customer-admin aside ul li a:hover {
     background-color: #1E1F26;
-    border-left: 3px solid #C10F77;
+    border-left: 6px solid #C10F77;
     text-decoration: none; }
 
 #customer-admin aside ul li a i {
