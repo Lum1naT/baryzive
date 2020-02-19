@@ -1324,6 +1324,10 @@ body#light-theme{
     border-bottom: 3px solid $dark-lighter-bg;
 }
 
+.customer-name p:last-child {
+    padding-left: 20px;
+}
+
 @media only screen and (min-width: 768px){
   .preview-form .field-box label {
     min-width: 200px;

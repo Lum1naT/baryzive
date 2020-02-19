@@ -1048,6 +1048,9 @@ body#light-theme {
   padding: 20px;
   border-bottom: 3px solid #1E1F26; }
 
+.customer-name p:last-child {
+  padding-left: 20px; }
+
 @media only screen and (min-width: 768px) {
   .preview-form .field-box label {
     min-width: 200px; } }
