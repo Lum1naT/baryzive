@@ -13,9 +13,13 @@
         {% block stylesheets %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous" />
         <link rel="stylesheet" type="text/css" href="assets/styles/css/style.css">
+
+        <link rel="stylesheet" type="text/css" href="assets/styles/css/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/styles/css/owl.theme.default.min.css">
         {% endblock %}
 
         <script src="https://kit.fontawesome.com/b472121949.js" crossorigin="anonymous"></script>
+        <script src="assets/scripts/owl.carousel.js"></script>
     </head>
     <body class="voucher-layout">
         {% block body %}
@@ -28,6 +32,51 @@
           <h2>Kolik slevových voucherů můžete dnes získat?</h2>
           <p id="voucher-count">3x</p>
         </section>-->
+
+        <section id="demos">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <h4>1</h4>
+                </div>
+                <div class="item">
+                  <h4>2</h4>
+                </div>
+                <div class="item">
+                  <h4>3</h4>
+                </div>
+                <div class="item">
+                  <h4>4</h4>
+                </div>
+                <div class="item">
+                  <h4>5</h4>
+                </div>
+                <div class="item">
+                  <h4>6</h4>
+                </div>
+                <div class="item">
+                  <h4>7</h4>
+                </div>
+                <div class="item">
+                  <h4>8</h4>
+                </div>
+                <div class="item">
+                  <h4>9</h4>
+                </div>
+                <div class="item">
+                  <h4>10</h4>
+                </div>
+                <div class="item">
+                  <h4>11</h4>
+                </div>
+                <div class="item">
+                  <h4>12</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section id="voucher-list">
           <div class="voucher-list-content">
@@ -203,6 +252,32 @@
         {{ include('newsletter.html.twig') }}
 
         {{ include('footer.html.twig') }}
+
+        <script>
+          $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+              loop: true,
+              margin: 10,
+              responsiveClass: true,
+              responsive: {
+                0: {
+                  items: 1,
+                  nav: true
+                },
+                600: {
+                  items: 3,
+                  nav: false
+                },
+                1000: {
+                  items: 5,
+                  nav: true,
+                  loop: false,
+                  margin: 20
+                }
+              }
+            })
+          })
+        </script>
 
         {% block javascripts %}
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
