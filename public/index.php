@@ -45,6 +45,7 @@ Route::add('/',function(){
 Route::add('/register',function(){
   $loader = new FilesystemLoader('assets/templates');
   $twig = new Environment($loader);
+  print_r($_POST);
   /*
   $clientId = "500004357895-e8pjfbmghees1dfgf43gfvmm4o35tqph";
   $client = new Google_Client(['client_id' => $clientId]);  // Specify the CLIENT_ID of the app that accesses the backend
@@ -57,9 +58,10 @@ Route::add('/register',function(){
   } else {
     // Invalid ID token
   }
-  */
+
   echo $twig->render('register.html.twig', ['name' => 'John Doe',
       'occupation' => 'gardener']);
+      */
 }, 'post');
 
 Route::add('/register',function(){
