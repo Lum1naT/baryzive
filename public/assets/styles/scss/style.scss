@@ -1253,16 +1253,19 @@ body#light-theme{
 }
 
 #customer-admin .admin-content-wrapper{
-  padding: 20px;
+  padding: 84px 20px 20px 20px;
 }
 
 #customer-admin .admin-content-topBar {
-    background-color: $dark-darker-bg;
-    display: flex;
-    width: 100%;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
+  background-color: $dark-darker-bg;
+  display: flex;
+  width: calc(100% - 300px);
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 11;
+  right: 0;
 }
 
 #customer-admin .log-out {
