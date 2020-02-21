@@ -725,7 +725,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 .com-box {
   background-color: #1E1F26;
   border-radius: 4px;
-  margin: 10px 0; }
+  margin: 8px 0; }
 
 .com-parts-wrapper {
   overflow-x: scroll;
@@ -880,7 +880,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     max-width: 298px;
     margin: 0 auto; }
   section, footer, header {
-    padding: 1.4rem;
+    padding: 1rem;
     text-align: center; }
   .headerContentWrapper svg {
     max-width: 298px; }
