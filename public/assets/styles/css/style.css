@@ -1134,7 +1134,7 @@ body#light-theme {
   #customer-admin .log-out p {
     font-size: 0; }
   #customer-admin .log-out p i {
-    font-size: 0.8rem; } }
+    font-size: 1rem; } }
 
 @media only screen and (max-width: 767px) {
   #customer-admin .admin-content-topBar {
