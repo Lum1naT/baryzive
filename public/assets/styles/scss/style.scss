@@ -1420,6 +1420,16 @@ body#light-theme{
   color: $secondary-color;
 }
 
+@media only screen and (max-width: 479px){
+  #customer-admin .log-out p{
+    font-size: 0;
+  }
+
+  #customer-admin .log-out p i{
+    font-size: $phone-fontSize;
+  }
+}
+
 @media only screen and (max-width: 767px){
   #customer-admin .admin-content-topBar {
     width: 100%;

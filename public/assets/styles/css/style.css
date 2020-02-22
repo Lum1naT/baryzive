@@ -1130,6 +1130,12 @@ body#light-theme {
   margin: 0 3px;
   color: #9b9dad; }
 
+@media only screen and (max-width: 479px) {
+  #customer-admin .log-out p {
+    font-size: 0; }
+  #customer-admin .log-out p i {
+    font-size: 0.8rem; } }
+
 @media only screen and (max-width: 767px) {
   #customer-admin .admin-content-topBar {
     width: 100%; }
