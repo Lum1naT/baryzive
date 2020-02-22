@@ -1073,6 +1073,9 @@ body#light-theme {
   padding: 20px;
   border-bottom: 1px solid #1E1F26; }
 
+.admin-support {
+  padding: 0 10px; }
+
 .customer-name p:first-child i {
   margin-right: 5px; }
 
@@ -1126,6 +1129,19 @@ body#light-theme {
   font-size: 1.1rem;
   margin: 0 3px;
   color: #9b9dad; }
+
+@media only screen and (max-width: 767px) {
+  #customer-admin .admin-content-topBar {
+    width: 100%; }
+  #customer-admin .admin-content {
+    padding-left: 0; }
+  #customer-admin aside {
+    display: none; }
+  .preview-form .field-box input {
+    display: inline-block;
+    width: calc(100% - 26px); }
+  .admin-hint {
+    display: inline-block; } }
 
 @media only screen and (min-width: 768px) {
   .preview-form .field-box label {
