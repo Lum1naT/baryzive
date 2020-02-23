@@ -130,7 +130,18 @@ try{
 
       $pdo->commit();
 
-      Mailman($);
+      Mailman($email, "Baryživě.cz potvrzení registrace", "
+      <html>
+      <head>
+        <title>Baryživě.cz </title>
+      </head>
+      <body>
+        <p>Zde je tvůj autentikační kód: ".$authenticationCode." </p>
+          </tr>
+        </table>
+      </body>
+      </html>
+      '");
   }catch (Exception $e){
       $pdo->rollback();
       throw $e;
