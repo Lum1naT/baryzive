@@ -53,8 +53,8 @@ Route::add('/register',function(){
 
     if (!($password == $passwordConfirm)) {
       $_SESSION["passwordConfirmError"] = true;
-      $url =  "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-      header('Location: https://www..com/');
+    //  $url =  "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+    //  header('Location: https://www..com/');
     }
 
   } else {
