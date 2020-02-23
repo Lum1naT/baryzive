@@ -45,8 +45,19 @@ Route::add('/',function(){
 Route::add('/register',function(){
   $loader = new FilesystemLoader('assets/templates');
   $twig = new Environment($loader);
-  if ($_POST["ctrl"] == "regi147") {
-    print_r($_POST);
+  if ($_POST["ctrl"] == "regi147" && isset($_POST['termsAgreement'])) {
+    $email = htmlspecialchars(trim($_POST["userEmail"]));
+    $password = htmlspecialchars(trim($_POST["userPassword"]));
+    $passwordConfirm = htmlspecialchars(trim($_POST["userPasswordConfirm"]));
+    $newsletterAgreement = htmlspecialchars(trim($_POST["newsletterAgreement"]));
+
+    if (!($password == $passwordConfirm)) {
+      $_SESSION["passwordConfirmError"] = true;
+      header('Location: http://www.example.com/');
+    }
+
+  } else {
+    $_SESSION["termsAgreementError"] = true;
   }
   /*
   $clientId = "500004357895-e8pjfbmghees1dfgf43gfvmm4o35tqph";

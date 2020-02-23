@@ -1,4 +1,6 @@
 <?php
+
+include_once("./Mailman.php");
 /*
 
 Some dummy syntax incase this link is not avalible
@@ -123,9 +125,12 @@ try{
   try {
       $pdo->beginTransaction();
 
-      $stmt->execute(["intern", "42069", "David", "Vítek", "K0jnCZ@gmail.com", "M", "cz_cs",  "customlink", "1", "0", generateRandomString(6,2)]);
+      $authenticationCode = generateRandomString(6,2);
+      $stmt->execute([$oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale,  $link, "1", "0", $authenticationCode]);
 
       $pdo->commit();
+
+      Mailman($);
   }catch (Exception $e){
       $pdo->rollback();
       throw $e;
