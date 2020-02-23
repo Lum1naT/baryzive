@@ -50,12 +50,25 @@ Route::add('/register',function(){
     $password = htmlspecialchars(trim($_POST["userPassword"]));
     $passwordConfirm = htmlspecialchars(trim($_POST["userPasswordConfirm"]));
     $newsletterAgreement = htmlspecialchars(trim($_POST["newsletterAgreement"]));
+/*
+    $hash = '$2y$07$BCryptRequires22Chrcte/VlQH0piJtjXl.0t1XkA8pw9dMXTpOq';
 
-    if (!($password == $passwordConfirm)) {
-      $_SESSION["passwordConfirmError"] = true;
+if (password_verify('rasmuslerdorf', $hash)) {
+    echo 'Password is valid!';
+} else {
+    echo 'Invalid password.';
+}
+*/
+    if ($password == $passwordConfirm) {
+      $options = [
+    'cost' => 12,
+];
+  $hashedPassword = password_hash($password, PASSWORD_BCRYPT, $options);
     //  $url =  "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
     //  header('Location: https://www..com/');
-    }
+  } else {
+    $_SESSION["passwordConfirmError"] = true;
+  }
 
   } else {
     $_SESSION["termsAgreementError"] = true;
