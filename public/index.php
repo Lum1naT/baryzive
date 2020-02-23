@@ -45,7 +45,7 @@ Route::add('/',function(){
 Route::add('/register',function(){
   $loader = new FilesystemLoader('assets/templates');
   $twig = new Environment($loader);
-  if ($_POST["ctrl"]=="regi147") {
+  if ($_POST["ctrl"] == "regi147") {
     print_r($_POST);
   }
   /*
