@@ -734,10 +734,14 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     width: 33.33%;
     padding: 15px; } }
 
+@media only screen and (max-width: 767px) {
+  .com-box-wrapper {
+    width: 100%;
+    padding: 8px 0; } }
+
 .com-box {
   background-color: #1E1F26;
-  border-radius: 4px;
-  margin: 8px 0; }
+  border-radius: 4px; }
 
 .com-parts-wrapper {
   overflow-x: scroll;
