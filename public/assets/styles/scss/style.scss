@@ -859,33 +859,6 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     padding-bottom: 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px){
-  .com-box-wrapper{
-    float: left;
-    width: 50%;
-    padding: 15px;
-  }
-}
-
-@media only screen and (min-width: 960px){
-  .com-box-wrapper{
-    float: left;
-    width: 33.33%;
-    padding: 15px;
-  }
-}
-
-@media only screen and (max-width: 767px){
-  .com-box-wrapper{
-    width: 100%;
-    padding: 8px 0;
-  }
-
-  .com-part-box .part-icon-content i {
-    font-size: 3rem;
-  }
-}
-
 .com-box{
   background-color: #1E1F26;
   border-radius: 4px;
@@ -1012,6 +985,37 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     content: "\f00c";
     font-family: "Font Awesome 5 Pro";
 }*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+  .com-box-wrapper{
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 960px){
+  .com-box-wrapper{
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .com-box-wrapper{
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  .com-part-box .part-icon-content i {
+    font-size: 1.5rem;
+  }
+
+  .com-part-box{
+    padding: 10px;
+  }
+}
 
 /* --- Responsive --- */
 @media only screen and (min-width: 480px){
