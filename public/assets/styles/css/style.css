@@ -835,11 +835,12 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .com-box .my-favourite {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  margin: 10px;
+  top: 0;
+  right: 0;
+  margin: 0 10px;
   border-radius: 0 4px 0 0;
-  padding: 3px 7px; }
+  padding: 10px;
+  background-color: #1E1F26; }
 
 .com-box .my-favourite i {
   color: red; }
