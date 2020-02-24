@@ -722,7 +722,13 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     min-height: 166px; } }
 
 /* --- City layout --- */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .com-box-wrapper {
+    float: left;
+    width: 50%;
+    padding: 15px; } }
+
+@media only screen and (min-width: 960px) {
   .com-box-wrapper {
     float: left;
     width: 33.33%;
