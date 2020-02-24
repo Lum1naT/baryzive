@@ -879,6 +879,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 .com-header {
     padding: 10px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .com-content {
@@ -988,6 +989,15 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .com-part-box.active-part-box{
   opacity: .4;
+}
+
+.my-favourite {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin: 10px;
+  border-radius: 0 4px 0 0;
+  padding: 3px 7px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px){
