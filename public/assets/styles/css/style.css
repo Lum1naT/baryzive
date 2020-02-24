@@ -833,13 +833,16 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 .com-part-box.active-part-box {
   opacity: .4; }
 
-.my-favourite {
+.com-box .my-favourite {
   position: absolute;
   top: 10px;
   right: 15px;
   margin: 10px;
   border-radius: 0 4px 0 0;
   padding: 3px 7px; }
+
+.com-box .my-favourite i {
+  color: #C10F77; }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .com-box-wrapper {
