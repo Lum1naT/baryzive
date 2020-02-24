@@ -740,7 +740,9 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 @media only screen and (max-width: 767px) {
   .com-box-wrapper {
     width: 100%;
-    padding: 8px 0; } }
+    padding: 8px 0; }
+  .com-part-box .part-icon-content i {
+    font-size: 3rem; } }
 
 .com-box {
   background-color: #1E1F26;
@@ -752,7 +754,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .com-part-box {
   display: inline-block;
-  padding: 15px;
+  padding: 20px 15px;
   border-radius: 4px;
   background-color: #1E1F26; }
 
@@ -824,6 +826,9 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }*/
 .com-preview-reservation {
   margin: 3px 0; }
+
+.com-part-box .part-text-content {
+  text-align: left; }
 
 .com-part-box .part-icon-content, .com-part-box .part-text-content {
   display: inline-block;
