@@ -890,6 +890,9 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .com-part-box{
   display: inline-block;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: $dark-lighter-bg;
 }
 
 .com-header {
@@ -974,6 +977,19 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
 .com-preview-reservation{
   margin: 3px 0;
+}
+
+.com-part-box .part-icon-content, .com-part-box .part-text-content {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.com-part-box .part-icon-content i {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 /*.com-advantages p::before {

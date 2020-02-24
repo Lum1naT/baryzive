@@ -748,7 +748,10 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   white-space: nowrap; }
 
 .com-part-box {
-  display: inline-block; }
+  display: inline-block;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #1E1F26; }
 
 .com-header {
   padding: 10px;
@@ -818,6 +821,17 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 }*/
 .com-preview-reservation {
   margin: 3px 0; }
+
+.com-part-box .part-icon-content, .com-part-box .part-text-content {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+  box-sizing: border-box; }
+
+.com-part-box .part-icon-content i {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold; }
 
 /*.com-advantages p::before {
     content: "\f00c";
