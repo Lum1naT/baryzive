@@ -722,6 +722,12 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     min-height: 166px; } }
 
 /* --- City layout --- */
+@media only screen and (min-width: 768px) {
+  .com-box-wrapper {
+    float: left;
+    width: 33.33%;
+    padding: 15px; } }
+
 .com-box {
   background-color: #1E1F26;
   border-radius: 4px;
