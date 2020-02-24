@@ -986,6 +986,10 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     font-family: "Font Awesome 5 Pro";
 }*/
 
+.com-part-box.active-part-box{
+  opacity: .4;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px){
   .com-box-wrapper{
     float: left;
