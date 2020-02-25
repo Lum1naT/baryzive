@@ -1249,15 +1249,19 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
   .voucher-home-btn {
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     background-color: $primary-btn;
     border-bottom: $primaryBorder-underBtn;
     padding: 15px;
-    color: white;
-    font-weight: 500;
-    width: 100%;
+    border-radius: 4px;
+}
+
+.voucher-home-btn a{
+  display: block;
+  color: white;
+  font-weight: 500;
 }
 
   .voucher-home-icons svg {
