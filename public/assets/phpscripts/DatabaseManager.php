@@ -40,10 +40,10 @@ $dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password"
 
 try{
  // create a PostgreSQL database connection
- $pdo = new PDO($dsn);
+ $pdoInstance = new PDO($dsn);
 
  // display a message if connected to the PostgreSQL successfully
- if($pdo){
+ if($pdoInstance){
    echo "<script>console.log('xo');</script>";
 
  }
