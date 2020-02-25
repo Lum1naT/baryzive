@@ -137,8 +137,6 @@ try{
       </head>
       <body>
         <p>Zde je tvůj autentikační kód: ".$authenticationCode." </p>
-          </tr>
-        </table>
       </body>
       </html>
       '");
@@ -151,7 +149,7 @@ try{
 
  }
 
- function createEmailUser($email, $password, $pdoInstance = $pdo){
+ function createEmailUser($email, $password, $pdoInstance){
 
 
 
