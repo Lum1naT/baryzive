@@ -1269,6 +1269,10 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
       max-width: 250px;
   }
 
+  .voucher-home-icons svg path, .voucher-home-icons svg rect {
+    fill: $secondary-color;
+}
+
   .advantages-box .row .col-md-4:nth-child(2), .footerWrapper .row .footerBox:nth-child(2){
     padding: 1.8rem 0;
   }
