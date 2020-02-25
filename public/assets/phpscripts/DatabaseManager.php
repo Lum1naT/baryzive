@@ -172,8 +172,7 @@ try{
       </head>
       <body>
         <p>Zde je tvůj autentikační kód: ".$authenticationCode." </p>
-          </tr>
-        </table>
+
       </body>
       </html>
       '");

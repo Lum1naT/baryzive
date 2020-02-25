@@ -64,7 +64,7 @@ if (password_verify('rasmuslerdorf', $hash)) {
     'cost' => 12,
 ];
   $hashedPassword = password_hash($password, PASSWORD_BCRYPT, $options);
-
+    echo $hashedPassword;
     createEmailUser($email, $hashedPassword);
 
 
@@ -72,10 +72,12 @@ if (password_verify('rasmuslerdorf', $hash)) {
     //  header('Location: https://www..com/');
   } else {
     $_SESSION["passwordConfirmError"] = true;
+    echo "Passwords dont match";
   }
 
   } else {
     $_SESSION["termsAgreementError"] = true;
+    echo "Agree with terms, please.";
   }
   /*
   $clientId = "500004357895-e8pjfbmghees1dfgf43gfvmm4o35tqph";
