@@ -1,6 +1,6 @@
 <?php
 
-include_once("/Mailman.php");
+include_once("/assets/phpscripts/Mailman.php");
 /*
 
 Some dummy syntax incase this link is not avalible
