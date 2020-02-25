@@ -44,7 +44,7 @@ try{
 
  // display a message if connected to the PostgreSQL successfully
  if($pdo){
-   echo "<script>console.log('pdo ready');</script>";
+   echo "<script>console.log('xo');</script>";
 
  }
 }catch (PDOException $e){
