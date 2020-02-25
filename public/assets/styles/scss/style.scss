@@ -419,6 +419,17 @@ input{
   text-align: center;
 }
 
+.phone-voucher{
+  position: relative;
+}
+
+.phone-voucher-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .voucher-home-btn {
   background-color: $primary-btn;
   border-bottom: $primaryBorder-underBtn;
