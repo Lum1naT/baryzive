@@ -156,14 +156,14 @@ try{
 
 
 
-          $stmt = $pdo->prepare("INSERT INTO users (oauth_provider, email, password, role, account_status, authenticationCode) VALUES (?, ?, ?, ?, ?, ?)");
+          $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, email, password, role, account_status, authenticationCode) VALUES (?, ?, ?, ?, ?, ?)");
   try {
-      $pdo->beginTransaction();
+      $pdoInstance->beginTransaction();
 
       $authenticationCode = generateRandomString(6,2);
       $stmt->execute(["email", $email, $password, "1", "0", $authenticationCode]);
 
-      $pdo->commit();
+      $pdoInstance->commit();
 
       Mailman($email, "Baryživě.cz potvrzení registrace", "
       <html>
