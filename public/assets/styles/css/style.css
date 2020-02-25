@@ -989,7 +989,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     position: relative; }
   .voucher-home-btn {
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     background-color: #C10F77;
