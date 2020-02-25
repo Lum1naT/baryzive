@@ -47,6 +47,7 @@ try{
    echo "<script>console.log('xo');</script>";
 
  }
+ 
 }catch (PDOException $e){
  // report error message
  echo $e->getMessage();
@@ -120,7 +121,7 @@ try{
 
  }
 
- function createEmailUser($email, $password, $pdoInstance = $this->$pdo){
+ function createEmailUser($email, $password, $pdoInstance){
 
 
 
