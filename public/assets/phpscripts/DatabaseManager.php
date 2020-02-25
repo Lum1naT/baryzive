@@ -120,7 +120,7 @@ try{
 
  }
 
- function createEmailUser($email, $password, $pdoInstance = $pdo){
+ function createEmailUser($email, $password, $pdoInstance){
 
 
 
