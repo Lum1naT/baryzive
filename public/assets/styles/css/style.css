@@ -984,6 +984,22 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   body .newsletter button {
     width: 100%;
     margin: 10px 0 0 0; }
+  .voucher-home-icons {
+    padding: 20px 0;
+    position: relative; }
+  .voucher-home-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #C10F77;
+    border: 3px solid #8C0042;
+    padding: 15px;
+    color: white;
+    font-weight: 500;
+    width: 100%; }
+  .voucher-home-icons svg {
+    max-width: 250px; }
   .advantages-box .row .col-md-4:nth-child(2), .footerWrapper .row .footerBox:nth-child(2) {
     padding: 1.8rem 0; }
   .footerBottomContent {
