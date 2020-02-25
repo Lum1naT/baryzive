@@ -151,7 +151,7 @@ try{
 
  }
 
- function createEmailUser($email, $password, $pdo = $pdo){
+ function createEmailUser($email, $password){
 
 
 
