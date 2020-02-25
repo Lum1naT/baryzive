@@ -993,7 +993,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     left: 50%;
     transform: translateX(-50%);
     background-color: #C10F77;
-    border: 3px solid #8C0042;
+    border-bottom: 3px solid #8C0042;
     padding: 15px;
     color: white;
     font-weight: 500;

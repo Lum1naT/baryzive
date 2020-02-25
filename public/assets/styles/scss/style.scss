@@ -1253,7 +1253,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     left: 50%;
     transform: translateX(-50%);
     background-color: $primary-btn;
-    border: $primaryBorder-underBtn;
+    border-bottom: $primaryBorder-underBtn;
     padding: 15px;
     color: white;
     font-weight: 500;
