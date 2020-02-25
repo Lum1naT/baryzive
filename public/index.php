@@ -65,7 +65,7 @@ if (password_verify('rasmuslerdorf', $hash)) {
 ];
   $hashedPassword = password_hash($password, PASSWORD_BCRYPT, $options);
     echo $hashedPassword;
-    // createEmailUser($email, $hashedPassword);
+     createEmailUser($email, $hashedPassword, $pdo);
 
 
     //  $url =  "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
