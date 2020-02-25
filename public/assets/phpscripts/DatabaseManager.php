@@ -116,7 +116,7 @@ try{
      return $randomString;
  }
 
- function createEmailUser($pdoInstance, $oauth_provider, $oauth_uid, $first_name, $last_name, $email, $password, $gender, $locale, $link){
+ function createNewUser($pdoInstance, $oauth_provider, $oauth_uid, $first_name, $last_name, $email, $password, $gender, $locale, $link){
 
 
 
@@ -151,6 +151,40 @@ try{
 
  }
 
+ function createEmailUser($email, $password, $pdo = $pdo){
+
+
+
+
+          $stmt = $pdo->prepare("INSERT INTO users (oauth_provider, email, password, role, account_status, authenticationCode) VALUES (?, ?, ?, ?, ?, ?)");
+  try {
+      $pdo->beginTransaction();
+
+      $authenticationCode = generateRandomString(6,2);
+      $stmt->execute(["email", $email, $password, "1", "0", $authenticationCode]);
+
+      $pdo->commit();
+
+      Mailman($email, "Baryživě.cz potvrzení registrace", "
+      <html>
+      <head>
+        <title>Baryživě.cz </title>
+      </head>
+      <body>
+        <p>Zde je tvůj autentikační kód: ".$authenticationCode." </p>
+          </tr>
+        </table>
+      </body>
+      </html>
+      '");
+  }catch (Exception $e){
+      $pdo->rollback();
+      throw $e;
+  }
+
+
+
+ }
 
 
  ?>
