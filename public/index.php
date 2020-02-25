@@ -64,6 +64,10 @@ if (password_verify('rasmuslerdorf', $hash)) {
     'cost' => 12,
 ];
   $hashedPassword = password_hash($password, PASSWORD_BCRYPT, $options);
+
+   // createEmailUser("email", $pdo, );
+
+
     //  $url =  "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
     //  header('Location: https://www..com/');
   } else {

@@ -116,7 +116,7 @@ try{
      return $randomString;
  }
 
- function createNewUser($pdoInstance, $oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale, $link){
+ function createEmailUser($pdoInstance, $oauth_provider, $oauth_uid, $first_name, $last_name, $email, $password, $gender, $locale, $link){
 
 
 
