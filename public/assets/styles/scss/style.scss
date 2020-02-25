@@ -419,12 +419,24 @@ input{
   text-align: center;
 }
 
-.voucher-home-icons svg path, .voucher-home-icons svg rect {
-  fill: $secondary-color;
+.voucher-home-btn {
+  background-color: $primary-btn;
+  border-bottom: $primaryBorder-underBtn;
+  padding: 15px;
+  border-radius: 4px;
 }
 
-.voucher-home-icons svg rect{
-  display: none;
+.voucher-home-btn a{
+  display: block;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px){
+  .phone-voucher img{
+    width: 100%;
+  }
 }
 
 /* --- Fast Info --- */
@@ -1248,33 +1260,6 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   body .newsletter button {
     width: 100%;
     margin: 10px 0 0 0;
-  }
-
-  .voucher-home-icons{
-    padding: 20px 0;
-    position: relative;
-  }
-
-  .voucher-home-btn {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: $primary-btn;
-    border-bottom: $primaryBorder-underBtn;
-    padding: 15px;
-    border-radius: 4px;
-  }
-
-  .voucher-home-btn a{
-    display: block;
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-  }
-
-  .voucher-home-icons svg {
-      max-width: 250px;
   }
 
   .advantages-box .row .col-md-4:nth-child(2), .footerWrapper .row .footerBox:nth-child(2){
