@@ -40,10 +40,10 @@ $dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password"
 
 try{
  // create a PostgreSQL database connection
- $pdoInstance = new PDO($dsn);
+ $pdo = new PDO($dsn);
 
  // display a message if connected to the PostgreSQL successfully
- if($pdoInstance){
+ if($pdo){
    echo "<script>console.log('xo');</script>";
 
  }
@@ -116,40 +116,11 @@ try{
      return $randomString;
  }
 
- function createNewUser($pdoInstance, $oauth_provider, $oauth_uid, $first_name, $last_name, $email, $password, $gender, $locale, $link){
-
-
-
-
-          $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link, role, account_status, authenticationCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-  try {
-      $pdo->beginTransaction();
-
-      $authenticationCode = generateRandomString(6,2);
-      $stmt->execute([$oauth_provider, $oauth_uid, $first_name, $last_name, $email, $gender, $locale,  $link, "1", "0", $authenticationCode]);
-
-      $pdo->commit();
-
-      Mailman($email, "Baryživě.cz potvrzení registrace", "
-      <html>
-      <head>
-        <title>Baryživě.cz </title>
-      </head>
-      <body>
-        <p>Zde je tvůj autentikační kód: ".$authenticationCode." </p>
-      </body>
-      </html>
-      '");
-  }catch (Exception $e){
-      $pdo->rollback();
-      throw $e;
-  }
-
 
 
  }
 
- function createEmailUser($email, $password, $pdoInstance){
+ function createEmailUser($email, $password, $pdoInstance = $pdo){
 
 
 
