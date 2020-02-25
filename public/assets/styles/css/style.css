@@ -365,6 +365,30 @@ input {
 .aboutUsWrapper {
   text-align: center; }
 
+.phone-voucher {
+  position: relative; }
+
+.phone-voucher-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; }
+
+.phone-voucher-icons {
+  display: table;
+  width: 100%;
+  clear: both;
+  padding: 0 0 20px 0; }
+
+.phone-voucher-icon-box {
+  float: left;
+  width: 33.33%; }
+
+.phone-voucher-icons .phone-voucher-icon-box svg {
+  max-width: 64px;
+  height: auto; }
+
 .voucher-home-btn {
   background-color: #C10F77;
   border-bottom: 3px solid #8C0042;
@@ -379,7 +403,8 @@ input {
 
 @media only screen and (max-width: 767px) {
   .phone-voucher img {
-    width: 100%; } }
+    width: 100%;
+    opacity: .12; } }
 
 /* --- Fast Info --- */
 #fastInfo {
