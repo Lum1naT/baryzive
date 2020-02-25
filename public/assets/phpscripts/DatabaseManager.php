@@ -1,6 +1,6 @@
 <?php
 
-include_once("../Mailman.php");
+include_once("Mailman.php");
 /*
 
 Some dummy syntax incase this link is not avalible
@@ -44,7 +44,7 @@ try{
 
  // display a message if connected to the PostgreSQL successfully
  if($pdo){
-
+   echo "<script>console.log('pdo ready');</script>"
 
  }
 }catch (PDOException $e){
