@@ -423,6 +423,10 @@ input{
   fill: $secondary-color;
 }
 
+.voucher-home-icons svg rect{
+  display: none;
+}
+
 /* --- Fast Info --- */
 #fastInfo{
   background: $dark-lighter-bg;
