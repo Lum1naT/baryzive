@@ -999,7 +999,8 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   .voucher-home-btn a {
     display: block;
     color: white;
-    font-weight: 500; }
+    font-weight: 500;
+    text-decoration: none; }
   .voucher-home-icons svg {
     max-width: 250px; }
   .advantages-box .row .col-md-4:nth-child(2), .footerWrapper .row .footerBox:nth-child(2) {
