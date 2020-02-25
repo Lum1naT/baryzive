@@ -78,7 +78,7 @@ input {
   background-color: #2a2d34;
   border: 1px solid #2a2d34; }
 
-.fastInfoWrapper, .footerWrapper, .headerWrapper, .aboutUsWrapper, .ham-nav, .voucher-list-content, .com-wrapper, .com-parts-wrapper {
+.fastInfoWrapper, .footerWrapper, .headerWrapper, .aboutUsWrapper, .ham-nav, .voucher-list-content, .com-wrapper, .com-parts-wrapper, .choose-taxi-wrapper {
   max-width: 1350px;
   width: 100%;
   margin: 0 auto; }
