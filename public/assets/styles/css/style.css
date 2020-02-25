@@ -375,6 +375,20 @@ input {
   transform: translate(-50%, -50%);
   width: 100%; }
 
+.phone-voucher-icons {
+  display: table;
+  width: 100%;
+  clear: both;
+  padding: 0 0 20px 0; }
+
+.phone-voucher-icon-box {
+  float: left;
+  width: 33.33%; }
+
+.phone-voucher-icons .phone-voucher-icon-box svg {
+  max-width: 64px;
+  height: auto; }
+
 .voucher-home-btn {
   background-color: #C10F77;
   border-bottom: 3px solid #8C0042;
