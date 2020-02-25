@@ -43,6 +43,8 @@ Route::add('/',function(){
 
 // Simple test route that simulates static html file
 Route::add('/register',function(){
+  include_once("assets/phpscripts/DatabaseManager.php");
+
   $loader = new FilesystemLoader('assets/templates');
   $twig = new Environment($loader);
   if ($_POST["ctrl"] == "regi147" && isset($_POST['termsAgreement'])) {
@@ -65,7 +67,7 @@ if (password_verify('rasmuslerdorf', $hash)) {
 ];
   $hashedPassword = password_hash($password, PASSWORD_BCRYPT, $options);
     echo $hashedPassword;
-    createEmailUser($email, $hashedPassword);
+    createEmailUser($email, $hashedPassword, $pdo);
 
 
     //  $url =  "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
