@@ -365,6 +365,9 @@ input {
 .aboutUsWrapper {
   text-align: center; }
 
+.voucher-home-icons svg path, .voucher-home-icons svg rect {
+  fill: #9b9dad; }
+
 /* --- Fast Info --- */
 #fastInfo {
   background: #1E1F26; }
@@ -1003,8 +1006,6 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     text-decoration: none; }
   .voucher-home-icons svg {
     max-width: 250px; }
-  .voucher-home-icons svg path, .voucher-home-icons svg rect {
-    fill: #9b9dad; }
   .advantages-box .row .col-md-4:nth-child(2), .footerWrapper .row .footerBox:nth-child(2) {
     padding: 1.8rem 0; }
   .footerBottomContent {
