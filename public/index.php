@@ -12,9 +12,7 @@ include_once("assets/phpscripts/Route.php");
 
 
 
-$id = $_POST['id'];
 
-echo $id;
 
 // ROUTING
 
