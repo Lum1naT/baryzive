@@ -121,7 +121,7 @@ try{
 
 
 
-          $stmt = $pdo->prepare("INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link, role, account_status, authenticationCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+          $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, oauth_uid, first_name, last_name, email, gender, locale, link, role, account_status, authenticationCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
   try {
       $pdo->beginTransaction();
 
@@ -151,7 +151,7 @@ try{
 
  }
 
- function createEmailUser($email, $password){
+ function createEmailUser($email, $password, $pdoInstance = $pdo){
 
 
 
