@@ -310,7 +310,7 @@ input {
 /* --- Header --- */
 .home header {
   padding: 2rem 20px 4rem 20px;
-  background-image: url("../../imgs/head-bg06.png");
+  background-image: url("../../imgs/head-bg06-compressed.png");
   /*head-bg04*/
   background-size: cover;
   background-repeat: no-repeat;
@@ -365,6 +365,30 @@ input {
 .aboutUsWrapper {
   text-align: center; }
 
+.phone-voucher {
+  position: relative; }
+
+.phone-voucher-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  bottom: 0; }
+
+.phone-voucher-icons {
+  display: table;
+  width: 100%;
+  clear: both;
+  padding: 0 0 20px 0; }
+
+.phone-voucher-icon-box {
+  float: left;
+  width: 33.33%; }
+
+.phone-voucher-icons .phone-voucher-icon-box svg {
+  max-width: 52px;
+  height: auto; }
+
 .voucher-home-btn {
   background-color: #C10F77;
   border-bottom: 3px solid #8C0042;
@@ -377,9 +401,37 @@ input {
   font-weight: 500;
   text-decoration: none; }
 
+/*.voucher-beer-icon svg, .voucher-burger-icon svg, .voucher-taxi-icon svg {
+    max-width: 52px;
+}
+
+.voucher-taxi-icon {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    transform: rotate(-20deg);
+}
+
+.voucher-burger-icon {
+    position: absolute;
+    left: 30px;
+    bottom: 80px;
+    transform: rotate(10deg);
+}
+
+.voucher-beer-icon {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    right: 20px;
+    transform: rotate(-10deg);
+}*/
 @media only screen and (max-width: 767px) {
   .phone-voucher img {
-    width: 100%; } }
+    width: 65%; }
+  .voucher-home-btn {
+    max-width: 298px;
+    margin: 0 auto; } }
 
 /* --- Fast Info --- */
 #fastInfo {
@@ -949,7 +1001,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     font-size: 2rem;
   }*/
   h2 {
-    font-size: 1.4rem; }
+    font-size: 1.2rem; }
   h3 {
     font-size: 1rem; }
   a, p, li, input, span, button, label {
@@ -1003,7 +1055,10 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   .advantages-box .row .col-md-4:nth-child(2), .footerWrapper .row .footerBox:nth-child(2) {
     padding: 1.8rem 0; }
   .footerBottomContent {
-    padding-top: 1.8rem; } }
+    padding-top: 1.8rem; }
+  form.newsletter {
+    max-width: 298px;
+    margin: 10px auto 0 auto; } }
 
 @media only screen and (max-width: 959px) {
   /*.headerContentWrapper svg{
