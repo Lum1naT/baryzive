@@ -427,11 +427,11 @@ input {
     transform: rotate(-10deg);
 }*/
 /* --- Taxi LP --- */
-/*.taxi-home-svg svg{
+.taxi-home-svg svg {
   width: 120%;
   position: relative;
-  right: 40px;
-}*/
+  right: 40px; }
+
 @media only screen and (max-width: 767px) {
   .phone-voucher img {
     width: 100%; }
