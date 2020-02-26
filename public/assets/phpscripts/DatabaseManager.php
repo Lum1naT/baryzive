@@ -30,28 +30,6 @@ define("DB_USERNAME", "Luminat");
 define("DB_PASSWORD", "baryzive42");
 define("DB_DATABASE", "baryzivedb");
 
-$host = DB_HOST;
-$db   = DB_DATABASE;
-$username = DB_USERNAME;
-$password = DB_PASSWORD;
-
-
-$dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
-
-try{
- // create a PostgreSQL database connection
- $pdo = new PDO($dsn);
-
- // display a message if connected to the PostgreSQL successfully
- if($pdo){
-   echo "<script>console.log('xo');</script>";
-
- }
-
-}catch (PDOException $e){
- // report error message
- echo $e->getMessage();
-}
 
 
 
@@ -119,41 +97,8 @@ try{
 
 
 
- 
-
- function createEmailUser($email, $password, $pdoInstance){
 
 
-
-
-          $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, email, password, role, account_status, authenticationCode) VALUES (?, ?, ?, ?, ?, ?)");
-  try {
-      $pdoInstance->beginTransaction();
-
-      $authenticationCode = generateRandomString(6,2);
-      $stmt->execute(["email", $email, $password, "1", "0", $authenticationCode]);
-
-      $pdoInstance->commit();
-
-      Mailman($email, "Baryživě.cz potvrzení registrace", "
-      <html>
-      <head>
-        <title>Baryživě.cz </title>
-      </head>
-      <body>
-        <p>Zde je tvůj autentikační kód: ".$authenticationCode." </p>
-
-      </body>
-      </html>
-      '");
-  }catch (Exception $e){
-      $pdo->rollback();
-      throw $e;
-  }
-
-
-
- }
 
 
  ?>
