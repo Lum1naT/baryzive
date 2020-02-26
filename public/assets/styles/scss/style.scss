@@ -1185,11 +1185,6 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   .logIn-page .logIn-wrapper .fb-logIn input, .logIn-page .logIn-wrapper .google-logIn input, .register-page .register-wrapper .fb-register input, .register-page .register-wrapper .google-register input{
     padding-left: 35px;
   }
-
-  form.newsletter {
-    max-width: 298px;
-    margin: 10px auto 0 auto;
-  }
 }
 
 @media only screen and (max-width: 767px){
@@ -1311,6 +1306,11 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
 
   .footerBottomContent{
     padding-top: 1.8rem;
+  }
+
+  form.newsletter {
+    max-width: 298px;
+    margin: 10px auto 0 auto;
   }
 }
 
