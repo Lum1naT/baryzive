@@ -406,7 +406,10 @@ input {
 
 @media only screen and (max-width: 767px) {
   .phone-voucher img {
-    width: 60%; } }
+    width: 65%; }
+  .voucher-home-btn {
+    max-width: 298px;
+    margin: 0 auto; } }
 
 /* --- Fast Info --- */
 #fastInfo {
@@ -959,7 +962,10 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   .logIn-wrapper > .row .col-md-6:last-child, .register-wrapper > .row .col-md-6:last-child {
     padding-left: 5px; }
   .logIn-page .logIn-wrapper .fb-logIn input, .logIn-page .logIn-wrapper .google-logIn input, .register-page .register-wrapper .fb-register input, .register-page .register-wrapper .google-register input {
-    padding-left: 35px; } }
+    padding-left: 35px; }
+  form.newsletter {
+    max-width: 298px;
+    margin: 10px auto 0 auto; } }
 
 @media only screen and (max-width: 767px) {
   body .row {
