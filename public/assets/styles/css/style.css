@@ -401,28 +401,31 @@ input {
   font-weight: 500;
   text-decoration: none; }
 
-.voucher-beer-icon svg, .voucher-burger-icon svg, .voucher-taxi-icon svg {
-  max-width: 52px; }
+/*.voucher-beer-icon svg, .voucher-burger-icon svg, .voucher-taxi-icon svg {
+    max-width: 52px;
+}
 
 .voucher-taxi-icon {
-  position: absolute;
-  top: 30px;
-  left: 20px;
-  transform: rotate(-20deg); }
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    transform: rotate(-20deg);
+}
 
 .voucher-burger-icon {
-  position: absolute;
-  left: 30px;
-  bottom: 80px;
-  transform: rotate(10deg); }
+    position: absolute;
+    left: 30px;
+    bottom: 80px;
+    transform: rotate(10deg);
+}
 
 .voucher-beer-icon {
-  position: absolute;
-  right: 0;
-  top: 70px;
-  right: 20px;
-  transform: rotate(-10deg); }
-
+    position: absolute;
+    right: 0;
+    top: 70px;
+    right: 20px;
+    transform: rotate(-10deg);
+}*/
 @media only screen and (max-width: 767px) {
   .phone-voucher img {
     width: 65%; }
