@@ -428,7 +428,7 @@ input {
 }*/
 @media only screen and (max-width: 767px) {
   .phone-voucher img {
-    width: 65%; }
+    width: 100%; }
   .voucher-home-btn {
     max-width: 298px;
     margin: 0 auto; } }
