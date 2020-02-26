@@ -466,6 +466,28 @@ input{
     max-width: 52px;
 }
 
+.voucher-taxi-icon {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    transform: rotate(-20deg);
+}
+
+.voucher-burger-icon {
+    position: absolute;
+    left: 30px;
+    bottom: 80px;
+    transform: rotate(10deg);
+}
+
+.voucher-beer-icon {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    right: 20px;
+    transform: rotate(-10deg);
+}
+
 @media only screen and (max-width: 767px){
   .phone-voucher img{
     width: 65%;
