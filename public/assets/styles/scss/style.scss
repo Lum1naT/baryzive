@@ -426,9 +426,9 @@ input{
 .phone-voucher-content{
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 100%;
+  bottom: 0;
 }
 
 .phone-voucher-icons {
@@ -444,7 +444,7 @@ input{
 }
 
 .phone-voucher-icons .phone-voucher-icon-box svg {
-    max-width: 46px;
+    max-width: 52px;
     height: auto;
 }
 
@@ -463,12 +463,12 @@ input{
 }
 
 .phone-voucher img{
-  opacity: .25;
+  opacity: .5;
 }
 
 @media only screen and (max-width: 767px){
   .phone-voucher img{
-    width: 100%;
+    width: 80%;
   }
 }
 
