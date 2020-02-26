@@ -370,7 +370,7 @@ input {
 
 .phone-voucher-content {
   position: absolute;
-  top: 50%;
+  left: 50%;
   transform: translateX(-50%);
   width: 100%;
   bottom: 0; }
@@ -406,7 +406,7 @@ input {
 
 @media only screen and (max-width: 767px) {
   .phone-voucher img {
-    width: 80%; } }
+    width: 70%; } }
 
 /* --- Fast Info --- */
 #fastInfo {
