@@ -427,6 +427,9 @@ input {
     transform: rotate(-10deg);
 }*/
 /* --- Taxi LP --- */
+.taxi-home-svg {
+  overflow-x: hidden; }
+
 .taxi-home-svg svg {
   width: 120%;
   position: relative;
