@@ -462,6 +462,10 @@ input{
   text-decoration: none;
 }
 
+.voucher-beer-icon svg, .voucher-burger-icon svg, .voucher-taxi-icon svg {
+    max-width: 52px;
+}
+
 @media only screen and (max-width: 767px){
   .phone-voucher img{
     width: 65%;
