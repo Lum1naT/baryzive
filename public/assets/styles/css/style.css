@@ -386,7 +386,7 @@ input {
   width: 33.33%; }
 
 .phone-voucher-icons .phone-voucher-icon-box svg {
-  max-width: 64px;
+  max-width: 46px;
   height: auto; }
 
 .voucher-home-btn {
@@ -401,10 +401,12 @@ input {
   font-weight: 500;
   text-decoration: none; }
 
+.phone-voucher img {
+  opacity: .25; }
+
 @media only screen and (max-width: 767px) {
   .phone-voucher img {
-    width: 100%;
-    opacity: .12; } }
+    width: 100%; } }
 
 /* --- Fast Info --- */
 #fastInfo {
