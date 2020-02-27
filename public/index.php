@@ -52,8 +52,9 @@ function generateRandomString($length, $characterSwitch) {
 
 
 Route::add('/mailtest',function(){
-  mail("vitekd@stredniskola.cz", "Baryživě.cz potvrzení registrace", "Zde je tvůj autentikační kód: "."XXXXXX");
-  echo "Mail sent.";
+  $email = "vitekd@stredniskola.cz";
+  mail($email, "Baryživě.cz potvrzení registrace", "Zde je tvůj autentikační kód: "."XXXXXX");
+  echo "Mail sent to ".$email.".";
 });
 
 
