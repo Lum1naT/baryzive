@@ -41,7 +41,8 @@ function Mailman($to, $subject, $message){
   $headers[] = 'Bcc: birthdaycheck@example.com';
 
   // Mail it
-  mail($to, $subject, $message, implode("\r\n", $headers));
+  $result = mail($to, $subject, $message, implode("\r\n", $headers));
+  return $result;
 }
 
 

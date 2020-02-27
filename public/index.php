@@ -69,6 +69,17 @@ if (password_verify('rasmuslerdorf', $hash)) {
     echo $hashedPassword;
 
 
+              echo Mailman($email, "Baryživě.cz potvrzení registrace", "
+              <html>
+              <head>
+                <title>Baryživě.cz </title>
+              </head>
+              <body>
+                <p>Zde je tvůj autentikační kód: ".$authenticationCode." </p>
+
+              </body>
+              </html>
+              '");
 
     $host = DB_HOST;
     $db   = DB_DATABASE;
@@ -104,17 +115,6 @@ if (password_verify('rasmuslerdorf', $hash)) {
 
           $pdoInstance->commit();
 
-          Mailman($email, "Baryživě.cz potvrzení registrace", "
-          <html>
-          <head>
-            <title>Baryživě.cz </title>
-          </head>
-          <body>
-            <p>Zde je tvůj autentikační kód: ".$authenticationCode." </p>
-
-          </body>
-          </html>
-          '");
       }catch (Exception $e){
           $pdo->rollback();
           throw $e;
