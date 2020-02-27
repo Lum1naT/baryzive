@@ -33,7 +33,7 @@ define("DB_DATABASE", "baryzivedb");
 
 
 
- public function authenticateUser($pdoInstance, $email, $authenticationCode){
+ function authenticateUser($pdoInstance, $email, $authenticationCode){
    // TODO: check if $email and $authenticationCode match > done mby?
    $stmt = $pdoInstance->query('SELECT authentication_code FROM users WHERE email = ?');
    $stmt->execute([$email]);
@@ -58,7 +58,7 @@ define("DB_DATABASE", "baryzivedb");
  *
  */
 
- public function generateRandomString($length, $characterSwitch) {
+function generateRandomString($length, $characterSwitch) {
 
    switch ($characterSwitch) {
      case 1:
