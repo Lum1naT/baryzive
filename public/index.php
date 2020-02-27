@@ -42,6 +42,8 @@ Route::add('/',function(){
 // Simple test route that simulates static html file
 Route::add('/register',function(){
   include_once("assets/phpscripts/DatabaseManager.php");
+  include_once("assets/phpscripts/Mailman.php");
+
 
   $loader = new FilesystemLoader('assets/templates');
   $twig = new Environment($loader);

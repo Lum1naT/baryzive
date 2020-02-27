@@ -1,6 +1,5 @@
 <?php
 
-include_once("Mailman.php");
 /*
 
 Some dummy syntax incase this link is not avalible
