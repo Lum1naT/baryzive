@@ -434,7 +434,14 @@ input {
     margin: 0 auto; }
   .taxi-city-select select {
     text-align: center;
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  .taxi-home-svg {
+    position: relative; }
+  .taxi-home-text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0; } }
 
 /* --- Taxi LP --- */
 .taxi-city-select {
