@@ -133,15 +133,18 @@ if (password_verify('rasmuslerdorf', $hash)) {
 
 
               $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, email, password, role, account_status, authentication_code) VALUES (?, ?, ?, ?, ?, ?)");
+              echo "-prepared.<br>";
+
       try {
           $pdoInstance->beginTransaction();
           $authenticationCode = generateRandomString(6,2);
           $stmt->execute(["email", $email, $hashedPassword, 1, 0, $authenticationCode]);
-
+          echo "-executed.<br>";
           $pdoInstance->commit();
-
+          echo "-commited.<br>";
       }catch (Exception $e){
           $pdo->rollback();
+          echo "-rolling back.<br>";
           throw $e;
       }
 
