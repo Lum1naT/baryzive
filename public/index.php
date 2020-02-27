@@ -143,7 +143,7 @@ if (password_verify('rasmuslerdorf', $hash)) {
           $pdoInstance->commit();
           echo "-commited.<br>";
       }catch (Exception $e){
-          $pdo->rollback();
+          $pdoInstance->rollback();
           echo "-rolling back.<br>";
           throw $e;
       }
