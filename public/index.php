@@ -94,6 +94,41 @@ if (password_verify('rasmuslerdorf', $hash)) {
      echo $e->getMessage();
     }
 
+    function generateRandomString($length, $characterSwitch) {
+
+       switch ($characterSwitch) {
+         case 1:
+            $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            break;
+         case 2:
+            $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            break;
+         case 3:
+            $characters = '0123456789abcdefghijklmnopqrstuvwxyz';
+            break;
+          case 4:
+            $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            break;
+          case 5:
+            $characters = '0123456789';
+            break;
+          case 6:
+            $characters = 'abcdefghijklmnopqrstuvwxyz';
+            break;
+          case 7:
+            $characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            break;
+         default:
+           break;
+       }
+
+         $charactersLength = strlen($characters);
+         $randomString = '';
+         for ($i = 0; $i < $length; $i++) {
+             $randomString .= $characters[rand(0, $charactersLength - 1)];
+         }
+         return $randomString;
+     }
 
     $authenticationCode = generateRandomString(6,2);
 
