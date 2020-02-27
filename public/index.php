@@ -95,12 +95,12 @@ if (password_verify('rasmuslerdorf', $hash)) {
     }
 
 
+    $authenticationCode = generateRandomString(6,2);
 
               $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, email, password, role, account_status, authenticationCode) VALUES (?, ?, ?, ?, ?, ?)");
       try {
           $pdoInstance->beginTransaction();
 
-          $authenticationCode = generateRandomString(6,2);
           $stmt->execute(["email", $email, $password, "1", "0", $authenticationCode]);
 
           $pdoInstance->commit();
