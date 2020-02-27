@@ -427,6 +427,19 @@ input {
     transform: rotate(-10deg);
 }*/
 /* --- Taxi LP --- */
+.taxi-city-select {
+  padding: 10px 0; }
+
+.taxi-city-select select {
+  width: 100%;
+  max-width: 298px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #1E1F26;
+  color: #9b9dad; }
+
 @media only screen and (max-width: 767px) {
   .phone-voucher img {
     width: 100%; }
