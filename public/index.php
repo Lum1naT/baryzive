@@ -136,7 +136,7 @@ if (password_verify('rasmuslerdorf', $hash)) {
       try {
           $pdoInstance->beginTransaction();
           $authenticationCode = generateRandomString(6,2);
-          $stmt->execute(["email", $email, $hashedPassword, "1", "0", $authenticationCode]);
+          $stmt->execute(["email", $email, $hashedPassword, "1", "0", "xxxxxx"]);
 
           $pdoInstance->commit();
 
@@ -144,9 +144,9 @@ if (password_verify('rasmuslerdorf', $hash)) {
           $pdo->rollback();
           throw $e;
       }
-     // createEmailUser($email, $hashedPassword);
 
-     echo Mailman($email, "Baryživě.cz potvrzení registrace", "
+      echo $authenticationCode;
+     mail($email, "Baryživě.cz potvrzení registrace", "
      <html>
      <head>
        <title>Baryživě.cz </title>
