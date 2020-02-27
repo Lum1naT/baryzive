@@ -69,17 +69,7 @@ if (password_verify('rasmuslerdorf', $hash)) {
     echo $hashedPassword;
 
 
-              echo Mailman($email, "Baryživě.cz potvrzení registrace", "
-              <html>
-              <head>
-                <title>Baryživě.cz </title>
-              </head>
-              <body>
-                <p>Zde je tvůj autentikační kód: ".$authenticationCode." </p>
 
-              </body>
-              </html>
-              '");
 
     $host = DB_HOST;
     $db   = DB_DATABASE;
@@ -121,7 +111,17 @@ if (password_verify('rasmuslerdorf', $hash)) {
       }
      // createEmailUser($email, $hashedPassword);
 
+     echo Mailman($email, "Baryživě.cz potvrzení registrace", "
+     <html>
+     <head>
+       <title>Baryživě.cz </title>
+     </head>
+     <body>
+       <p>Zde je tvůj autentikační kód: ".$authenticationCode." </p>
 
+     </body>
+     </html>
+     '");
     //  $url =  "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
     //  header('Location: https://www..com/');
   } else {
