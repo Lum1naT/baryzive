@@ -12,7 +12,41 @@ include_once("assets/phpscripts/Route.php");
 
 
 
+function generateRandomString($length, $characterSwitch) {
 
+   switch ($characterSwitch) {
+     case 1:
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        break;
+     case 2:
+        $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        break;
+     case 3:
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyz';
+        break;
+      case 4:
+        $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        break;
+      case 5:
+        $characters = '0123456789';
+        break;
+      case 6:
+        $characters = 'abcdefghijklmnopqrstuvwxyz';
+        break;
+      case 7:
+        $characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        break;
+     default:
+       break;
+   }
+
+     $charactersLength = strlen($characters);
+     $randomString = '';
+     for ($i = 0; $i < $length; $i++) {
+         $randomString .= $characters[rand(0, $charactersLength - 1)];
+     }
+     return $randomString;
+ }
 
 // ROUTING
 
@@ -94,48 +128,14 @@ if (password_verify('rasmuslerdorf', $hash)) {
      echo $e->getMessage();
     }
 
-    function generateRandomString($length, $characterSwitch) {
 
-       switch ($characterSwitch) {
-         case 1:
-            $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-            break;
-         case 2:
-            $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-            break;
-         case 3:
-            $characters = '0123456789abcdefghijklmnopqrstuvwxyz';
-            break;
-          case 4:
-            $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-            break;
-          case 5:
-            $characters = '0123456789';
-            break;
-          case 6:
-            $characters = 'abcdefghijklmnopqrstuvwxyz';
-            break;
-          case 7:
-            $characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-            break;
-         default:
-           break;
-       }
 
-         $charactersLength = strlen($characters);
-         $randomString = '';
-         for ($i = 0; $i < $length; $i++) {
-             $randomString .= $characters[rand(0, $charactersLength - 1)];
-         }
-         return $randomString;
-     }
 
-    $authenticationCode = generateRandomString(6,2);
 
               $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, email, password, role, account_status, authenticationCode) VALUES (?, ?, ?, ?, ?, ?)");
       try {
           $pdoInstance->beginTransaction();
-
+          $authenticationCode = generateRandomString(6,2);
           $stmt->execute(["email", $email, $hashedPassword, "1", "0", $authenticationCode]);
 
           $pdoInstance->commit();
