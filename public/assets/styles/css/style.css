@@ -429,7 +429,7 @@ input {
 @media only screen and (max-width: 767px) {
   .phone-voucher img {
     width: 100%; }
-  .voucher-home-btn {
+  .voucher-home-btn, .taxi-city-select input.taxi-search-btn {
     max-width: 298px;
     margin: 0 auto; }
   .taxi-city-select select {
@@ -442,14 +442,14 @@ input {
 .taxi-city-select select {
   width: 100%;
   max-width: 298px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   padding: 15px;
   border-radius: 4px;
   border: none;
   background-color: #1E1F26;
   color: #9b9dad; }
 
-.taxi-city-select select input.taxi-search-btn {
+.taxi-city-select input.taxi-search-btn {
   border: none;
   border-bottom: 3px solid #8C0042;
   border-radius: 4px;
@@ -457,7 +457,7 @@ input {
   font-weight: 500;
   color: white;
   background-color: #C10F77; }
-  .taxi-city-select select input.taxi-search-btn:hover {
+  .taxi-city-select input.taxi-search-btn:hover {
     background-color: #DE2774; }
 
 /* --- Fast Info --- */

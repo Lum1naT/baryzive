@@ -493,7 +493,7 @@ input{
     width: 100%;
   }
 
-  .voucher-home-btn {
+  .voucher-home-btn, .taxi-city-select input.taxi-search-btn {
     max-width: 298px;
     margin: 0 auto;
   }
@@ -511,7 +511,7 @@ input{
 .taxi-city-select select {
   width: 100%;
   max-width: 298px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   padding: 15px;
   border-radius: 4px;
   border: none;
@@ -519,7 +519,7 @@ input{
   color: $secondary-color;
 }
 
-.taxi-city-select select input.taxi-search-btn{
+.taxi-city-select input.taxi-search-btn{
   border: none;
   border-bottom: $primaryBorder-underBtn;
   border-radius: 4px;
