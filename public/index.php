@@ -100,7 +100,7 @@ if (password_verify('rasmuslerdorf', $hash)) {
     'cost' => 12,
 ];
   $hashedPassword = password_hash($password, PASSWORD_BCRYPT, $options);
-    echo $hashedPassword;
+    echo $hashedPassword."<br>";
 
 
 
