@@ -48,7 +48,15 @@ function generateRandomString($length, $characterSwitch) {
      return $randomString;
  }
 
-// ROUTING
+// ROUTING TESTS
+
+
+Route::add('/mailtest',function(){
+  mail("K0jnCZ@gmail.com", "Baryživě.cz potvrzení registrace", "Zde je tvůj autentikační kód: "."XXXXXX");
+  echo "Mail sent.";
+});
+
+
 
 
 // Add base route (startpage)
@@ -132,13 +140,13 @@ if (password_verify('rasmuslerdorf', $hash)) {
 
 
 
-              $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, email, password, role, account_status, authentication_code) VALUES (?, ?, ?, ?, ?, ?)");
+              $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, email, password, authentication_code, role, account_status) VALUES (?, ?, ?, ?, ?, ?)");
               echo "-prepared.<br>";
 
       try {
           $pdoInstance->beginTransaction();
           $authenticationCode = generateRandomString(6,2);
-          $stmt->execute(["email", $email, $hashedPassword, 1, 0, $authenticationCode]);
+          $stmt->execute(["email", $email, $hashedPassword, $authenticationCode, "1", "0"]);
           echo "-executed.<br>";
           $pdoInstance->commit();
           echo "-commited.<br>";
@@ -149,17 +157,7 @@ if (password_verify('rasmuslerdorf', $hash)) {
       }
 
       echo $authenticationCode;
-     mail($email, "Baryživě.cz potvrzení registrace", "
-     <html>
-     <head>
-       <title>Baryživě.cz </title>
-     </head>
-     <body>
-       <p>Zde je tvůj autentikační kód: ".$authenticationCode." </p>
-
-     </body>
-     </html>
-     '");
+     mail($email, "Baryživě.cz potvrzení registrace", "Zde je tvůj autentikační kód: ".$authenticationCode);
     //  $url =  "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
     //  header('Location: https://www..com/');
   } else {
