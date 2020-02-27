@@ -136,7 +136,7 @@ if (password_verify('rasmuslerdorf', $hash)) {
       try {
           $pdoInstance->beginTransaction();
 
-          $stmt->execute(["email", $email, $password, "1", "0", $authenticationCode]);
+          $stmt->execute(["email", $email, $hashedPassword, "1", "0", $authenticationCode]);
 
           $pdoInstance->commit();
 
