@@ -502,17 +502,6 @@ input{
     text-align: center;
     font-size: $phone-fontSize;
   }
-
-  #choose-taxi{
-    position: relative;
-    z-index: 1;
-  }
-
-  .taxi-home-svg {
-    margin-top: -15%;
-    z-index: 0;
-    position: relative;
-  }
 }
 
 /* --- Taxi LP --- */
