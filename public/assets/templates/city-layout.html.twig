@@ -215,8 +215,8 @@
 
             var time = parseInt(hours + '' + ("0" + mins).slice(-2));
 
-            if(day >= 1 && day <= 5) {
-              if(time >= 900 && time <= 1802) {
+            if(day >= 0 && day <= 6) {
+              if(time >= 900 && time <= 1800) {
                 var status = 'open';
               }	else {
                 var status = 'closed';
