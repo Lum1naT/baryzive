@@ -502,11 +502,19 @@ input{
     text-align: center;
     font-size: $phone-fontSize;
   }
+
+  .taxi-home-svg svg{
+    max-width: 298px;
+  }
 }
 
 /* --- Taxi LP --- */
 .taxi-city-select {
   padding: 10px 0;
+}
+
+.taxi-home-svg {
+    padding: 20px;
 }
 
 .taxi-city-select select {
