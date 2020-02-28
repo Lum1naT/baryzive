@@ -869,6 +869,9 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   margin: 0;
   padding-right: 5px; }
 
+.com-open-or-close .time {
+  display: inline-block; }
+
 .com-btns.com-small-info > a {
   margin: 0 3px; }
 
