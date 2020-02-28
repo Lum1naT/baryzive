@@ -11,7 +11,8 @@
     "require": {
         "composer-plugin-api": "^1.0",
         "twig/twig": "^2.0",
-        "google/apiclient": "^2.4"
+        "google/apiclient": "^2.4",
+        "aws/aws-sdk-php": "^3.133"
     },
     "require-dev": {
         "composer/composer": "^1.3"
