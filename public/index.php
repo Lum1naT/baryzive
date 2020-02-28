@@ -13,7 +13,6 @@ include_once("assets/phpscripts/Route.php");
 
 
 
-// ROUTING
 
 
 // Add base route (startpage)
@@ -41,6 +40,8 @@ Route::add('/',function(){
 // Simple test route that simulates static html file
 Route::add('/register',function(){
   include_once("assets/phpscripts/DatabaseManager.php");
+  include_once("assets/phpscripts/Mailman.php");
+
 
   $loader = new FilesystemLoader('assets/templates');
   $twig = new Environment($loader);
@@ -63,10 +64,56 @@ if (password_verify('rasmuslerdorf', $hash)) {
     'cost' => 12,
 ];
   $hashedPassword = password_hash($password, PASSWORD_BCRYPT, $options);
-    echo $hashedPassword;
-    // createEmailUser($email, $hashedPassword);
+    echo $hashedPassword."<br>";
 
 
+
+
+    $host = DB_HOST;
+    $db   = DB_DATABASE;
+    $username = DB_USERNAME;
+    $password = DB_PASSWORD;
+
+
+    $dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
+
+    try{
+     // create a PostgreSQL database connection
+     $pdoInstance = new PDO($dsn);
+
+     // display a message if connected to the PostgreSQL successfully
+     if($pdoInstance){
+       echo "<script>console.log('xo');</script>";
+
+     }
+
+    }catch (PDOException $e){
+     // report error message
+     echo $e->getMessage();
+    }
+
+
+
+
+
+              $stmt = $pdoInstance->prepare("INSERT INTO users (oauth_provider, email, password, authentication_code, role, account_status) VALUES (?, ?, ?, ?, ?, ?)");
+              echo "-prepared.<br>";
+
+      try {
+          $pdoInstance->beginTransaction();
+          $authenticationCode = generateRandomString(6,2);
+          $stmt->execute(["email", $email, $hashedPassword, $authenticationCode, "1", "0"]);
+          echo "-executed.<br>";
+          $pdoInstance->commit();
+          echo "-commited.<br>";
+      }catch (Exception $e){
+          $pdoInstance->rollback();
+          echo "-rolling back.<br>";
+          throw $e;
+      }
+
+      echo $authenticationCode;
+     mail($email, "Baryživě.cz potvrzení registrace", "Zde je tvůj autentikační kód: ".$authenticationCode);
     //  $url =  "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
     //  header('Location: https://www..com/');
   } else {

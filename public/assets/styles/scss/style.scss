@@ -355,7 +355,7 @@ input{
 /* --- Header --- */
 .home header{
   padding: 2rem 20px 4rem 20px;
-  background-image: url('../../imgs/head-bg06.png'); /*head-bg04*/
+  background-image: url('../../imgs/head-bg06-compressed.png'); /*head-bg04*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
@@ -419,8 +419,118 @@ input{
   text-align: center;
 }
 
-.voucher-home-icons svg path, .voucher-home-icons svg rect {
-  fill: $secondary-color;
+.phone-voucher{
+  position: relative;
+}
+
+.phone-voucher-content{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  bottom: 0;
+}
+
+.phone-voucher-icons {
+    display: table;
+    width: 100%;
+    clear: both;
+    padding: 0 0 20px 0;
+}
+
+.phone-voucher-icon-box {
+    float: left;
+    width: 33.33%;
+}
+
+.phone-voucher-icons .phone-voucher-icon-box svg {
+    max-width: 52px;
+    height: auto;
+}
+
+.voucher-home-btn {
+  background-color: $primary-btn;
+  border-bottom: $primaryBorder-underBtn;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.voucher-home-btn a{
+  display: block;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*.voucher-beer-icon svg, .voucher-burger-icon svg, .voucher-taxi-icon svg {
+    max-width: 52px;
+}
+
+.voucher-taxi-icon {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    transform: rotate(-20deg);
+}
+
+.voucher-burger-icon {
+    position: absolute;
+    left: 30px;
+    bottom: 80px;
+    transform: rotate(10deg);
+}
+
+.voucher-beer-icon {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    right: 20px;
+    transform: rotate(-10deg);
+}*/
+
+@media only screen and (max-width: 767px){
+  .phone-voucher img{
+    width: 100%;
+  }
+
+  .voucher-home-btn, .taxi-city-select input.taxi-search-btn {
+    max-width: 298px;
+    margin: 0 auto;
+  }
+
+  .taxi-city-select select{
+    text-align: center;
+    font-size: $phone-fontSize;
+  }
+}
+
+/* --- Taxi LP --- */
+.taxi-city-select {
+  padding: 10px 0;
+}
+
+.taxi-city-select select {
+  width: 100%;
+  max-width: 298px;
+  margin: 0 auto 10px auto;
+  padding: 15px;
+  border-radius: 4px;
+  border: none;
+  background-color: $dark-lighter-bg;
+  color: $secondary-color;
+}
+
+.taxi-city-select input.taxi-search-btn{
+  border: none;
+  border-bottom: $primaryBorder-underBtn;
+  border-radius: 4px;
+  padding: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: $primary-btn;
+  &:hover{
+    background-color: #DE2774;
+  }
 }
 
 /* --- Fast Info --- */
@@ -1159,7 +1269,7 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
   }*/
 
   h2{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   h3{
@@ -1246,39 +1356,17 @@ body.register-page .register-text svg path, body.logIn-page .logIn-text svg path
     margin: 10px 0 0 0;
   }
 
-  .voucher-home-icons{
-    padding: 20px 0;
-    position: relative;
-  }
-
-  .voucher-home-btn {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: $primary-btn;
-    border-bottom: $primaryBorder-underBtn;
-    padding: 15px;
-    border-radius: 4px;
-  }
-
-  .voucher-home-btn a{
-    display: block;
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-  }
-
-  .voucher-home-icons svg {
-      max-width: 250px;
-  }
-
   .advantages-box .row .col-md-4:nth-child(2), .footerWrapper .row .footerBox:nth-child(2){
     padding: 1.8rem 0;
   }
 
   .footerBottomContent{
     padding-top: 1.8rem;
+  }
+
+  form.newsletter {
+    max-width: 298px;
+    margin: 10px auto 0 auto;
   }
 }
 
