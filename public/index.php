@@ -6,6 +6,8 @@ require '../vendor/autoload.php';
 
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
+use Aws\Ses\SesClient;
+use Aws\Exception\AwsException;
 
 include_once("assets/phpscripts/DatabaseManager.php");
 include_once("assets/phpscripts/Route.php");
